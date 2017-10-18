@@ -55,6 +55,9 @@
     </Content>
     <Content Include="Styles\Web.config" />
     <Content Include="Theme.txt" />
+    <Content Include="Views\Fields\MediaLibraryPicker-Screenshot.liquid" />
+    <None Include="Views\Fields\MediaLibraryPicker_Summary-Screenshot.liquid" />
+    <None Include="Views\Parts\TermPart.liquid" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
@@ -118,7 +121,5 @@
     <Content Include="Licence.md" />
     <Content Include="Readme.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

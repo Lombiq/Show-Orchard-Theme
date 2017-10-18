@@ -4,6 +4,12 @@
         <Name>Show Orchard tenant initialization recipe.</Name>
         <Author>Lombiq</Author>
     </Recipe>
+
+    <Settings>
+        <SearchSettingsPart SearchFields="Categories:Category,Category-id" DisplayType="Summary" FilterCulture="false" SearchIndex="Categories" />
+        <SiteSettingsPart PageSize="8" />
+    </Settings>
+    
     <ContentDefinition>
         <Types>
             <CategoryTerm Taxonomy="Category" DisplayName="Category Term">
@@ -12,7 +18,7 @@
                 <TermPart />
                 <TitlePart />
             </CategoryTerm>
-            <Website ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" ContentTypeSettings.Listable="True" ContentTypeSettings.Securable="True" ContentTypeLayoutSettings.Placeable="False" DisplayName="Website">
+            <Website ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" ContentTypeSettings.Listable="True" ContentTypeSettings.Securable="True" ContentTypeLayoutSettings.Placeable="False" DisplayName="Website" TypeIndexing.Indexes="Categories">
                 <AutoroutePart AutorouteSettings.PerItemConfiguration="False" AutorouteSettings.AllowCustomPattern="False" AutorouteSettings.UseCulturePattern="False" AutorouteSettings.AutomaticAdjustmentOnEdit="True" AutorouteSettings.PatternDefinitions="[{&quot;Name&quot;:&quot;Website&quot;,&quot;Pattern&quot;:&quot;gallery/{Content.Fields.WebsitePart.Category.Terms:0.Slug}/{Content.Slug}&quot;,&quot;Description&quot;:&quot;/gallery/website-category/website-slug&quot;,&quot;Culture&quot;:&quot;en-US&quot;}]" AutorouteSettings.DefaultPatternDefinitions="[{&quot;Culture&quot;:&quot;en-US&quot;,&quot;PatternIndex&quot;:&quot;0&quot;}]" />
                 <BodyPart BodyTypePartSettings.Flavor="Html" />
                 <CommonPart OwnerEditorSettings.ShowOwnerEditor="True" DateEditorSettings.ShowDateEditor="True" />
@@ -35,7 +41,33 @@
             </WebsitePart>
         </Parts>
     </ContentDefinition>
+    
     <Content>
+        <Layer Id="/Layer.LayerName=Category" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-18T13:28:51.5892993Z" PublishedUtc="2017-10-18T13:28:51.6033372Z" ModifiedUtc="2017-10-18T13:28:51.62339Z" />
+            <LayerPart Name="Category" Description="" LayerRule="url(&quot;/gallery/category/*&quot;)" />
+        </Layer>
+        <Layer Id="/Layer.LayerName=Website" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-18T12:46:36.7533196Z" PublishedUtc="2017-10-18T12:46:36.7954001Z" ModifiedUtc="2017-10-18T12:46:36.8595699Z" />
+            <LayerPart Name="Website" Description="Displays widgets when a Website content item is displayed." LayerRule="ContentType(&quot;Website&quot;)" />
+        </Layer>
+
+        <LayoutWidget Id="/Identifier=c0e1401fb8234fb9a6d889df1fd3e235" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Website" CreatedUtc="2017-10-18T14:35:14.1835616Z" PublishedUtc="2017-10-18T16:11:54.5660063Z" ModifiedUtc="2017-10-18T16:11:54.5529716Z" />
+            <IdentityPart Identifier="c0e1401fb8234fb9a6d889df1fd3e235" />
+            <LayoutPart>
+                <LayoutData>{"elements":[{"typeName":"Orchard.Layouts.Elements.Canvas","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Grid","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Row","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Column","data":"Width=6&amp;Offset=0&amp;Collapsible=null","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Projection","data":"QueryLayoutId=239%3b3&amp;ItemsToDisplay=1&amp;Skip=0&amp;MaxItems=1&amp;PagerSuffix=&amp;DisplayPager=false","exportableData":"QueryId=%2fIdentifier%3de1795d9894aa49d9bb9789affe3baa03&amp;LayoutIndex=0","index":0,"elements":[],"isTemplated":false,"htmlId":"","htmlClass":"website-stepper website-stepper-left","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""},{"typeName":"Orchard.Layouts.Elements.Column","data":"Width=6&amp;Offset=0&amp;Collapsible=null","exportableData":"","index":1,"elements":[{"typeName":"Orchard.Layouts.Elements.Projection","data":"QueryLayoutId=240%3b2&amp;ItemsToDisplay=1&amp;Skip=0&amp;MaxItems=1&amp;PagerSuffix=&amp;DisplayPager=false","exportableData":"QueryId=%2fIdentifier%3d4aecf35533b8499aa260af5c555d35f1&amp;LayoutIndex=0","index":0,"elements":[],"isTemplated":false,"htmlId":"","htmlClass":"website-stepper website-stepper-right","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}]}</LayoutData>
+            </LayoutPart>
+            <WidgetPart Title="Website Stepper" Position="1" Zone="AfterContent" RenderTitle="false" Name="" CssClasses="" />
+        </LayoutWidget>
+        
+        <ProjectionWidget Id="/Identifier=39162c86abb74203825e656462ec70fa" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Website" CreatedUtc="2017-10-18T12:56:53.6706088Z" PublishedUtc="2017-10-18T12:56:53.7588762Z" ModifiedUtc="2017-10-18T12:56:53.7468124Z" />
+            <IdentityPart Identifier="39162c86abb74203825e656462ec70fa" />
+            <ProjectionPart Items="6" ItemsPerPage="0" Offset="0" PagerSuffix="" MaxItems="6" DisplayPager="false" Query="/Identifier=bc8c8344aceb47b393faa622db8cd459" LayoutIndex="-1" />
+            <WidgetPart Title="Related Websites" Position="3" Zone="AfterContent" RenderTitle="true" Name="" CssClasses="" />
+        </ProjectionWidget>
+        
         <Taxonomy Id="/alias=gallery\/category" Status="Published">
             <AutoroutePart Alias="gallery/category" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T09:10:57.6138011Z" PublishedUtc="2017-10-17T09:29:04.3617509Z" ModifiedUtc="2017-10-17T09:29:04.3557307Z" />
@@ -1662,5 +1694,163 @@
             <AutoroutePart Alias="gallery/retail/7forallmankind" UseCustomPattern="false" />
             <TitlePart Title="7FORALLMANKIND" />
         </Website>
+
+
+        <Menu Id="/Identifier=850cddc6755c404d9feb1105531fc0b3" Status="Published">
+            <CommonPart CreatedUtc="2017-10-17T08:51:55.6109472Z" PublishedUtc="2017-10-17T08:51:55.6210003Z" ModifiedUtc="2017-10-17T08:51:55.6109472Z" />
+            <IdentityPart Identifier="850cddc6755c404d9feb1105531fc0b3" />
+            <TitlePart Title="Main Menu" />
+        </Menu>
+        
+        <MenuItem Id="/Identifier=1e554473539c49eab7c6030486070cd8" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T08:51:55.9779517Z" PublishedUtc="2017-10-17T08:51:55.9879513Z" ModifiedUtc="2017-10-17T08:51:55.9779517Z" />
+            <IdentityPart Identifier="1e554473539c49eab7c6030486070cd8" />
+            <MenuItemPart Url="~/" />
+            <MenuPart Menu="/Identifier=850cddc6755c404d9feb1105531fc0b3" MenuText="Home" MenuPosition="1" />
+        </MenuItem>
+        <MenuItem Id="/Identifier=a2acf11dce424bb7b540a16b75641147" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T14:21:23.0526057Z" PublishedUtc="2017-10-17T14:21:23.1825262Z" ModifiedUtc="2017-10-17T14:21:23.126803Z" />
+            <IdentityPart Identifier="a2acf11dce424bb7b540a16b75641147" />
+            <MenuItemPart Url="~/interviews" />
+            <MenuPart Menu="/Identifier=850cddc6755c404d9feb1105531fc0b3" MenuText="Interviews" MenuPosition="2" />
+        </MenuItem>
+        <MenuItem Id="/Identifier=f894305455e74a79941a2c026907f06b" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T14:24:30.4755643Z" PublishedUtc="2017-10-17T14:25:19.4009584Z" ModifiedUtc="2017-10-17T14:25:19.3969306Z" />
+            <IdentityPart Identifier="f894305455e74a79941a2c026907f06b" />
+            <MenuItemPart Url="~/gallery/category" />
+            <MenuPart Menu="/Identifier=850cddc6755c404d9feb1105531fc0b3" MenuText="Categories" MenuPosition="3" />
+        </MenuItem>
+
+        <TaxonomyNavigationMenuItem Id="/Identifier=7845296e4c334b4aa0c0ed49284e4202" Status="Published">
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T14:22:16.9976616Z" PublishedUtc="2017-10-18T13:47:17.738545Z" ModifiedUtc="2017-10-18T13:47:17.7335136Z" />
+            <IdentityPart Identifier="7845296e4c334b4aa0c0ed49284e4202" />
+            <MenuPart Menu="/Identifier=850cddc6755c404d9feb1105531fc0b3" MenuText="Categories" MenuPosition="3.1" />
+            <TaxonomyNavigationPart DisplayContentCount="true" DisplayRootTerm="false" HideEmptyTerms="true" LevelsToDisplay="0" TaxonomyId="/alias=gallery\/category" />
+        </TaxonomyNavigationMenuItem>
+        
+        <Page Id="/alias=gallery" Status="Published">
+            <AutoroutePart Alias="gallery" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="true" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T14:31:00Z" PublishedUtc="2017-10-17T14:34:11.9302041Z" ModifiedUtc="2017-10-17T14:34:11.858989Z" />
+            <LayoutPart>
+                <LayoutData>{"elements":[{"typeName":"Orchard.Layouts.Elements.Canvas","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Grid","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Row","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Column","data":"Width=12&amp;Offset=0&amp;Collapsible=null","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Html","data":"Content=%3cp%3eShow+Orchard+is+an+Orchard+CMS+showcase%2c+displaying+only+the+best+Orchard+CMS+powered+sites+from+around+the+web.%3c%2fp%3e","exportableData":"","index":0,"elements":[],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""},{"typeName":"Orchard.Layouts.Elements.Projection","data":"QueryLayoutId=229%3b-1&amp;ItemsToDisplay=8&amp;Skip=0&amp;MaxItems=8&amp;PagerSuffix=&amp;DisplayPager=true","exportableData":"QueryId=%2fIdentifier%3d3c6424fbd1e94642b16381a710a3dc8b&amp;LayoutIndex=-1","index":1,"elements":[],"isTemplated":false,"htmlId":null,"htmlClass":null,"htmlStyle":null,"rule":null}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}]}</LayoutData>
+            </LayoutPart>
+            <TagsPart Tags="" />
+            <TitlePart Title="Gallery" />
+        </Page>
+        <Page Id="/alias=interviews" Status="Published">
+            <AutoroutePart Alias="interviews" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-18T13:23:58.3084833Z" PublishedUtc="2017-10-18T13:23:58.3084833Z" ModifiedUtc="2017-10-18T13:23:58.2804405Z" />
+            <LayoutPart>
+                <LayoutData>{"elements":[{"typeName":"Orchard.Layouts.Elements.Canvas","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Grid","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Row","data":"","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Column","data":"Width=12&amp;Offset=0&amp;Collapsible=null","exportableData":"","index":0,"elements":[{"typeName":"Orchard.Layouts.Elements.Html","data":"Content=%3cp%3eExplore+interviews+with+developers+working+on+real+Orchard+websites.%3c%2fp%3e","exportableData":"","index":0,"elements":[],"isTemplated":false,"htmlId":null,"htmlClass":null,"htmlStyle":null,"rule":null},{"typeName":"Orchard.Layouts.Elements.Projection","data":"QueryLayoutId=235%3b-1&amp;ItemsToDisplay=8&amp;Skip=0&amp;MaxItems=8&amp;PagerSuffix=&amp;DisplayPager=true","exportableData":"QueryId=%2fIdentifier%3d36ef6fceab404f629d6ead46f2d091f6&amp;LayoutIndex=-1","index":1,"elements":[],"isTemplated":false,"htmlId":null,"htmlClass":null,"htmlStyle":null,"rule":null}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}],"isTemplated":false,"htmlId":"","htmlClass":"","htmlStyle":"","rule":""}]}</LayoutData>
+            </LayoutPart>
+            <TagsPart Tags="" />
+            <TitlePart Title="Interviews" />
+        </Page>
+
+        <Query Id="/Identifier=36ef6fceab404f629d6ead46f2d091f6" Status="Published">
+            <IdentityPart Identifier="36ef6fceab404f629d6ead46f2d091f6" />
+            <QueryPart>
+                <FilterGroups>
+                    <FilterGroup>
+                        <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Website&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+                        <Filter Category="WebsitePartContentFields" Description="" Position="1" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Value&gt;true&lt;/Value&gt;&lt;/Form&gt;" Type="WebsitePart.Interview." />
+                    </FilterGroup>
+                </FilterGroups>
+                <SortCriteria>
+                    <SortCriterion Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Sort&gt;false&lt;/Sort&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                </SortCriteria>
+                <Layouts />
+            </QueryPart>
+            <TitlePart Title="Interviews" />
+        </Query>
+        <Query Id="/Identifier=3c6424fbd1e94642b16381a710a3dc8b" Status="Published">
+            <IdentityPart Identifier="3c6424fbd1e94642b16381a710a3dc8b" />
+            <QueryPart>
+                <FilterGroups>
+                    <FilterGroup>
+                        <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Website&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+                    </FilterGroup>
+                </FilterGroups>
+                <SortCriteria>
+                    <SortCriterion Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Sort&gt;false&lt;/Sort&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                </SortCriteria>
+                <Layouts />
+            </QueryPart>
+            <TitlePart Title="Websites" />
+        </Query>
+        <Query Id="/Identifier=4aecf35533b8499aa260af5c555d35f1" Status="Published">
+            <IdentityPart Identifier="4aecf35533b8499aa260af5c555d35f1" />
+            <QueryPart>
+                <FilterGroups>
+                    <FilterGroup>
+                        <Filter Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Operator&gt;GreaterThan&lt;/Operator&gt;&lt;ValueType&gt;0&lt;/ValueType&gt;&lt;Value&gt;{Request.Content.Date.Local.Format:yyyy-MM-dd HH:mm:ss}&lt;/Value&gt;&lt;ValueUnit&gt;Year&lt;/ValueUnit&gt;&lt;Min&gt;&lt;/Min&gt;&lt;MinUnit&gt;Year&lt;/MinUnit&gt;&lt;Max&gt;&lt;/Max&gt;&lt;MaxUnit&gt;Year&lt;/MaxUnit&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                        <Filter Category="Content" Description="" Position="1" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Website&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+                    </FilterGroup>
+                </FilterGroups>
+                <SortCriteria>
+                    <SortCriterion Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Sort&gt;true&lt;/Sort&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                </SortCriteria>
+                <Layouts>
+                    <Layout Category="Html" Description="" State="&lt;Form&gt;&lt;QueryId&gt;240&lt;/QueryId&gt;&lt;Category&gt;Html&lt;/Category&gt;&lt;Type&gt;Raw&lt;/Type&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Display&gt;0&lt;/Display&gt;&lt;DisplayType&gt;WebsiteStepper&lt;/DisplayType&gt;&lt;ContainerTag&gt;&lt;/ContainerTag&gt;&lt;ContainerId&gt;&lt;/ContainerId&gt;&lt;ContainerClass&gt;&lt;/ContainerClass&gt;&lt;ItemTag&gt;&lt;/ItemTag&gt;&lt;ItemClass&gt;website-stepper website-stepper-right&lt;/ItemClass&gt;&lt;Prepend&gt;&lt;/Prepend&gt;&lt;Separator&gt;&lt;/Separator&gt;&lt;Append&gt;&lt;/Append&gt;&lt;/Form&gt;" Display="0" DisplayType="WebsiteStepper" Type="Raw">
+                        <Properties />
+                        <Group />
+                    </Layout>
+                </Layouts>
+            </QueryPart>
+            <TitlePart Title="Website Stepper - Right" />
+        </Query>
+        <Query Id="/Identifier=5938dc1dfe20489894407d976fd1a047" Status="Published">
+            <IdentityPart Identifier="5938dc1dfe20489894407d976fd1a047" />
+            <QueryPart>
+                <FilterGroups>
+                    <FilterGroup>
+                        <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Website&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+                        <Filter Category="Search" Description="" Position="1" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Index&gt;Categories&lt;/Index&gt;&lt;SearchQuery&gt;{Request.Content.Id}&lt;/SearchQuery&gt;&lt;HitCountLimit&gt;&lt;/HitCountLimit&gt;&lt;/Form&gt;" Type="SearchFilter" />
+                    </FilterGroup>
+                </FilterGroups>
+                <SortCriteria>
+                    <SortCriterion Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Sort&gt;false&lt;/Sort&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                </SortCriteria>
+                <Layouts />
+            </QueryPart>
+            <TitlePart Title="Selected Category" />
+        </Query>
+        <Query Id="/Identifier=bc8c8344aceb47b393faa622db8cd459" Status="Published">
+            <IdentityPart Identifier="bc8c8344aceb47b393faa622db8cd459" />
+            <QueryPart>
+                <FilterGroups>
+                    <FilterGroup>
+                        <Filter Category="Search" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Index&gt;Categories&lt;/Index&gt;&lt;SearchQuery&gt;{Request.Content.Fields.WebsitePart.Category.Terms}&lt;/SearchQuery&gt;&lt;HitCountLimit&gt;&lt;/HitCountLimit&gt;&lt;/Form&gt;" Type="SearchFilter" />
+                        <Filter Category="Content" Description="" Position="1" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Website&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+                    </FilterGroup>
+                </FilterGroups>
+                <SortCriteria>
+                    <SortCriterion Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Sort&gt;false&lt;/Sort&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                </SortCriteria>
+                <Layouts />
+            </QueryPart>
+            <TitlePart Title="Related Websites" />
+        </Query>
+        <Query Id="/Identifier=e1795d9894aa49d9bb9789affe3baa03" Status="Published">
+            <IdentityPart Identifier="e1795d9894aa49d9bb9789affe3baa03" />
+            <QueryPart>
+                <FilterGroups>
+                    <FilterGroup>
+                        <Filter Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Operator&gt;LessThan&lt;/Operator&gt;&lt;ValueType&gt;0&lt;/ValueType&gt;&lt;Value&gt;{Request.Content.Date.Local.Format:yyyy-MM-dd HH:mm:ss}&lt;/Value&gt;&lt;ValueUnit&gt;Year&lt;/ValueUnit&gt;&lt;Min&gt;&lt;/Min&gt;&lt;MinUnit&gt;Year&lt;/MinUnit&gt;&lt;Max&gt;&lt;/Max&gt;&lt;MaxUnit&gt;Year&lt;/MaxUnit&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                        <Filter Category="Content" Description="" Position="1" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Website&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+                    </FilterGroup>
+                </FilterGroups>
+                <SortCriteria>
+                    <SortCriterion Category="CommonPartRecord" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Sort&gt;false&lt;/Sort&gt;&lt;/Form&gt;" Type="CreatedUtc" />
+                </SortCriteria>
+                <Layouts>
+                    <Layout Category="Html" Description="" State="&lt;Form&gt;&lt;QueryId&gt;239&lt;/QueryId&gt;&lt;Category&gt;Html&lt;/Category&gt;&lt;Type&gt;Raw&lt;/Type&gt;&lt;Description&gt;&lt;/Description&gt;&lt;Display&gt;0&lt;/Display&gt;&lt;DisplayType&gt;WebsiteStepper&lt;/DisplayType&gt;&lt;ContainerTag&gt;&lt;/ContainerTag&gt;&lt;ContainerId&gt;&lt;/ContainerId&gt;&lt;ContainerClass&gt;&lt;/ContainerClass&gt;&lt;ItemTag&gt;div&lt;/ItemTag&gt;&lt;ItemClass&gt;website-stepper website-stepper-left&lt;/ItemClass&gt;&lt;Prepend&gt;&lt;/Prepend&gt;&lt;Separator&gt;&lt;/Separator&gt;&lt;Append&gt;&lt;/Append&gt;&lt;/Form&gt;" Display="0" DisplayType="WebsiteStepper" Type="Raw">
+                        <Properties />
+                        <Group />
+                    </Layout>
+                </Layouts>
+            </QueryPart>
+            <TitlePart Title="Website Stepper - Left" />
+        </Query>
     </Content>
 </Orchard>

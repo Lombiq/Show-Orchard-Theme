@@ -1,2 +1,42 @@
 <Placement>
+    <Match ContentType="Page">
+        <Place Parts_Common_Metadata="-"/>
+    </Match>
+
+    <Match ContentType="Website">
+        <Match DisplayType="Summary">
+            <Place Parts_Common_Metadata_Summary="-"
+                   Parts_Common_Body_Summary="-"
+                   Fields_Link-Developer="-"
+                   Fields_Link-Website="-"
+                   Fields_TaxonomyField-Category="-"
+                   Fields_Boolean-Interview="-"
+                   Fields_MediaLibraryPicker_Summary-Screenshot="Content: 1"/>
+        </Match>
+        
+        <Match DisplayType="Detail">
+            <Place Parts_Common_Body_Summary="-"
+                   Fields_Link-Developer="-"
+                   Fields_Link-Website="-"
+                   Fields_TaxonomyField-Category="-"
+                   Fields_Boolean-Interview="-"
+                   Fields_MediaLibraryPicker-Screenshot="Header: 1"/>
+        </Match>
+
+        <Match DisplayType="WebsiteStepper">
+            <Place Parts_Common_Metadata="-"
+                   Parts_Common_Body_Summary="-"
+                   Fields_Link-Developer="-"
+                   Fields_Link-Website="-"
+                   Fields_TaxonomyField-Category="-"
+                   Fields_Boolean-Interview="-"
+                   Fields_MediaLibraryPicker-Screenshot="-"
+                   Fields_MediaLibraryPicker_Summary-Screenshot="-"
+                   Parts_Title_Summary="Content: 1"/>
+        </Match>
+    </Match>
+
+    <Match ContentType="CategoryTerm">
+        <Place Parts_Common_Metadata="-"/>
+    </Match>
 </Placement>

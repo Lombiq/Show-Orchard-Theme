@@ -1,0 +1,56 @@
+//
+// Common
+// --------------------------------------------------
+// Generic styling for all content items.
+// --------------------------------------------------
+
+// Content item header ------------------------------
+
+// This also includes '.static-page-header' which is
+// used on area pages. (i.e. login and archives etc.)
+.content-item-detail > .content-item-header,
+.static-page-header {
+    padding: 35px 0;
+}
+
+// Content meta -------------------------------------
+
+.content-item-meta {
+	font-size: 14px;
+    line-height: 1.95;
+    margin-top: 24px;
+	color: @gray;
+	
+	&:before {
+		display: block;
+		content: " ";
+		width: 15px;
+		height: 2px;
+		background: @gray-light;
+		margin-bottom: 15px;
+		position: relative;
+	}
+	
+	> span {
+		a {
+			font-weight: 700;
+			color: @gray;
+			
+			&:hover {
+				color: @gray-darker;
+			}			
+		}
+	}
+	
+	> span:before {
+		content: '/';
+		display: inline-block;
+		margin: 0px 9px 0 4px;
+		font-weight: 400;
+		color: @gray;
+	}
+	
+	> span:first-child:before {
+		display: none;
+	}
+}

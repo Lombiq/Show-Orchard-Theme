@@ -1,0 +1,61 @@
+﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/forms.less";
+
+//
+// Forms
+// --------------------------------------------------
+
+// Modify the .form-control class for the theme.
+.form-control {	
+	&:focus {
+		.box-shadow(none);
+	}
+}
+
+// Remove need for the .form-control class.
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+	.form-control();
+	.box-shadow(none);
+	height: auto;
+	padding: 16px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+// For better custom forms styling.
+.orchard-customforms {
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"] {
+		margin-bottom: 15px;
+	}
+}

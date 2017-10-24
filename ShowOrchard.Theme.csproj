@@ -49,15 +49,64 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Images\favicon.ico" />
-    <Content Include="Recipes\ShowOrchard.recipe.xml" />
+    <Content Include="Recipes\ShowOrchard.recipe.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Styles\site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
     <Content Include="Styles\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Views\Fields\MediaLibraryPicker-Screenshot.liquid" />
-    <None Include="Views\Fields\MediaLibraryPicker_Summary-Screenshot.liquid" />
+    <Content Include="Styles\Variables.less" />
+    <Content Include="Styles\Areas\Users.less" />
+    <Content Include="Styles\ContentParts\Body.less" />
+    <Content Include="Styles\ContentParts\Comments.less" />
+    <Content Include="Styles\ContentParts\Layout.less" />
+    <Content Include="Styles\ContentParts\Subtitle.less" />
+    <Content Include="Styles\ContentParts\Title.less" />
+    <Content Include="Styles\ContentParts\Website.less" />
+    <Content Include="Styles\ContentTypes\Blog.less" />
+    <Content Include="Styles\ContentTypes\Common.less" />
+    <Content Include="Styles\ContentTypes\Page.less" />
+    <Content Include="Styles\Layout\AfterContent.less" />
+    <Content Include="Styles\Layout\BeforeContent.less" />
+    <Content Include="Styles\Layout\Content.less" />
+    <Content Include="Styles\Layout\Footer.less" />
+    <Content Include="Styles\Layout\Header.less" />
+    <Content Include="Styles\Layout\Messages.less" />
+    <Content Include="Styles\Layout\SiteMeta.less" />
+    <Content Include="Styles\Widgets\BlogArchives.less" />
+    <Content Include="Styles\Widgets\Common.less" />
+    <Content Include="Styles\Widgets\RecentBlogPosts.less" />
+    <Content Include="Styles\Widgets\Search.less" />
+    <Content Include="Styles\Widgets\TagCloud.less" />
+    <Content Include="Styles\Alerts.less" />
+    <Content Include="Styles\Buttons.less" />
+    <Content Include="Styles\Close.less" />
+    <Content Include="Styles\Code.less" />
+    <Content Include="Styles\Forms.less" />
+    <Content Include="Styles\Grid.less" />
+    <Content Include="Styles\Mixins.less" />
+    <Content Include="Styles\Navs.less" />
+    <Content Include="Styles\Normalize.less" />
+    <Content Include="Styles\Pager.less" />
+    <Content Include="Styles\Scaffolding.less" />
+    <Content Include="Styles\Site.less" />
+    <Content Include="Styles\Tables.less" />
+    <Content Include="Styles\Type.less" />
+    <Content Include="Styles\Utilities.less" />
+    <Content Include="Views\Content-Website.Detail.liquid" />
+    <Content Include="Views\Content-Website.RelatedWebsite.liquid" />
+    <None Include="Views\Content-Website.Summary.liquid" />
+    <None Include="Views\Elements\Grid.liquid" />
+    <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
+    <Content Include="Views\Layout.liquid" />
+    <None Include="Views\Fields\TaxonomyField.liquid" />
+    <None Include="Views\Parts\Common.Metadata-Website.liquid" />
     <None Include="Views\Parts\TermPart.liquid" />
+    <None Include="Views\Parts\Title.liquid" />
+    <None Include="Views\Parts\Title.Summary.liquid" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />
@@ -117,7 +166,6 @@
     <Content Include="Placement.info">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Styles\Site.less" />
     <Content Include="Licence.md" />
     <Content Include="Readme.md" />
   </ItemGroup>

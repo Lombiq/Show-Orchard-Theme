@@ -1,0 +1,55 @@
+﻿//
+// Website Part
+// --------------------------------------------------
+// All styling for the website part.
+// --------------------------------------------------
+
+// Website stepper ----------------------------------
+// Links at the bottom of the website page linking to
+// the previous/next website.
+
+.website-stepper {
+    margin: 32px 0 22px 0;
+
+    .btn {
+        margin: 8px 0;
+    }
+}
+
+
+// Related websites ---------------------------------
+// Grid of related websites at the bottom of each
+// website page.
+
+.related-websites {
+    > header > h1 {
+        font-size: 22px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 4px;
+        margin-bottom: 32px;
+
+        @media (min-width: @screen-md-min) {
+            margin-bottom: 14px;
+        }
+    }
+
+    ul {
+        .list-unstyled();
+    }
+
+    .related-website {
+        margin-bottom: 36px;
+
+        @media (min-width: @screen-md-min) {
+            margin-bottom: 17px;
+        }
+
+        h1 {
+            font-size: 22px;
+
+            @media (min-width: @screen-md-min) {
+                font-size: 19px;
+            }
+        }
+    }
+}

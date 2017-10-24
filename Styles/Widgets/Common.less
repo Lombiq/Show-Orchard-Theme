@@ -1,0 +1,54 @@
+﻿//
+// Common Widget Styling
+// --------------------------------------------------
+// Includes general styling shared across all 
+// widgets. Widget styling is only applied to the
+// specific widgetised zones.
+//
+// Supported zones are FooterFirst and FooterSecond.
+// --------------------------------------------------
+
+.footer-twins .widget {
+    margin-bottom: 38px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        margin: 0 0 17px 0;
+        line-height: 1.1;
+        font-size: 19px;
+        text-transform: uppercase;
+        color: #fefefe;
+    }
+
+    ul,
+    ol {
+        .list-unstyled();
+
+        li {
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        li.current a {
+            color:  #fefefe;
+        }
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+
+    a {
+        color: #d3e0ff;
+
+        &:hover {
+            color: #fefefe;
+        }
+    }
+}

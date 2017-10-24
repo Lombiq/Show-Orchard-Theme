@@ -1,4 +1,78 @@
-﻿@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Styles/Site.less";
+﻿//
+// Global Includes
+// --------------------------------------------------
 
-body {
-}
+@import "Variables.less";
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/mixins.less";
+
+//
+// Normalize and Dependencies
+// --------------------------------------------------
+
+@import "../../Lombiq.PrettyGoodBootstrapBaseTheme/Content/Bootstrap/less/normalize.less";
+
+//
+// Core
+// --------------------------------------------------
+
+@import "Scaffolding.less";
+@import "Utilities.less";
+@import "Grid.less";
+@import "Type.less";
+@import "Code.less";
+@import "Tables.less";
+@import "Alerts.less";
+@import "Close.less";
+@import "Forms.less";
+@import "Buttons.less";
+@import "Pager.less";
+
+
+//
+// Layout
+// --------------------------------------------------
+
+@import "Layout/Header.less";
+@import "Layout/Messages";
+@import "Layout/BeforeContent.less";
+@import "Layout/Content.less";
+@import "Layout/AfterContent.less";
+@import "Layout/Footer.less";
+@import "Layout/SiteMeta.less";
+
+
+//
+// Areas
+// --------------------------------------------------
+
+@import "Areas/Users.less";
+
+
+//
+// Content Parts
+// --------------------------------------------------
+
+@import "ContentParts/Comments.less";
+@import "ContentParts/Title.less";
+@import "ContentParts/Subtitle.less";
+@import "ContentParts/Website.less";
+
+
+//
+// Content Types
+// --------------------------------------------------
+
+@import "ContentTypes/Common.less";
+// @import "ContentTypes/Blog.less";
+// @import "ContentTypes/Page.less";
+
+
+//
+// Widgets
+// --------------------------------------------------
+
+@import "Widgets/Common.less";
+@import "Widgets/TagCloud.less";
+@import "Widgets/Search.less";
+@import "Widgets/RecentBlogPosts.less";
+@import "Widgets/BlogArchives.less";

@@ -1,0 +1,50 @@
+﻿{% Style "//fonts.googleapis.com/css?family=Raleway:400,700" %}
+{% Style "../Styles/site.min.css" %}
+
+<div id="layout-wrapper">
+    <header id="header" class="site-header" role="banner">
+        <div class="container">
+            <div class="row">
+                <div id="site-branding" class="col-md-12"><a href="{% Href "~/" %}" rel="home">{{ Model.WorkContext.CurrentSite.SiteName }}</a></div>
+                
+                <a class="nav-toggle" href="#" data-toggle="collapse" data-target="#site-navigation">
+                    <span></span>
+                </a>
+                
+                <div id="site-navigation" class="col-md-12" role="navigation">
+                    {{ Model.Navigation | Display }}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="content" class="site-content" role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ Model.Content | Display }}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer" class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                {{ Model.Footer | Display }}
+            </div>
+        </div>
+    
+        <div class="site-meta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="powered-by clearfix">
+                            {{ Model.PoweredBy | Display }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

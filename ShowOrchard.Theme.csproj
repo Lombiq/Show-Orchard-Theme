@@ -101,12 +101,16 @@
     <Content Include="Styles\Utilities.less" />
     <Content Include="Views\Content-Website.Detail.liquid" />
     <Content Include="Views\Content-Website.RelatedWebsite.liquid" />
+    <Content Include="Views\Content-Website.WebsiteStepperPrevious.liquid" />
     <None Include="Views\Content-Website.Summary.liquid" />
+    <Content Include="Views\Content-Website.WebsiteStepperNext.liquid" />
+    <None Include="Views\Copyright.liquid" />
     <None Include="Views\Elements\Column.liquid" />
     <None Include="Views\Elements\Grid.liquid" />
+    <None Include="Views\Fields\Link-Developer.liquid" />
     <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
     <Content Include="Views\Layout.liquid" />
-    <None Include="Views\Fields\TaxonomyField.liquid" />
+    <None Include="Views\Fields\TaxonomyField-Category.liquid" />
     <None Include="Views\Menu-Main-Menu.liquid" />
     <None Include="Views\MenuItem-Main-Menu.liquid" />
     <None Include="Views\Parts\Common.Metadata-Website.liquid" />

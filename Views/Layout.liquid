@@ -40,9 +40,18 @@
     </main>
     
     <footer id="footer" class="site-footer" role="contentinfo">
-        <div class="container">
+        <div class="container site-meta">
             <div class="row">
-                {{ Model.Footer | Display }}
+                <div class="col-md-6 copyright">
+                    {% Display Copyright %}
+                </div>
+                
+                <div class="col-md-6 user-actions">
+                    {% Display User %}
+                </div>
+				<div class="col-md-12">
+					{{ Model.Footer | Display }}
+				</div>
             </div>
         </div>
     </footer>

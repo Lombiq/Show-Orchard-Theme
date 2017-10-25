@@ -1,4 +1,6 @@
-﻿<span class="taxonomy-field">{{ Model.ContentField.DisplayName }}
+﻿<span class="taxonomy-field">
+    {{ Model.ContentField.DisplayName }}
+    
     {% for term in Model.Terms %}
         <a href="{% Href term.ContentItem.AutoroutePart.DisplayAlias %}">{{ term.Name }}</a>
     {% endfor %}

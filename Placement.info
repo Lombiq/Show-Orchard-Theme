@@ -4,13 +4,14 @@
     </Match>
 
     <Match ContentType="Website">
+        <Place Fields_Link-Website="-"
+               Fields_Boolean-Interview="-"/>
+        
         <Match DisplayType="Summary">
             <Place Parts_Common_Metadata_Summary="-"
                    Parts_Common_Body_Summary="-"
                    Fields_Link-Developer="-"
-                   Fields_Link-Website="-"
                    Fields_TaxonomyField-Category="-"
-                   Fields_Boolean-Interview="-"
                    Fields_MediaLibraryPicker_Summary-Screenshot="Content: 1"/>
         </Match>
         
@@ -18,33 +19,18 @@
             <Place Parts_Common_Metadata_Summary="-"
                    Parts_Common_Body_Summary="-"
                    Fields_Link-Developer="-"
-                   Fields_Link-Website="-"
                    Fields_TaxonomyField-Category="-"
-                   Fields_Boolean-Interview="-"
                    Parts_Title_Summary="Header: 1"
                    Fields_MediaLibraryPicker_Summary-Screenshot="Content: 1"/>
         </Match>
         
         <Match DisplayType="Detail">
-            <Place Parts_Common_Body_Summary="-"
-                   Fields_Link-Developer="-"
-                   Fields_Link-Website="-"
-                   Fields_Boolean-Interview="-"
+            <Place Parts_Title="Header:1"
                    Fields_MediaLibraryPicker-Screenshot="Content: 1"
                    Parts_Common_Metadata="Meta: 1"
-                   Fields_TaxonomyField-Category="Meta: 2"/>
-        </Match>
-
-        <Match DisplayType="WebsiteStepper">
-            <Place Parts_Common_Metadata="-"
-                   Parts_Common_Body_Summary="-"
-                   Fields_Link-Developer="-"
-                   Fields_Link-Website="-"
-                   Fields_TaxonomyField-Category="-"
-                   Fields_Boolean-Interview="-"
-                   Fields_MediaLibraryPicker-Screenshot="-"
-                   Fields_MediaLibraryPicker_Summary-Screenshot="-"
-                   Parts_Title_Summary="Content: 1"/>
+                   Fields_TaxonomyField-Category="Meta: 2"
+                   Fields_Link-Developer="Meta: 3"
+                   Parts_Common_Body="Interview: 1"/>
         </Match>
     </Match>
 

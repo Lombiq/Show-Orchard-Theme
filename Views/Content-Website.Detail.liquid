@@ -8,4 +8,8 @@
     <div class="content-item-meta">
         {{ Model.Meta | Display }}
     </div>
+    
+    {% if Model.Interview != null %}
+        {{ Model.Interview | Display }}
+    {% endif %}
 </article>

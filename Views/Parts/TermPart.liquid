@@ -1,4 +1,7 @@
 ﻿<p>Viewing websites from the {{ Model.ContentPart.Name }} category.</p>
 
-{{ Model.ContentItems | Display }}
+<div class="content-items">
+    {{ Model.ContentItems | Display }}
+</div>
+
 {{ Model.Pager | Display }}

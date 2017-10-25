@@ -55,6 +55,9 @@
     <Content Include="Styles\site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
+    <Content Include="Styles\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
     <Content Include="Styles\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Views\Fields\MediaLibraryPicker-Screenshot.liquid" />
@@ -99,14 +102,18 @@
     <Content Include="Views\Content-Website.Detail.liquid" />
     <Content Include="Views\Content-Website.RelatedWebsite.liquid" />
     <None Include="Views\Content-Website.Summary.liquid" />
+    <None Include="Views\Elements\Column.liquid" />
     <None Include="Views\Elements\Grid.liquid" />
     <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
     <Content Include="Views\Layout.liquid" />
     <None Include="Views\Fields\TaxonomyField.liquid" />
+    <None Include="Views\Menu-Main-Menu.liquid" />
+    <None Include="Views\MenuItem-Main-Menu.liquid" />
     <None Include="Views\Parts\Common.Metadata-Website.liquid" />
     <None Include="Views\Parts\TermPart.liquid" />
     <None Include="Views\Parts\Title.liquid" />
     <None Include="Views\Parts\Title.Summary.liquid" />
+    <None Include="Views\Resources.liquid" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Web.config" />

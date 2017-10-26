@@ -1,5 +1,3 @@
 ﻿<div class="grid">
-	{% for item in Model.Items %}
-	    {{ item | Display }}
-	{% endfor %}
+    {{ Model | DisplayChildren }}
 </div>

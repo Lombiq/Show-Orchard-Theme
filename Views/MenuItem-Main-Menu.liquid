@@ -22,9 +22,7 @@
 
     {% if subMenuItemCount > 0 %}
         <ul class="dropdown-menu">
-            {% for item in Model.Items %}
-                {{ item | Display }}
-            {% endfor %}
+            {{ Model | DisplayChildren }}
         </ul>
     {% endif %}
 </li>

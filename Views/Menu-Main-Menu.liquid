@@ -1,7 +1,5 @@
 ﻿<nav>
     <ul class="nav">
-        {% for item in Model.Items %}
-            {{ item | Display }}
-        {% endfor %}
+        {{ Model | DisplayChildren }}
     </ul>
 </nav>

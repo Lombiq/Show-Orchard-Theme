@@ -8,7 +8,5 @@
 {% endif %}
 
 <div class="{{ columnWidth }} {{ columnOffsetWidth }}">
-    {% for item in Model.Items %}
-        {{ item | Display }}
-    {% endfor %}
+    {{ Model | DisplayChildren }}
 </div>

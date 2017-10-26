@@ -5,9 +5,9 @@
         <div class="container">
             <div class="row">
                 <div id="site-branding" class="col-md-12"><a href="{% Href "~/" %}" rel="home">{{ Model.WorkContext.CurrentSite.SiteName }}</a></div>
-				
+                
                 <a class="nav-toggle" href="#" data-toggle="collapse" data-target="#site-navigation">
-					<span></span>
+                    <span></span>
                 </a>
                 
                 <div id="site-navigation" class="col-md-12" role="navigation">
@@ -49,9 +49,9 @@
                 <div class="col-md-6 user-actions">
                     {% Display User %}
                 </div>
-				<div class="col-md-12">
-					{{ Model.Footer | Display }}
-				</div>
+                <div class="col-md-12">
+                    {{ Model.Footer | Display }}
+                </div>
             </div>
         </div>
     </footer>

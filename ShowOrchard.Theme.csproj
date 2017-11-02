@@ -105,6 +105,7 @@
     <None Include="Views\Content-Website.Summary.liquid" />
     <Content Include="Views\Content-Website.WebsiteStepperNext.liquid" />
     <None Include="Views\Copyright.liquid" />
+    <None Include="Views\Document_.liquid" />
     <None Include="Views\Elements\Column.liquid" />
     <None Include="Views\Elements\Grid.liquid" />
     <None Include="Views\Fields\Link-Developer.liquid" />

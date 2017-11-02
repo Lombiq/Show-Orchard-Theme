@@ -27,11 +27,6 @@
             </Website>
         </Types>
         <Parts>
-            <AutoroutePart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Adds advanced url configuration options to your content type to completely customize the url pattern for a content item." />
-            <BodyPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Allows the editing of text using an editor provided by the configured flavor (e.g. html, text, markdown)." ContentPartLayoutSettings.Placeable="True" BodyPartSettings.FlavorDefault="html" />
-            <CommonPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Provides common information about a content item, such as Owner, Date Created, Date Published and Date Modified." ContentPartLayoutSettings.Placeable="True" />
-            <TermPart />
-            <TitlePart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Provides a Title for your content item." ContentPartLayoutSettings.Placeable="True" />
             <WebsitePart ContentPartSettings.Attachable="True" ContentPartLayoutSettings.Placeable="False">
                 <Category.TaxonomyField DisplayName="Category" TaxonomyFieldSettings.Taxonomy="Category" TaxonomyFieldSettings.LeavesOnly="False" TaxonomyFieldSettings.Required="True" TaxonomyFieldSettings.SingleChoice="True" TaxonomyFieldSettings.Autocomplete="False" TaxonomyFieldSettings.AllowCustomTerms="False" TaxonomyFieldSettings.Hint="The category that the website will be filed under." />
                 <Developer.LinkField DisplayName="Developer" LinkFieldSettings.Hint="The URL of the site developer, set the link text to be the prettified URL. (i.e. no http://)" LinkFieldSettings.Required="False" LinkFieldSettings.TargetMode="NewWindow" LinkFieldSettings.LinkTextMode="Optional" />

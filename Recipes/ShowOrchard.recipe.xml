@@ -1,15 +1,13 @@
-<!--Exported from Orchard-->
+﻿<!--Exported from Orchard-->
 <Orchard>
     <Recipe>
         <Name>Show Orchard tenant initialization recipe.</Name>
         <Author>Lombiq</Author>
     </Recipe>
-
     <Settings>
         <SearchSettingsPart SearchFields="Categories:Category,Category-id" DisplayType="Summary" FilterCulture="false" SearchIndex="Categories" />
         <SiteSettingsPart PageSize="8" />
     </Settings>
-
     <ContentDefinition>
         <Types>
             <CategoryTerm Taxonomy="Category" DisplayName="Category Term">
@@ -36,7 +34,6 @@
             </WebsitePart>
         </Parts>
     </ContentDefinition>
-
     <Content>
         <Layer Id="/Layer.LayerName=Anonymous" Status="Published">
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T08:51:55.5397575Z" PublishedUtc="2017-10-17T08:51:55.5467765Z" ModifiedUtc="2017-10-17T08:51:55.5397575Z" />
@@ -66,7 +63,6 @@
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-18T12:46:36.7533196Z" PublishedUtc="2017-10-18T12:46:36.7954001Z" ModifiedUtc="2017-10-18T12:46:36.8595699Z" />
             <LayerPart Name="Website" Description="Displays widgets when a Website content item is displayed." LayerRule="ContentType(&quot;Website&quot;)" />
         </Layer>
-
         <LayoutWidget Id="/Identifier=c0e1401fb8234fb9a6d889df1fd3e235" Status="Published">
             <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Website" CreatedUtc="2017-10-18T14:35:14.1835616Z" PublishedUtc="2017-10-25T16:18:37.8297825Z" ModifiedUtc="2017-10-25T16:18:37.814244Z" />
             <IdentityPart Identifier="c0e1401fb8234fb9a6d889df1fd3e235" />
@@ -83,14 +79,12 @@
             </LayoutPart>
             <WidgetPart Title="Related Websites" Position="2" Zone="Content" RenderTitle="true" Name="" CssClasses="related-websites" />
         </LayoutWidget>
-
         <Taxonomy Id="/alias=gallery\/category" Status="Published">
             <AutoroutePart Alias="gallery/category" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T09:10:57.6138011Z" PublishedUtc="2017-10-17T09:36:28.7667203Z" ModifiedUtc="2017-10-17T09:29:04.3557307Z" />
             <TaxonomyPart TermTypeName="CategoryTerm" />
             <TitlePart Title="Category" />
         </Taxonomy>
-
         <CategoryTerm Id="/alias=gallery\/category\/agency" Status="Published">
             <AutoroutePart Alias="gallery/category/agency" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <CommonPart Owner="/User.UserName=admin" Container="/alias=gallery\/category" CreatedUtc="2017-10-17T09:12:27.8332404Z" PublishedUtc="2017-10-17T09:36:28.8208634Z" ModifiedUtc="2017-10-17T09:12:27.8332404Z" />
@@ -229,7 +223,6 @@
             <TermPart Count="5" Selectable="true" Weight="-13" TaxonomyId="/alias=gallery\/category" Path="" />
             <TitlePart Title="Travel" />
         </CategoryTerm>
-
         <Image Id="/Identifier=017634df67af43469bf35f030fa6eff2" Status="Published">
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-20T21:52:28.6385302Z" PublishedUtc="2017-10-17T09:36:30.3108261Z" ModifiedUtc="2015-12-20T21:52:28.6385302Z" />
             <IdentityPart Identifier="017634df67af43469bf35f030fa6eff2" />
@@ -825,7 +818,6 @@
             <MediaPart MimeType="image/jpeg" Caption="" AlternateText="" FolderPath="Gallery" FileName="orchard-pros.jpg" />
             <TitlePart Title="orchard-pros" />
         </Image>
-
         <Website Id="/alias=gallery\/agency\/ais" Status="Published">
             <BooleanField.Interview Value="false" />
             <LinkField.Developer Target="_blank" />
@@ -1219,7 +1211,7 @@
             <TaxonomyField.Category Terms="/alias=gallery\/category\/medical" />
             <AutoroutePart Alias="gallery/medical/n1health-for-physicians" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <BodyPart Text="" />
-            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-20T23:35:00Z" PublishedUtc="2017-10-17T09:36:39.5203766Z" ModifiedUtc="2015-12-23T14:02:14.9157285Z" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-20T23:35:30Z" PublishedUtc="2017-10-17T09:36:39.5203766Z" ModifiedUtc="2015-12-23T14:02:14.9157285Z" />
             <TitlePart Title="n1Health for Physicians" />
         </Website>
         <Website Id="/alias=gallery\/medical\/nice" Status="Published">
@@ -1362,7 +1354,7 @@
             <TaxonomyField.Category Terms="/alias=gallery\/category\/retail" />
             <AutoroutePart Alias="gallery/retail/bear-nibbles" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <BodyPart Text="" />
-            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-23T11:09:00Z" PublishedUtc="2017-10-17T09:36:42.3418694Z" ModifiedUtc="2015-12-23T13:56:32.6979274Z" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-23T11:09:30Z" PublishedUtc="2017-10-17T09:36:42.3418694Z" ModifiedUtc="2015-12-23T13:56:32.6979274Z" />
             <TitlePart Title="Bear Nibbles" />
         </Website>
         <Website Id="/alias=gallery\/retail\/carsquare-com" Status="Published">
@@ -1417,7 +1409,7 @@
             <TaxonomyField.Category Terms="/alias=gallery\/category\/retail" />
             <AutoroutePart Alias="gallery/retail/enterprise-car-sales" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <BodyPart Text="" />
-            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-21T11:34:00Z" PublishedUtc="2017-10-17T09:36:40.3255181Z" ModifiedUtc="2015-12-23T13:57:40.246046Z" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-21T11:34:30Z" PublishedUtc="2017-10-17T09:36:40.3255181Z" ModifiedUtc="2015-12-23T13:57:40.246046Z" />
             <TitlePart Title="Enterprise Car Sales" />
         </Website>
         <Website Id="/alias=gallery\/retail\/j-brand" Status="Published">
@@ -1439,7 +1431,7 @@
             <TaxonomyField.Category Terms="/alias=gallery\/category\/retail" />
             <AutoroutePart Alias="gallery/retail/juicy-couture" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <BodyPart Text="" />
-            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-04-02T21:16:00Z" PublishedUtc="2017-10-17T09:36:35.8054625Z" ModifiedUtc="2015-12-23T13:59:14.5170116Z" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-04-02T21:16:30Z" PublishedUtc="2017-10-17T09:36:35.8054625Z" ModifiedUtc="2015-12-23T13:59:14.5170116Z" />
             <TitlePart Title="Juicy Couture" />
         </Website>
         <Website Id="/alias=gallery\/retail\/madeclose" Status="Published">
@@ -1549,7 +1541,7 @@
             <TaxonomyField.Category Terms="/alias=gallery\/category\/sports" />
             <AutoroutePart Alias="gallery/sports/musqle" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <BodyPart Text="" />
-            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-23T11:25:00Z" PublishedUtc="2017-10-17T09:36:42.6396751Z" ModifiedUtc="2015-12-23T13:56:23.6031114Z" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-23T11:25:30Z" PublishedUtc="2017-10-17T09:36:42.6396751Z" ModifiedUtc="2015-12-23T13:56:23.6031114Z" />
             <TitlePart Title="MUSQLE" />
         </Website>
         <Website Id="/alias=gallery\/sports\/nflpa" Status="Published">
@@ -1637,7 +1629,7 @@
             <TaxonomyField.Category Terms="/alias=gallery\/category\/technology" />
             <AutoroutePart Alias="gallery/technology/teksavvy" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
             <BodyPart Text="" />
-            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-21T11:37:00Z" PublishedUtc="2017-10-17T09:36:41.0404151Z" ModifiedUtc="2015-12-23T13:57:13.9287998Z" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-12-21T11:37:30Z" PublishedUtc="2017-10-17T09:36:41.0404151Z" ModifiedUtc="2015-12-23T13:57:13.9287998Z" />
             <TitlePart Title="TekSavvy" />
         </Website>
         <Website Id="/alias=gallery\/technology\/triton-digital" Status="Published">
@@ -1717,20 +1709,17 @@
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2015-04-10T22:14:00Z" PublishedUtc="2017-10-17T09:36:37.5511324Z" ModifiedUtc="2015-12-23T14:02:52.9485953Z" />
             <TitlePart Title="World Nomads" />
         </Website>
-
         <MenuWidget Id="/Identifier=MenuWidget1" Status="Published">
             <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Default" CreatedUtc="2017-10-17T08:51:56.0310657Z" PublishedUtc="2017-10-17T08:51:56.0581383Z" ModifiedUtc="2017-10-17T08:51:56.0310657Z" />
             <IdentityPart Identifier="MenuWidget1" />
             <MenuWidgetPart Menu="/Identifier=850cddc6755c404d9feb1105531fc0b3" StartLevel="1" Levels="0" Breadcrumb="false" AddCurrentPage="false" AddHomePage="false" ShowFullMenu="false" />
             <WidgetPart Title="Main Menu" Position="1" Zone="Navigation" RenderTitle="false" Name="" />
         </MenuWidget>
-
         <Menu Id="/Identifier=850cddc6755c404d9feb1105531fc0b3" Status="Published">
             <CommonPart CreatedUtc="2017-10-17T08:51:55.6109472Z" PublishedUtc="2017-10-17T08:51:55.6210003Z" ModifiedUtc="2017-10-17T08:51:55.6109472Z" />
             <IdentityPart Identifier="850cddc6755c404d9feb1105531fc0b3" />
             <TitlePart Title="Main Menu" />
         </Menu>
-
         <MenuItem Id="/Identifier=1e554473539c49eab7c6030486070cd8" Status="Published">
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T08:51:55.9779517Z" PublishedUtc="2017-10-17T08:51:55.9879513Z" ModifiedUtc="2017-10-17T08:51:55.9779517Z" />
             <IdentityPart Identifier="1e554473539c49eab7c6030486070cd8" />
@@ -1749,14 +1738,12 @@
             <MenuItemPart Url="~/gallery/category" />
             <MenuPart Menu="/Identifier=850cddc6755c404d9feb1105531fc0b3" MenuText="Categories" MenuPosition="3" />
         </MenuItem>
-
         <TaxonomyNavigationMenuItem Id="/Identifier=7845296e4c334b4aa0c0ed49284e4202" Status="Published">
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T14:22:16.9976616Z" PublishedUtc="2017-10-18T13:47:17.738545Z" ModifiedUtc="2017-10-18T13:47:17.7335136Z" />
             <IdentityPart Identifier="7845296e4c334b4aa0c0ed49284e4202" />
             <MenuPart Menu="/Identifier=850cddc6755c404d9feb1105531fc0b3" MenuText="Categories" MenuPosition="3.1" />
             <TaxonomyNavigationPart DisplayContentCount="true" DisplayRootTerm="false" HideEmptyTerms="true" LevelsToDisplay="0" TaxonomyId="/alias=gallery\/category" />
         </TaxonomyNavigationMenuItem>
-
         <Page Id="/alias=gallery" Status="Published">
             <AutoroutePart Alias="gallery" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="true" />
             <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-10-17T14:31:00Z" PublishedUtc="2017-10-25T19:25:07.9919361Z" ModifiedUtc="2017-10-25T19:25:07.8815922Z" />
@@ -1775,7 +1762,6 @@
             <TagsPart Tags="" />
             <TitlePart Title="Interviews" />
         </Page>
-
         <Query Id="/Identifier=36ef6fceab404f629d6ead46f2d091f6" Status="Published">
             <IdentityPart Identifier="36ef6fceab404f629d6ead46f2d091f6" />
             <QueryPart>

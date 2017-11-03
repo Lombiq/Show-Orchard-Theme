@@ -59,6 +59,7 @@
       <DependentUpon>site.css</DependentUpon>
     </Content>
     <Content Include="Styles\Web.config" />
+    <Content Include="Theme.png" />
     <Content Include="Theme.txt" />
     <Content Include="Views\Fields\MediaLibraryPicker-Screenshot.liquid" />
     <Content Include="Styles\Variables.less" />

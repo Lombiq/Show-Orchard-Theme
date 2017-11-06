@@ -11,10 +11,10 @@ The goal of Show Orchard is to collect all the representative Orchard websites i
 
 * Enable the following features:
 	* Import/Export
-	* Projector Element
+	* Projection Element
 	* Projector Helpful Extensions - Search
 	* Lucene
 	* Liquid Markup View Engine (this is already enabled on DotNest but it needs to be enabled in the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK))
 * Create an Index named "Categories"
-* Go to the Modules page and Recpies tab. Execute the Show Orchard Initialization recipe
+* Go to the Modules page and Recipes tab. Execute the Show Orchard Initialization recipe
 * Go to the Indexes again and rebuild the "Categories" index.

@@ -1,7 +1,7 @@
 ﻿[
   {
-    "outputFile": "Styles/site.css",
-    "inputFile": "Styles/site.less",
+    "outputFile": "Styles/Site.css",
+    "inputFile": "Styles/Site.less",
     "minify": {
       "enabled": true
     },

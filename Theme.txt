@@ -1,6 +1,6 @@
 Name: Show Orchard Theme
 Author: Lombiq
-Website: http://lombiq.com
+Website: https://lombiq.com
 Description: Theme for the Show Orchard website.
 Version: 1.0
 BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme

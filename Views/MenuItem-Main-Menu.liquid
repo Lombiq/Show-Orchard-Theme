@@ -17,7 +17,7 @@
             <span class="dd-caret">{{ Model.Item.Text }}</span>
         </a>
     {% else %}
-        <a href="{% Href Model.Item.Href %}">{{ Model.Item.Text }}</a>
+        <a href="{{ Model.Item.Href }}">{{ Model.Item.Text }}</a>
     {% endif %}
 
     {% if subMenuItemCount > 0 %}

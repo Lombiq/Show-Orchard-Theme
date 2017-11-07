@@ -6,7 +6,7 @@
 
 The goal of Show Orchard is to collect all the representative Orchard websites in one place. This project was originally started and developed by [Ryan Drew Burnett](https://github.com/ryandrewburnett). Since 2017 it's developed by [Lombiq](https://lombiq.com). Currently, this is one of the representative websites of [DotNest](https://dotnest.com) as well, since it uses a [Media Theme](https://dotnest.com/knowledge-base/topics/theming/writing-a-dotnest-theme-from-scratch) with a bunch of various [Liquid](https://dotnest.com/blog/better-theming-for-your-dotnest-site-with-improved-liquid-templates) shape templates.
 
-The theme contains an initialization recipe that can be used both with the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) and [Media Theme Deployment](https://dotnest.com/knowledge-base/topics/theming/writing-a-dotnest-theme-from-scratch). This recipe contains all the required content items (including websites) until 2017-11-07.
+The theme contains an initialization recipe that can be used both with the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) and [Media Theme Deployment](https://dotnest.com/knowledge-base/topics/theming/writing-a-dotnest-theme-from-scratch). This recipe contains all the websites until 2017-11-07.
 
 
 ## Initialization - using DotNest SDK

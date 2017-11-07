@@ -2371,4 +2371,8 @@
             <TitlePart Title="Website Stepper - Previous" />
         </Query>
     </Content>
+    <Command>
+        index create Categories
+        index update Categories
+    </Command>
 </Orchard>

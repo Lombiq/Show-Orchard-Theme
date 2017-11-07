@@ -5,4 +5,4 @@ Description: Theme for the Show Orchard website.
 Version: 1.0
 BaseTheme: Lombiq.PrettyGoodBootstrapBaseTheme
 Zones: Navigation, Messages, Content, Footer
-Dependencies: Orchard.Taxonomies
+Dependencies: Orchard.Taxonomies, Orchard.Layouts.Projections, Piedone.HelpfulExtensions.Projections.Search, Lucene, Lombiq.LiquidMarkup.ViewEngine

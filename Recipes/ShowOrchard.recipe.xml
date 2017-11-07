@@ -4,6 +4,7 @@
         <Name>Show Orchard tenant initialization recipe.</Name>
         <Author>Lombiq</Author>
     </Recipe>
+    <Feature enable="Orchard.Layouts.Projections,Piedone.HelpfulExtensions.Projections.Search,Lucene" />
     <Settings>
         <SearchSettingsPart SearchFields="Categories:Category,Category-id" DisplayType="Summary" FilterCulture="false" SearchIndex="Categories" />
         <SiteSettingsPart PageSize="8" />

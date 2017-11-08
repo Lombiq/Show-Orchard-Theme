@@ -53,7 +53,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Styles\site.css">
-      <DependentUpon>Site.less</DependentUpon>
+      <DependentUpon>site.less</DependentUpon>
     </Content>
     <Content Include="Styles\site.min.css">
       <DependentUpon>site.css</DependentUpon>
@@ -96,7 +96,7 @@
     <Content Include="Styles\Normalize.less" />
     <Content Include="Styles\Pager.less" />
     <Content Include="Styles\Scaffolding.less" />
-    <Content Include="Styles\Site.less" />
+    <Content Include="Styles\site.less" />
     <Content Include="Styles\Tables.less" />
     <Content Include="Styles\Type.less" />
     <Content Include="Styles\Utilities.less" />

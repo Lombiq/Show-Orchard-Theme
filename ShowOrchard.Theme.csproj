@@ -112,8 +112,8 @@
     <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
     <Content Include="Views\Layout.liquid" />
     <None Include="Views\Fields\TaxonomyField-Category.liquid" />
-    <None Include="Views\Menu-main-menu2.liquid" />
-    <None Include="Views\MenuItem-main-menu2.liquid" />
+    <None Include="Views\Menu-main-menu.liquid" />
+    <None Include="Views\MenuItem-main-menu.liquid" />
     <None Include="Views\Parts\Common.Metadata-Website.liquid" />
     <None Include="Views\Parts\TermPart.liquid" />
     <None Include="Views\Parts\Title.liquid" />

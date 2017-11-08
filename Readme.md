@@ -13,8 +13,8 @@ The theme contains an initialization recipe that can be used both with the [DotN
 
 If you are using the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) you need to follow these instructions:
 
-* On the `Orchard Dashboard` go to the `Themes` page and enable the `Show Orchard Theme`. It will enable all the required modules as well.
-* On the `Orchard Dashboard` go to the `Modules > Recipes` page and execute the `Show Orchard Initialization` recipe.
+* On the "Orchard Dashboard" go to the "Themes" page and enable the "Show Orchard Theme". It will enable all the required modules as well.
+* On the "Orchard Dashboard" go to the "Modules &gt; Recipes" page and execute the "Show Orchard Initialization" recipe.
 
 
 ## Initialization - using Media Theme Deployment on DotNest
@@ -22,5 +22,5 @@ If you are using the [DotNest SDK](https://github.com/Lombiq/DotNest-SDK) you ne
 If you are on DotNest and planning to use this theme as a Media Theme you need to follow these instructions:
 
 * Deploy the Show Orchard Theme using Media Theme Deployment. If you need further instructions on how to do it then visit [this website](https://dotnest.com/knowledge-base/topics/theming/writing-a-dotnest-theme-from-scratch).
-* On the `Orchard Dashboard` go to the `Modules` page and enable the `Import Export` feature.
-* On the `Orchard Dashboard` go to the `Import/Export` page and import the `ShowOrchard.recipe.xml` recipe found in the `/Recipes` folder of the theme. It will enable all the required modules as well.
+* On the "Orchard Dashboard" go to the "Modules" page and enable the "Import Export" feature.
+* On the "Orchard Dashboard" go to the "Import/Export" page and import the "ShowOrchard.recipe.xml" recipe found in the "/Recipes" folder of the theme. It will enable all the required modules as well.

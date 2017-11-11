@@ -1,0 +1,89 @@
+//
+// Comments Part
+// --------------------------------------------------
+// All styling for the comments part.
+// --------------------------------------------------
+
+// General ------------------------------------------
+
+.comment-count {
+	margin-top: 56px;
+	margin-bottom: 46px;
+	font-size: 24px;
+}
+
+.alert-comments {
+	margin-top: 46px;
+}
+
+// List of commments --------------------------------
+
+ul.comments {
+	.list-unstyled();
+	
+	li {
+		margin-bottom: 42px;
+	}
+	
+	.last {
+		margin-bottom: 0;
+	}
+}
+
+// Individual comments ------------------------------
+
+.comment {
+	h4 {
+		margin-bottom: 3px;
+	}
+	
+	time {
+		font-size: 14px;
+		a {
+			color: @gray;
+			
+			&:hover {
+				color: @gray-darker;
+			}
+		}
+	}
+	
+	p {
+		margin: 12px 0;
+	}
+	
+	> .comment-form {
+		margin-top: 18px;
+	}
+}
+
+// Threaded comments --------------------------------
+
+.comment.has-replies {
+	padding-left: 14px;
+	border-left: 4px solid @gray-lighter;
+	
+	@media (min-width: @screen-md-min) { 
+		margin-left: -14px;
+	}
+	
+	.comments {
+		margin: 28px 0 12px 19px;
+	}
+}
+
+.comment-reply-button {
+	font-size: 14px;
+}
+
+// Comment form -------------------------------------
+
+.comment-form {
+	margin-top: 44px;
+	
+	h3 {
+		font-size: 19px;
+		margin-top: 0;
+		margin-bottom: 19px;
+	}
+}

@@ -1,0 +1,58 @@
+﻿{% Display Resources %}
+
+<div id="layout-wrapper">
+    <header id="header" class="site-header" role="banner">
+        <div class="container">
+            <div class="row">
+                <div id="site-branding" class="col-md-12"><a href="{% Href "~/" %}" rel="home">{{ Model.WorkContext.CurrentSite.SiteName }}</a></div>
+                
+                <a class="nav-toggle" href="#" data-toggle="collapse" data-target="#site-navigation">
+                    <span></span>
+                </a>
+                
+                <div id="site-navigation" class="col-md-12" role="navigation">
+                    {{ Model.Navigation | Display }}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% if Model.Messages != null %}
+        <div id="messages" class="site-messages" role="messages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        {{ Model.Messages | Display }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <main id="content" class="site-content" role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {{ Model.Content | Display }}
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer" class="site-footer" role="contentinfo">
+        <div class="container site-meta">
+            <div class="row">
+                <div class="col-md-6 copyright">
+                    {% Display Copyright %}
+                </div>
+                
+                <div class="col-md-6 user-actions">
+                    {% Display User %}
+                </div>
+                <div class="col-md-12">
+                    {{ Model.Footer | Display }}
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

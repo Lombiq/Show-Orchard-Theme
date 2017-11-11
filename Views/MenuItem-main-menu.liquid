@@ -1,0 +1,28 @@
+﻿{% assign activeClass = "" %}
+{% assign dropdownClass = "" %}
+{% assign subMenuItemCount = Model.Items | Size %}
+{% assign menuText = Model.Text | Strip %}
+
+{% if Model.Selected %}
+    {% assign activeClass = "active" %}
+{% endif %}
+
+{% if subMenuItemCount > 0 %}
+    {% assign dropdownClass = "dropdown" %}
+{% endif %}
+
+<li class="{{ activeClass}} {{ dropdownClass }}">
+    {% if subMenuItemCount > 0 %}
+        <a class="dropdown-toggle" data-toggle="dropdown" href="{% Href Model.Item.Href %}" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="dd-caret">{{ Model.Item.Text }}</span>
+        </a>
+    {% else %}
+        <a href="{{ Model.Item.Href }}">{{ Model.Item.Text }}</a>
+    {% endif %}
+
+    {% if subMenuItemCount > 0 %}
+        <ul class="dropdown-menu">
+            {{ Model | DisplayChildren }}
+        </ul>
+    {% endif %}
+</li>

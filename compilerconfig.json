@@ -1,0 +1,12 @@
+﻿[
+  {
+    "outputFile": "Styles/site.css",
+    "inputFile": "Styles/Site.less",
+    "minify": {
+      "enabled": true
+    },
+    "options": {
+      "sourceMap": true
+    }
+  }
+]

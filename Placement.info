@@ -4,12 +4,12 @@
     </Match>
 
     <Match ContentType="Website">
-        <Place Fields_Link-Website="-"
-               Fields_Boolean-Interview="-"/>
+        <Place Fields_Boolean-Interview="-"/>
         
         <Match DisplayType="Summary">
             <Place Parts_Common_Metadata_Summary="-"
                    Parts_Common_Body_Summary="-"
+                   Fields_Link-Website="-"
                    Fields_Link-Developer="-"
                    Fields_TaxonomyField-Category="-"
                    Fields_MediaLibraryPicker_Summary-Screenshot="Content: 1"/>
@@ -18,6 +18,7 @@
         <Match DisplayType="RelatedWebsite">
             <Place Parts_Common_Metadata_Summary="-"
                    Parts_Common_Body_Summary="-"
+                   Fields_Link-Website="-"
                    Fields_Link-Developer="-"
                    Fields_TaxonomyField-Category="-"
                    Parts_Title_Summary="Header: 1"

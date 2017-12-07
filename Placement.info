@@ -29,7 +29,8 @@
                    Fields_MediaLibraryPicker-Screenshot="Content: 1"
                    Parts_Common_Metadata="Meta: 1"
                    Fields_TaxonomyField-Category="Meta: 2"
-                   Fields_Link-Developer="Meta: 3"
+                   Fields_Link-Website="Meta: 3"
+                   Fields_Link-Developer="Meta: 4"
                    Parts_Common_Body="Interview: 1"/>
         </Match>
     </Match>

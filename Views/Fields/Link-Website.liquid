@@ -1,0 +1,5 @@
+﻿{% if Model.ContentField.Value != null %}
+    <span class="link-field link-field-website">
+        {{ Model.ContentField.DisplayName }} <a href="{{ Model.ContentField.Value }}" target="_blank">{{ Model.ContentField.Text }}</a>
+    </span>
+{% endif %}

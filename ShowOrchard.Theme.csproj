@@ -108,6 +108,7 @@
     <None Include="Views\Copyright.liquid" />
     <None Include="Views\Elements\Column.liquid" />
     <None Include="Views\Elements\Grid.liquid" />
+    <Content Include="Views\Fields\Link-Website.liquid" />
     <None Include="Views\Fields\Link-Developer.liquid" />
     <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
     <Content Include="Views\Layout.liquid" />

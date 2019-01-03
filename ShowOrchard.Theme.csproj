@@ -14,8 +14,7 @@
     <AssemblyName>Lombiq.PrettyGoodBootstrapBaseTheme.Sample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
+    <FileUpgradeFlags></FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
@@ -49,6 +48,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Images\favicon.ico" />
+    <Content Include="Images\Favicons\android-icon-144x144.png" />
+    <Content Include="Images\Favicons\android-icon-192x192.png" />
+    <Content Include="Images\Favicons\android-icon-36x36.png" />
+    <Content Include="Images\Favicons\android-icon-48x48.png" />
+    <Content Include="Images\Favicons\android-icon-72x72.png" />
+    <Content Include="Images\Favicons\android-icon-96x96.png" />
+    <Content Include="Images\Favicons\apple-icon-114x114.png" />
+    <Content Include="Images\Favicons\apple-icon-120x120.png" />
+    <Content Include="Images\Favicons\apple-icon-144x144.png" />
+    <Content Include="Images\Favicons\apple-icon-152x152.png" />
+    <Content Include="Images\Favicons\apple-icon-180x180.png" />
+    <Content Include="Images\Favicons\apple-icon-57x57.png" />
+    <Content Include="Images\Favicons\apple-icon-60x60.png" />
+    <Content Include="Images\Favicons\apple-icon-72x72.png" />
+    <Content Include="Images\Favicons\apple-icon-76x76.png" />
+    <Content Include="Images\Favicons\apple-icon-precomposed.png" />
+    <Content Include="Images\Favicons\apple-icon.png" />
+    <Content Include="Images\Favicons\browserconfig.xml" />
+    <Content Include="Images\Favicons\favicon.ico" />
+    <Content Include="Images\Favicons\ms-icon-144x144.png" />
+    <Content Include="Images\Favicons\ms-icon-150x150.png" />
+    <Content Include="Images\Favicons\ms-icon-310x310.png" />
+    <Content Include="Images\Favicons\ms-icon-70x70.png" />
+    <Content Include="Images\show-orchard-logo-tagline.png" />
     <Content Include="Recipes\ShowOrchard.recipe.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -103,6 +126,7 @@
     <Content Include="Views\Content-Website.Detail.liquid" />
     <Content Include="Views\Content-Website.RelatedWebsite.liquid" />
     <Content Include="Views\Content-Website.WebsiteStepperPrevious.liquid" />
+    <Content Include="Images\Favicons\manifest.json" />
     <None Include="Views\Content-Website.Summary.liquid" />
     <Content Include="Views\Content-Website.WebsiteStepperNext.liquid" />
     <None Include="Views\Copyright.liquid" />
@@ -161,8 +185,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45979</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl></IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>

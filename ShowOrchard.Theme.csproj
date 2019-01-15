@@ -134,6 +134,7 @@
     <None Include="Views\Elements\Grid.liquid" />
     <Content Include="Views\Fields\Link-Website.liquid" />
     <Content Include="Views\Favicon.cshtml" />
+    <Content Include="Views\Favicon.liquid" />
     <None Include="Views\Fields\Link-Developer.liquid" />
     <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
     <Content Include="Views\Layout.liquid" />

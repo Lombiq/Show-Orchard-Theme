@@ -47,6 +47,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Images\favicon.ico" />
     <Content Include="Images\Favicons\android-icon-144x144.png" />
     <Content Include="Images\Favicons\android-icon-192x192.png" />
     <Content Include="Images\Favicons\android-icon-36x36.png" />
@@ -126,15 +127,13 @@
     <Content Include="Views\Content-Website.RelatedWebsite.liquid" />
     <Content Include="Views\Content-Website.WebsiteStepperPrevious.liquid" />
     <Content Include="Images\Favicons\manifest.json" />
-    <Content Include="Views\AdditionalResources.cshtml" />
     <None Include="Views\Content-Website.Summary.liquid" />
     <Content Include="Views\Content-Website.WebsiteStepperNext.liquid" />
     <None Include="Views\Copyright.liquid" />
     <None Include="Views\Elements\Column.liquid" />
     <None Include="Views\Elements\Grid.liquid" />
     <Content Include="Views\Fields\Link-Website.liquid" />
-    <Content Include="Views\Favicon.cshtml" />
-    <Content Include="Views\Favicon.liquid" />
+    <Content Include="Views\Metas.liquid" />
     <None Include="Views\Fields\Link-Developer.liquid" />
     <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
     <Content Include="Views\Layout.liquid" />

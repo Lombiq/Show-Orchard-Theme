@@ -48,12 +48,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Images\favicon.ico" />
-    <Content Include="Images\Favicons\android-icon-144x144.png" />
-    <Content Include="Images\Favicons\android-icon-192x192.png" />
-    <Content Include="Images\Favicons\android-icon-36x36.png" />
-    <Content Include="Images\Favicons\android-icon-48x48.png" />
-    <Content Include="Images\Favicons\android-icon-72x72.png" />
-    <Content Include="Images\Favicons\android-icon-96x96.png" />
+    <Content Include="Images\Favicons\android-chrome-144x144.png" />
+    <Content Include="Images\Favicons\android-chrome-192x192.png" />
+    <Content Include="Images\Favicons\android-chrome-256x256.png" />
+    <Content Include="Images\Favicons\android-chrome-36x36.png" />
+    <Content Include="Images\Favicons\android-chrome-384x384.png" />
+    <Content Include="Images\Favicons\android-chrome-48x48.png" />
+    <Content Include="Images\Favicons\android-chrome-512x512.png" />
+    <Content Include="Images\Favicons\android-chrome-72x72.png" />
+    <Content Include="Images\Favicons\android-chrome-96x96.png" />
     <Content Include="Images\Favicons\apple-icon-114x114.png" />
     <Content Include="Images\Favicons\apple-icon-120x120.png" />
     <Content Include="Images\Favicons\apple-icon-144x144.png" />

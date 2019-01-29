@@ -129,7 +129,6 @@
     <Content Include="Views\Content-Website.Detail.liquid" />
     <Content Include="Views\Content-Website.RelatedWebsite.liquid" />
     <Content Include="Views\Content-Website.WebsiteStepperPrevious.liquid" />
-    <Content Include="Images\Favicons\manifest.json" />
     <None Include="Views\Content-Website.Summary.liquid" />
     <Content Include="Views\Content-Website.WebsiteStepperNext.liquid" />
     <None Include="Views\Copyright.liquid" />

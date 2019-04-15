@@ -14,7 +14,8 @@
     <AssemblyName>Lombiq.PrettyGoodBootstrapBaseTheme.Sample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
@@ -24,6 +25,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,7 +49,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Images\favicon.ico" />
     <Content Include="Images\Favicons\android-chrome-144x144.png" />
     <Content Include="Images\Favicons\android-chrome-192x192.png" />
     <Content Include="Images\Favicons\android-chrome-256x256.png" />
@@ -66,14 +67,15 @@
     <Content Include="Images\Favicons\apple-icon-60x60.png" />
     <Content Include="Images\Favicons\apple-icon-72x72.png" />
     <Content Include="Images\Favicons\apple-icon-76x76.png" />
-    <Content Include="Images\Favicons\apple-icon-precomposed.png" />
     <Content Include="Images\Favicons\apple-icon.png" />
-    <Content Include="Images\Favicons\browserconfig.xml" />
     <Content Include="Images\Favicons\favicon.ico" />
     <Content Include="Images\Favicons\ms-icon-144x144.png" />
     <Content Include="Images\Favicons\ms-icon-150x150.png" />
     <Content Include="Images\Favicons\ms-icon-310x310.png" />
     <Content Include="Images\Favicons\ms-icon-70x70.png" />
+    <Content Include="Images\show-orchard-logo-tagline-100h.png" />
+    <Content Include="Images\show-orchard-logo-tagline-40h.png" />
+    <Content Include="Images\show-orchard-logo-tagline-60h.png" />
     <Content Include="Images\show-orchard-logo-tagline.png" />
     <Content Include="Recipes\ShowOrchard.recipe.xml">
       <SubType>Designer</SubType>
@@ -188,7 +190,8 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>45979</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl></IISUrl>
+          <IISUrl>
+          </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>True</UseCustomServer>
           <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>

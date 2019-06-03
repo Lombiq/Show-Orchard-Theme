@@ -1,13 +1,15 @@
 ﻿<span class="taxonomy-field">
     {{ Model.ContentField.DisplayName }}
 
-    {% assign terms = Model.Terms | Size %}
+    {% assign termCount = Model.Terms | Size %}
 
     {% for term in Model.Terms %}
-        {% assign terms = terms | Minus: 1 %}
-      
-        <a href="{% Href term.ContentItem.AutoroutePart.DisplayAlias %}">{{ term.Name }}</a>
-  
-        {% if terms > 0 %} , {% endif %}
+        {% assign termCount = termCount | Minus: 1 %}
+        
+        {% if termCount > 0 %}
+            <a href="{% Href term.ContentItem.AutoroutePart.DisplayAlias %}">{{ term.Name }},</a>
+        {% else %}
+            <a href="{% Href term.ContentItem.AutoroutePart.DisplayAlias %}">{{ term.Name }}</a>
+        {% endif %}
     {% endfor %}
 </span>

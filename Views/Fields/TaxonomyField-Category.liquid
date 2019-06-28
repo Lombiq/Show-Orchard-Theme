@@ -6,10 +6,6 @@
     {% for term in Model.Terms %}
         {% assign termCount = termCount | Minus: 1 %}
         
-        {% if termCount > 0 %}
-            <a href="{% Href term.ContentItem.AutoroutePart.DisplayAlias %}">{{ term.Name }},</a>
-        {% else %}
-            <a href="{% Href term.ContentItem.AutoroutePart.DisplayAlias %}">{{ term.Name }}</a>
-        {% endif %}
+        <a href="{% Href term.ContentItem.AutoroutePart.DisplayAlias %}">{{ term.Name }}</a>{% if termCount > 0 %}<span>,</span>{% endif %}
     {% endfor %}
 </span>

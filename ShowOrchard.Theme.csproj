@@ -25,6 +25,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,7 +49,34 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\Favicons\android-chrome-144x144.png" />
+    <Content Include="Images\Favicons\android-chrome-192x192.png" />
+    <Content Include="Images\Favicons\android-chrome-256x256.png" />
+    <Content Include="Images\Favicons\android-chrome-36x36.png" />
+    <Content Include="Images\Favicons\android-chrome-384x384.png" />
+    <Content Include="Images\Favicons\android-chrome-48x48.png" />
+    <Content Include="Images\Favicons\android-chrome-512x512.png" />
+    <Content Include="Images\Favicons\android-chrome-72x72.png" />
+    <Content Include="Images\Favicons\android-chrome-96x96.png" />
+    <Content Include="Images\Favicons\apple-icon-114x114.png" />
+    <Content Include="Images\Favicons\apple-icon-120x120.png" />
+    <Content Include="Images\Favicons\apple-icon-144x144.png" />
+    <Content Include="Images\Favicons\apple-icon-152x152.png" />
+    <Content Include="Images\Favicons\apple-icon-180x180.png" />
+    <Content Include="Images\Favicons\apple-icon-57x57.png" />
+    <Content Include="Images\Favicons\apple-icon-60x60.png" />
+    <Content Include="Images\Favicons\apple-icon-72x72.png" />
+    <Content Include="Images\Favicons\apple-icon-76x76.png" />
+    <Content Include="Images\Favicons\apple-icon.png" />
+    <Content Include="Images\Favicons\favicon.ico" />
+    <Content Include="Images\Favicons\ms-icon-144x144.png" />
+    <Content Include="Images\Favicons\ms-icon-150x150.png" />
+    <Content Include="Images\Favicons\ms-icon-310x310.png" />
+    <Content Include="Images\Favicons\ms-icon-70x70.png" />
+    <Content Include="Images\show-orchard-logo-tagline-100h.png" />
+    <Content Include="Images\show-orchard-logo-tagline-40h.png" />
+    <Content Include="Images\show-orchard-logo-tagline-60h.png" />
+    <Content Include="Images\show-orchard-logo-tagline.png" />
     <Content Include="Recipes\ShowOrchard.recipe.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -109,6 +137,7 @@
     <None Include="Views\Elements\Column.liquid" />
     <None Include="Views\Elements\Grid.liquid" />
     <Content Include="Views\Fields\Link-Website.liquid" />
+    <Content Include="Views\Metas.liquid" />
     <None Include="Views\Fields\Link-Developer.liquid" />
     <None Include="Views\Fields\MediaLibraryPicker.Summary-Screenshot.liquid" />
     <Content Include="Views\Layout.liquid" />

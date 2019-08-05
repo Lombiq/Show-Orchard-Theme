@@ -6,8 +6,8 @@
 // --------------------------------------------------
 
 .site-header {
-    background: #ebf3ea;
-    padding: 45px 30px 45px 0;
+	background: #ebf3ea;
+	padding: 45px 30px 45px 0;
     
     @media (min-width: @screen-md-min) { 
         padding-right: 0;
@@ -22,13 +22,27 @@
 // Branding -----------------------------------------
 
 #site-branding a {
-    color: #3e443d;
+    color: transparent;
+    background-image: url("../../Images/show-orchard-logo-tagline.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 120px;
     font-weight: 700;
     font-size: 24px;
-    
-    &:hover {
-        color: #5c635b;
-        text-decoration: none;
+
+    @media only screen and (max-width: @screen-md) {
+        background-image: url("../../Images/show-orchard-logo-tagline-100h.png");
+        height: 100px;
+    }
+
+    @media only screen and (max-width: @screen-sm) {
+        background-image: url("../../Images/show-orchard-logo-tagline-60h.png");
+        height: 60px;
+    }
+
+    @media only screen and (max-width: @screen-xs) {
+        background-image: url("../../Images/show-orchard-logo-tagline-40h.png");
+        height: 40px;
     }
 }
 
@@ -173,7 +187,7 @@
         }
     }
     
-    nav > ul > li {
+	nav > ul > li {
         // Add a border to the bottom of each item on small screens for
         // easy reading.
         border-bottom: 1px solid #bbc3ba;

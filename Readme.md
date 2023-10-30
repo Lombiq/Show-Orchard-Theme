@@ -1,14 +1,14 @@
-# Lombiq <add project name here>
+# Show Orchard Theme
 
 ## About
 
-Add a general overview of the project here. Keep or remove the OSOCE note below as necessary.
+This is the theme for [Show Orchard](https://showorchard.com) hosted on [DotNest](https://dotnest.com). Lately, it has been migrated to Orchard Core (read the [case study](https://dotnest.com/blog/show-orchard-case-study-migrating-an-orchard-1-dotnest-site-to-orchard-core) to see how it was done). It's also a [Media Theme](https://github.com/Lombiq/Hosting-Media-Theme) so it can be used as a sample project for creating your own Media Theme on DotNest.
 
-Do you want to quickly try out this project and see it in action? Check it out in our [Open-Source Orchard Core Extensions](https://github.com/Lombiq/Open-Source-Orchard-Core-Extensions) full Orchard Core solution and also see our other useful Orchard Core-related open-source projects!
+The goal of Show Orchard is to collect all the representative Orchard websites in one place. This project was originally started and developed by [Ryan Drew Burnett](https://github.com/RyanDBurnett). Since 2017 it's developed by [Lombiq](https://lombiq.com).
 
 ## Documentation
 
-Add detailed documentation here. If it's a lot of content then create documentation pages under the *Docs* folder and link pages here.
+It's recommended to use this theme with your fork of the [DotNest Core Sites SDK](https://github.com/Lombiq/DotNest-Core-SDK). See its readme for more information.
 
 ## Contributing and support
 

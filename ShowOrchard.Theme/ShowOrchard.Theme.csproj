@@ -23,8 +23,8 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <LombiqHelpfulExtensionsPath>..\..\..\..\..\Modules\Lombiq.HelpfulExtensions\Lombiq.HelpfulExtensions\Lombiq.HelpfulExtensions.csproj</LombiqHelpfulExtensionsPath>
-        <LombiqNodeJsExtensionsPath>..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.csproj</LombiqNodeJsExtensionsPath>
+        <LombiqHelpfulExtensionsPath>..\..\..\..\..\..\Modules\Lombiq.HelpfulExtensions\Lombiq.HelpfulExtensions\Lombiq.HelpfulExtensions.csproj</LombiqHelpfulExtensionsPath>
+        <LombiqNodeJsExtensionsPath>..\..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.csproj</LombiqNodeJsExtensionsPath>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqHelpfulExtensionsPath))">
@@ -36,8 +36,8 @@
     </ItemGroup>
 
     <ImportGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqNodeJsExtensionsPath))">
-        <Import Project="..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.props" />
-        <Import Project="..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.targets" />
+        <Import Project="..\..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.props" />
+        <Import Project="..\..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.targets" />
     </ImportGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqHelpfulExtensionsPath))">
@@ -49,9 +49,9 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <LombiqHostingMediaThemePath>../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.csproj</LombiqHostingMediaThemePath>
-        <LombiqHostingMediaThemeTargetsProps>../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props</LombiqHostingMediaThemeTargetsProps>
-        <LombiqHostingMediaThemeTargetsTargets>../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets</LombiqHostingMediaThemeTargetsTargets>
+        <LombiqHostingMediaThemePath>../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.csproj</LombiqHostingMediaThemePath>
+        <LombiqHostingMediaThemeTargetsProps>../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props</LombiqHostingMediaThemeTargetsProps>
+        <LombiqHostingMediaThemeTargetsTargets>../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets</LombiqHostingMediaThemeTargetsTargets>
     </PropertyGroup>
 
     <ItemGroup>
@@ -64,8 +64,8 @@
         <Content Include=".config\dotnet-tools.json" />
     </ItemGroup>
 
-    <Import Condition="Exists($(LombiqHostingMediaThemeTargetsProps))" Project="../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props" />
-    <Import Condition="Exists($(LombiqHostingMediaThemeTargetsTargets))" Project="../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets" />
+    <Import Condition="Exists($(LombiqHostingMediaThemeTargetsProps))" Project="../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props" />
+    <Import Condition="Exists($(LombiqHostingMediaThemeTargetsTargets))" Project="../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets" />
 
     <!-- Overriding to change the dependency order of the targets. -->
     <Target Name="MediaThemeDeploymentBeforeTargets" BeforeTargets="EmbeddModuleAssets;OrchardCoreEmbedModuleAssets" />

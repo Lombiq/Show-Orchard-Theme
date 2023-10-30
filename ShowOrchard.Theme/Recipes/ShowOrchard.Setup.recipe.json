@@ -1,0 +1,164 @@
+{
+  "name": "ShowOrchard.Setup",
+  "displayName": "Show Orchard - Setup (Base)",
+  "description": "Setup recipe for Show Orchard.",
+  "author": "Lombiq",
+  "website": "https://www.showorchard.com",
+  "version": "1.0",
+  "issetuprecipe": true,
+  "categories": [ "showorchard" ],
+  "tags": [ "HideFromSetupScreen" ],
+
+  "steps": [
+    {
+      "name": "feature",
+      "disable": [],
+      "enable": [
+        // Orchard Core
+        "OrchardCore.Admin",
+        "OrchardCore.AdminDashboard",
+        "OrchardCore.AdminMenu",
+        "OrchardCore.AdminTemplates",
+        "OrchardCore.Alias",
+        "OrchardCore.Apis.GraphQL",
+        "OrchardCore.AuditTrail",
+        "OrchardCore.Autoroute",
+        "OrchardCore.BackgroundTasks",
+        "OrchardCore.ContentFields",
+        "OrchardCore.ContentFields.Indexing.SQL",
+        "OrchardCore.ContentFields.Indexing.SQL.UserPicker",
+        "OrchardCore.ContentLocalization",
+        "OrchardCore.ContentLocalization.ContentCulturePicker",
+        "OrchardCore.ContentLocalization.Sitemaps",
+        "OrchardCore.ContentPreview",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.Contents",
+        "OrchardCore.Contents.Deployment.AddToDeploymentPlan",
+        "OrchardCore.Contents.Deployment.Download",
+        "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget",
+        "OrchardCore.Cors",
+        "OrchardCore.CustomSettings",
+        "OrchardCore.Deployment",
+        "OrchardCore.Deployment.Remote",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.DynamicCache",
+        "OrchardCore.Features",
+        "OrchardCore.Feeds",
+        "OrchardCore.Flows",
+        "OrchardCore.Forms",
+        "OrchardCore.HealthChecks",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Html",
+        "OrchardCore.Https",
+        "OrchardCore.Indexing",
+        "OrchardCore.Layers",
+        "OrchardCore.Liquid",
+        "OrchardCore.Lists",
+        "OrchardCore.Localization",
+        "OrchardCore.Localization.ContentLanguageHeader",
+        "OrchardCore.Search.Lucene",
+        "OrchardCore.Markdown",
+        "OrchardCore.Media",
+        "OrchardCore.Media.Cache",
+        "OrchardCore.Menu",
+        "OrchardCore.Navigation",
+        "OrchardCore.Placements",
+        "OrchardCore.Placements.FileStorage",
+        "OrchardCore.PublishLater",
+        "OrchardCore.Queries",
+        "OrchardCore.Queries.Sql",
+        "OrchardCore.ReCaptcha",
+        "OrchardCore.ReCaptcha.Users",
+        "OrchardCore.Recipes",
+        "OrchardCore.RemotePublishing",
+        "OrchardCore.Resources",
+        "OrchardCore.ResponseCompression",
+        "OrchardCore.ReverseProxy",
+        "OrchardCore.Roles",
+        "OrchardCore.Rules",
+        "OrchardCore.Scripting",
+        "OrchardCore.Seo",
+        "OrchardCore.Settings",
+        "OrchardCore.Shortcodes",
+        "OrchardCore.Shortcodes.Templates",
+        "OrchardCore.Sitemaps",
+        "OrchardCore.Sitemaps.Cleanup",
+        "OrchardCore.Sitemaps.RazorPages",
+        "OrchardCore.Taxonomies",
+        "OrchardCore.Taxonomies.ContentsAdminList",
+        "OrchardCore.Templates",
+        "OrchardCore.Tenants",
+        "OrchardCore.Tenants.Distributed",
+        "OrchardCore.Tenants.FeatureProfiles",
+        "OrchardCore.Tenants.FileProvider",
+        "OrchardCore.Themes",
+        "OrchardCore.Title",
+        "OrchardCore.Users",
+        "OrchardCore.Users.AuditTrail",
+        "OrchardCore.Users.ChangeEmail",
+        "OrchardCore.Users.CustomUserSettings",
+        "OrchardCore.Users.Registration",
+        "OrchardCore.Users.ResetPassword",
+        "OrchardCore.Users.TimeZone",
+        "OrchardCore.Widgets",
+        "OrchardCore.Workflows",
+        "OrchardCore.Workflows.Http",
+        "OrchardCore.Workflows.Timers",
+        "OrchardCore.XmlRpc",
+
+        // Lombiq
+        "Lombiq.HelpfulExtensions.CodeGeneration",
+        "Lombiq.HelpfulExtensions.ContentTypes",
+        "Lombiq.HelpfulExtensions.Flows",
+        "Lombiq.HelpfulExtensions.Widgets",
+        "Lombiq.Hosting.Tenants.Admin.Login",
+        "Lombiq.Hosting.Tenants.Admin.Login.SubTenant",
+        "Lombiq.Hosting.Tenants.Management.ForbiddenTenantNames",
+        "Lombiq.Hosting.MediaTheme",
+        "Lombiq.Privacy",
+        "Lombiq.Privacy.ConsentBanner",
+        "Lombiq.Privacy.FormConsent",
+        "Lombiq.Privacy.RegistrationConsent",
+
+        // Themes
+        "TheAdmin",
+        "Lombiq.BaseTheme"
+      ]
+    },
+    {
+      "name": "themes",
+      "admin": "TheAdmin",
+      "site": "Lombiq.Hosting.MediaTheme"
+    },
+    {
+      "name": "mediatheme",
+      "ClearMediaThemeFolder": false,
+      "BaseThemeId": "Lombiq.BaseTheme"
+    },
+    {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "DotNest.Core.SDK.Web",
+          "name": "ShowOrchard.Configuration"
+        },
+        {
+          "executionid": "DotNest.Core.SDK.Web",
+          "name": "ShowOrchard.ContentDefinition"
+        },
+        {
+          "executionid": "DotNest.Core.SDK.Web",
+          "name": "ShowOrchard.Queries"
+        },
+        {
+          "executionid": "DotNest.Core.SDK.Web",
+          "name": "ShowOrchard.ContentItems"
+        },
+        {
+          "executionid": "DotNest.Core.SDK.Web",
+          "name": "ShowOrchard.MediaTheme"
+        }
+      ]
+    }
+  ]
+}

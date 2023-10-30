@@ -1,0 +1,43 @@
+.relatedWebsites {
+    margin-bottom: $spacer-large;
+
+    &__title {
+        border-bottom: 2px solid $so-color-gallery;
+        margin-bottom: $spacer;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__websites {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        &__website {
+            flex: 0 0 33.33%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.relatedWebsite {
+    margin-bottom: $spacer;
+    padding-left: $gutter-small;
+    padding-right: $gutter-small;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__link {
+        &, &:visited, &:hover, &:active {
+            text-decoration: none;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &__title {
+            font-size: 1.1875rem;
+        }
+    }
+}

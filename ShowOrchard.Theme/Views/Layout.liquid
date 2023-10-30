@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ Culture.Name }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ "PageTitle" | shape_new | shape_stringify }}</title>
+
+    {% shape "Metas" %}
+
+    {% resources type: "Meta" %}
+
+    {% style src:"~/mediatheme/css/site.min.css" %}
+    {% style name:"font-awesome" %}
+
+    {% script name:"bootstrap-bundle", at:"Foot" %}
+    {% script src:"~/OrchardCore.Menu/Scripts/activate-links.min.js", debug_src:"~/OrchardCore.Menu/Scripts/activate-links.js", at:"Foot" %}
+
+    {% resources type: "HeadScript" %}
+    {% resources type: "HeadLink" %}
+    {% resources type: "Stylesheet" %}
+
+    {% render_section "HeadMeta", required: false %}
+
+    {% shape "GoogleTag", GoogleTagPropertyId: "G-C8EEHMLQLP", CookieDomain: "auto" %}<!-- #spell-check-ignore-line -->
+</head>
+<body dir="{{ Culture.Dir }}">
+<header class="header">
+    <nav class="header__navigation navigation">
+        <div class="navigation__container container d-flex justify-content-between">
+            <a class="navigation__logo" href="{{ "~/" | href }}">Show Orchard</a>
+            <button class="navigation__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenuContainer" aria-label="Toggle navigation">
+                <span class="navigation__togglerIcon"></span>
+            </button>
+        </div>
+        <div class="navigation__menuContainer container collapse" id="mainMenuContainer">
+            {% shape "menu", alias: "alias:main-menu" %}
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="main__container container">
+        {% render_section "Content" %}
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__copyrightAndSignIn">
+            <div class="footer__copyright">© 2011-{{ "now" | date: "%Y" }} Show Orchard</div>
+            <div class="footer__signIn">
+                {% if User.Identity.Name == null %}
+                    <a href="{{ "~/Login" | href }}">{{ "Sign In" | t }}</a>
+                {% else %}
+                    {{ User.Identity.Name }}
+                {% endif %}
+            </div>
+        </div>
+        <div class="footer__widgets">
+            {% render_section "Footer", required: false %}
+        </div>
+    </div>
+</footer>
+
+{% resources type: "FootScript" %}
+{% render_section "Scripts", required: false %}
+
+<script>
+    (function ($) {
+        $('.menu').activateLinks({ traverse: 2 }, function (items) {
+            var parents = $(items).closest(".menu__menuItem_hasSubMenu")
+            parents.addClass('active');
+        });
+    })(jQuery);
+</script>
+
+</body>
+</html>

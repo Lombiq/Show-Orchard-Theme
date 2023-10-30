@@ -1,0 +1,51 @@
+@import "../abstracts/variables";
+
+.pager {
+    /* Can't easily add the .pagination class to the pager, so we have to copy the styles from Bootstrap. */
+    /* stylelint-disable scss/at-extend-no-missing-placeholder */
+    @extend .pagination;
+    /* stylelint-enable scss/at-extend-no-missing-placeholder */
+
+    --bs-pagination-color: #{$so-color-st-tropaz};
+    --bs-pagination-bg: #{$so-color-gallery};
+    --bs-pagination-border-width: 0;
+    --bs-pagination-hover-color: #{$so-color-blue-zodiac};
+    --bs-pagination-hover-bg: #{$so-color-alto};
+    --bs-pagination-focus-color: #{$so-color-blue-zodiac};
+    --bs-pagination-focus-bg: #{$so-color-alto};
+    --bs-pagination-active-color: #{$so-color-mine-shaft};
+    --bs-pagination-active-bg: #{$so-color-gallery};
+    --bs-pagination-padding-x: 16px;
+    --bs-pagination-padding-y: 12px;
+    --bs-pagination-border-radius: 0;
+    --bs-pagination-font-size: 17px;
+
+    text-align: center;
+    justify-content: center;
+    margin-bottom: $spacer-large;
+
+    /* Can't easily override the pager shapes to extend with classes especially the Taxonomy-related ones. */
+    /* stylelint-disable selector-no-qualifying-type */
+    li {
+        margin: 0 5px;
+
+        &.active {
+            font-weight: 700;
+        }
+
+        &.disabled {
+            &:nth-child(-n+2),
+            &:nth-last-child(-n+2) {
+                display: none;
+            }
+        }
+
+        a {
+            /* Can't easily add the .page-link class to the pager link, so we have to copy the styles from Bootstrap. */
+            /* stylelint-disable scss/at-extend-no-missing-placeholder */
+            @extend .page-link;
+            /* stylelint-enable scss/at-extend-no-missing-placeholder */
+        }
+    }
+    /* stylelint-enable selector-no-qualifying-type */
+}

@@ -1,0 +1,747 @@
+{
+  "name": "ShowOrchard.Development.Setup",
+  "displayName": "Show Orchard - Development - Setup",
+  "description": "Setup recipe for Show Orchard.",
+  "author": "Lombiq",
+  "website": "https://www.showorchard.com",
+  "version": "1.0",
+  "issetuprecipe": true,
+  "categories": [ "showorchard" ],
+  "tags": [ "HideFromSetupScreen" ],
+
+  "steps": [
+    {
+      "name": "recipes",
+      "Values": [
+        {
+          "executionid": "DotNest.Core.SDK.Web",
+          "name": "ShowOrchard.Setup"
+        }
+      ]
+    },
+    {
+      "name": "content",
+      "data": [
+        {
+          "ContentItemId": "4syemaw44nrny04ttzwysg8vd4",
+          "ContentItemVersionId": "4j5gdeb3ef17qzz3wy9c93jqxw",
+          "ContentType": "Website",
+          "DisplayText": "AIS",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2015-11-29T13:00:00+01:00",
+          "PublishedUtc": "2017-11-11T01:48:18.9366986+01:00",
+          "CreatedUtc": "2015-11-29T13:00:00+01:00",
+          "Owner": null,
+          "Author": null,
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": null,
+              "Text": null
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/ais.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://www.appliedis.com",
+              "Text": "www.appliedis.com"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/ais",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "AIS"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/ais",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4sam046aatcz2yy0c45tngyjmg",
+          "ContentItemVersionId": "490wh1kqxz7fbx3gdfr5929ew8",
+          "ContentType": "Website",
+          "DisplayText": "Applicita",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2015-11-26T13:00:00+01:00",
+          "PublishedUtc": "2017-11-11T01:48:20.121524+01:00",
+          "CreatedUtc": "2015-11-26T13:00:00+01:00",
+          "Owner": null,
+          "Author": null,
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": null,
+              "Text": null
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/applicita.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://applicita.com",
+              "Text": "applicita.com"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/applicita",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "Applicita"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/applicita",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "47y09jksq8g3sth8krqvsd4kxz",
+          "ContentItemVersionId": "44te92ptzwmct6ets2p6nh70d0",
+          "ContentType": "Website",
+          "DisplayText": "Buzz Interactive",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-01-17T12:04:52.7908198+01:00",
+          "PublishedUtc": "2020-01-17T12:04:52.8803637+01:00",
+          "CreatedUtc": "2020-01-17T13:00:00+01:00",
+          "Owner": null,
+          "Author": "Zoltán Lehóczky",
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv",
+                "41t4qb7kgcbfbtxz751te2q2n9"
+              ]
+            },
+            "Developer": {
+              "Url": null,
+              "Text": null
+            },
+            "Interview": {
+              "Value": true
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/buzz-interactive.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "https://www.buzzinteractive.co.uk/",
+              "Text": "www.buzzinteractive.co.uk"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/buzz-interactive",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<div><h1>Hello World<\/h1><p>This is a simple paragraph.<\/p><\/div>"
+          },
+          "TitlePart": {
+            "Title": "Buzz Interactive"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/buzz-interactive",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4kg2p9wmtjtr449kpdht24m4d5",
+          "ContentItemVersionId": "4edbss7bcygf35kdbhdjwm56m6",
+          "ContentType": "Website",
+          "DisplayText": "FCB Global",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2015-04-02T14:00:00+02:00",
+          "PublishedUtc": "2017-11-11T01:48:34.6434092+01:00",
+          "CreatedUtc": "2015-04-02T14:00:00+02:00",
+          "Owner": null,
+          "Author": null,
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": "http://www.hellocomputer.com",
+              "Text": "Hellocomputer"
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/fcb.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://www.fcb.com",
+              "Text": "www.fcb.com"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/fcb-global",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "FCB Global"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/fcb-global",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "453trvy5f58e0r1q4h58k94ed6",
+          "ContentItemVersionId": "4r5b6q0xzr89m0a5rbm12tsmc2",
+          "ContentType": "Website",
+          "DisplayText": "IDeliverable",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2015-05-31T14:00:00+02:00",
+          "PublishedUtc": "2017-11-11T01:48:23.9027688+01:00",
+          "CreatedUtc": "2015-05-31T14:00:00+02:00",
+          "Owner": null,
+          "Author": null,
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": "http://www.ideliverable.com/",
+              "Text": "IDeliverable"
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/ideliverable.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://www.ideliverable.com",
+              "Text": "www.ideliverable.com"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/ideliverable",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "IDeliverable"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/ideliverable",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4k6772k8vagdks323rgbw45ndz",
+          "ContentItemVersionId": "45cstctsswx83vr930fpbzd0d7",
+          "ContentType": "Website",
+          "DisplayText": "KWP",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2018-11-27T16:05:59.5993506+01:00",
+          "PublishedUtc": "2018-11-27T16:05:59.6774757+01:00",
+          "CreatedUtc": "2018-11-21T13:00:00+01:00",
+          "Owner": null,
+          "Author": "Zoltán Lehóczky",
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv",
+                "41t4qb7kgcbfbtxz751te2q2n9"
+              ]
+            },
+            "Developer": {
+              "Url": null,
+              "Text": null
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/kwp.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://kwp.com.au/",
+              "Text": "kwp.com.au"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/kwp",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "KWP"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/kwp",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4z9s1dvvad4p2rmjsshtm5ram8",
+          "ContentItemVersionId": "4vag6j1bwxw7dr88zd2t87d8mb",
+          "ContentType": "Website",
+          "DisplayText": "Omnia",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2015-03-28T13:00:00+01:00",
+          "PublishedUtc": "2017-11-11T01:48:38.7502771+01:00",
+          "CreatedUtc": "2015-03-28T13:00:00+01:00",
+          "Owner": null,
+          "Author": null,
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": "http://omniaconnect.net",
+              "Text": "Omnia"
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/omnia.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://omniaconnect.net",
+              "Text": "omniaconnect.net"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/omnia",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "Omnia"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/omnia",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4xpjsrg740fkpxh7ycq94k4gdp",
+          "ContentItemVersionId": "4rn0kbtfycmjf3wmgvqmxac5ns",
+          "ContentType": "Website",
+          "DisplayText": "Reachmedia",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2015-11-21T13:00:00+01:00",
+          "PublishedUtc": "2017-11-11T01:48:22.3402693+01:00",
+          "CreatedUtc": "2015-11-21T13:00:00+01:00",
+          "Owner": null,
+          "Author": null,
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": null,
+              "Text": null
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/reach-media.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://reachmedia.co.nz",
+              "Text": "reachmedia.co.nz"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/reachmedia",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "Reachmedia"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/reachmedia",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "481s3rzhnw3zg3rx5vaxhhjzdy",
+          "ContentItemVersionId": "4k22nb1r789ynzxrv955n3x8w7",
+          "ContentType": "Website",
+          "DisplayText": "Rocca.",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2017-12-07T22:18:39.1713983+01:00",
+          "PublishedUtc": "2017-12-07T22:18:39.2807737+01:00",
+          "CreatedUtc": "2017-11-02T13:00:00+01:00",
+          "Owner": null,
+          "Author": "Zoltán Lehóczky",
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": null,
+              "Text": null
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/rocca.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://www.roccacreative.co.uk/",
+              "Text": "www.roccacreative.co.uk"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/rocca",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "Rocca."
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/rocca",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4hk3fg0qh3y76z7fk4fp5an8ny",
+          "ContentItemVersionId": "4fz5wmz23cd9cye0a524wyddw1",
+          "ContentType": "Website",
+          "DisplayText": "Webmoco",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2012-10-31T13:00:00+01:00",
+          "PublishedUtc": "2017-11-11T01:48:59.7190729+01:00",
+          "CreatedUtc": "2012-10-31T13:00:00+01:00",
+          "Owner": null,
+          "Author": null,
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4mv3gqtq49pm522f1wmv36hmcv"
+              ]
+            },
+            "Developer": {
+              "Url": "http://www.webmoco.com",
+              "Text": "Webmoco"
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/webmoco.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "http://www.webmoco.com",
+              "Text": "www.webmoco.com"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/agency/webmoco",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "Webmoco"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/agency\\/webmoco",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4e65rh1s30xcbvwv2dkxfp50xp",
+          "ContentItemVersionId": "4nmhm6wwmzn03s2qqcxjc36w56",
+          "ContentType": "Website",
+          "DisplayText": "Aerospace Cornwall",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-12-23T14:06:50.9485226+01:00",
+          "PublishedUtc": "2020-12-23T14:06:51.1700834+01:00",
+          "CreatedUtc": "2020-12-23T13:00:00+01:00",
+          "Owner": null,
+          "Author": "Gábor Domonkos",
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4cfyv9m8h8t2m4nmk13g7abax1",
+                "41t4qb7kgcbfbtxz751te2q2n9",
+                "4mc3d43q1egyjsaawsyvn1kx52"
+              ]
+            },
+            "Developer": {
+              "Url": "https://www.buzzinteractive.co.uk",
+              "Text": "Buzz Interactive"
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/aerospace-cornwall.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "https://aerospacecornwall.co.uk",
+              "Text": "aerospacecornwall.co.uk"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/business/aerospace-cornwall",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "Aerospace Cornwall"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/business\\/aerospace-cornwall",
+            "Parent": null
+          }
+        },
+        {
+          "ContentItemId": "4v4h1wq69149z7p2ww7zjrwwmh",
+          "ContentItemVersionId": "49k3fpgawkfvk4cyxf4a9zt9mz",
+          "ContentType": "Website",
+          "DisplayText": "Antebellum",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2021-12-14T14:22:28.9520106+01:00",
+          "PublishedUtc": "2021-12-14T14:22:29.0457093+01:00",
+          "CreatedUtc": "2021-12-14T13:00:00+01:00",
+          "Owner": null,
+          "Author": "Gábor Domonkos",
+          "Website": {
+            "Category": {
+              "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+              "TermContentItemIds": [
+                "4cfyv9m8h8t2m4nmk13g7abax1",
+                "41t4qb7kgcbfbtxz751te2q2n9",
+                "4mc3d43q1egyjsaawsyvn1kx52"
+              ]
+            },
+            "Developer": {
+              "Url": null,
+              "Text": null
+            },
+            "Interview": {
+              "Value": false
+            },
+            "Screenshot": {
+              "Paths": [
+                "Gallery/antebellum-crypto-mining.jpg"
+              ],
+              "MediaTexts": null
+            },
+            "Website": {
+              "Url": "https://antebellum.co.uk/",
+              "Text": "www.antebellum.co.uk"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "gallery/business/antebellum",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "TitlePart": {
+            "Title": "Antebellum"
+          },
+          "OrchardIds": {
+            "ExportId": "/alias=gallery\\/business\\/antebellum",
+            "Parent": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "media",
+      "Files": [
+        {
+          "SourcePath": "Media/Gallery/aerospace-cornwall.jpg",
+          "TargetPath": "Gallery/aerospace-cornwall.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/ais.jpg",
+          "TargetPath": "Gallery/ais.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/antebellum-crypto-mining.jpg",
+          "TargetPath": "Gallery/antebellum-crypto-mining.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/applicita.jpg",
+          "TargetPath": "Gallery/applicita.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/buzz-interactive.jpg",
+          "TargetPath": "Gallery/buzz-interactive.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/fcb.jpg",
+          "TargetPath": "Gallery/fcb.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/ideliverable.jpg",
+          "TargetPath": "Gallery/ideliverable.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/kwp.jpg",
+          "TargetPath": "Gallery/kwp.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/omnia.jpg",
+          "TargetPath": "Gallery/omnia.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/reach-media.jpg",
+          "TargetPath": "Gallery/reach-media.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/rocca.jpg",
+          "TargetPath": "Gallery/rocca.jpg"
+        },
+        {
+          "SourcePath": "Media/Gallery/webmoco.jpg",
+          "TargetPath": "Gallery/webmoco.jpg"
+        }
+      ]
+    }
+  ]
+}

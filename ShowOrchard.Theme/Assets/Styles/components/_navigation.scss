@@ -1,0 +1,261 @@
+@import "../abstracts/variables";
+
+$so-navigation-bg-color: #{$so-color-saltpan};
+$so-navigation-toggler-color: #{$so-color-lunar-green};
+$so-navigation-menu-color: #{$so-color-lunar-green};
+$so-navigation-menu-border-color: #{$so-color-pumice};
+$so-navigation-opened-menu-bg-color: #{$so-color-outer-space};
+$so-navigation-opened-menu-color: #{$so-color-white};
+$so-navigation-opened-menu-item-color: #{$so-color-saltpan};
+$so-navigation-active-menu-color: #{$so-color-lunar-green};
+$so-navigation-active-opened-menu-bg-color: #{$so-color-cape-cod};
+$so-navigation-hover-menu-bg-color: #{$so-color-pumice};
+$so-navigation-toggler-size: 22px;
+
+.navigation {
+    background-color: $so-navigation-bg-color;
+    padding: {
+        top: $spacer-large;
+        bottom: $spacer-large;
+    }
+
+    &__logo {
+        height: 40px;
+        background: {
+            image: url(#{$images-path}/show-orchard-logo-tagline-40h.png);
+            repeat: no-repeat;
+        }
+
+        // Hiding the text visually, but keeping it for screen readers.
+        text-indent: -9999px;
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            height: 60px;
+            background-image: url(#{$images-path}/show-orchard-logo-tagline-60h.png);
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 100px;
+            background-image: url(#{$images-path}/show-orchard-logo-tagline-100h.png);
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 120px;
+            background-image: url(#{$images-path}/show-orchard-logo-tagline.png);
+        }
+    }
+
+    &__toggler {
+        display: block;
+        width: 22px;
+        height: 22px;
+    }
+
+    &__togglerIcon {
+        margin: {
+            top: 10px;
+        }
+
+        position: relative;
+
+        &, &::before, &::after {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $so-navigation-toggler-color;
+            transition: transform 0.1s ease;
+        }
+
+        &::before, &::after {
+            content: " ";
+            position: absolute;
+        }
+
+        &::before {
+            top: -10px;
+        }
+
+        &::after {
+            bottom: -10px;
+        }
+    }
+
+    &__toggler[aria-expanded="true"] {
+        .navigation__togglerIcon {
+            transform: rotate(45deg);
+
+            &::before {
+                transform: rotate(90deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(90deg);
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.menu {
+    margin-top: $spacer;
+    padding-right: $gutter;
+
+    &__menuItem {
+        border-bottom: 1px solid $so-navigation-menu-border-color;
+
+        &Link {
+            padding: {
+                top: $spacer-small;
+                bottom: $spacer-small;
+                left: $gutter-small;
+                right: $gutter-small;
+            }
+
+            color: $so-navigation-menu-color;
+            font-weight: 700;
+        }
+
+        &_hasSubMenu {
+            .menu__menuItemLinkCaret {
+                padding: {
+                    right: $gutter-small;
+                }
+
+                position: relative;
+                display: block;
+
+                &::before,
+                &::after {
+                    background: $so-navigation-menu-color;
+                    content: " ";
+                    display: block;
+                    width: 2px;
+                    height: 8px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -3px;
+                }
+
+                &::before {
+                    right: 5px;
+                    transform: rotate(-45deg);
+                }
+
+                &::after {
+                    right: 0;
+                    transform: rotate(45deg);
+                }
+            }
+
+            &.active .subMenu__menuItem.active, .subMenu__menuItem:hover {
+                background-color: $so-navigation-active-opened-menu-bg-color;
+                color: $so-navigation-opened-menu-item-color;
+            }
+
+            .menu__menuItemLink {
+                transition: none;
+
+                &[aria-expanded="true"] {
+                    background-color: $so-navigation-opened-menu-bg-color;
+                    color: $so-navigation-opened-menu-color;
+
+                    .menu__menuItemLinkCaret {
+                        &::before,
+                        &::after {
+                            background: $so-navigation-opened-menu-color;
+                        }
+
+                        &::before {
+                            transform: rotate(45deg);
+                        }
+
+                        &::after {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        &.active {
+            .menu__menuItemLink[aria-expanded="false"], .menu__menuItemLink:not([aria-expanded]) {
+                color: $so-navigation-active-menu-color;
+
+                .menu__menuItemLinkCaret {
+                    &::before, &::after {
+                        background-color: $so-navigation-active-menu-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subMenu {
+    background-color: $so-navigation-opened-menu-bg-color;
+    z-index: 10000;
+
+    &.collapsing {
+        transition: none;
+        display: none;
+    }
+
+    &__menuItemLink {
+        color: $so-navigation-opened-menu-item-color;
+        padding: $spacer-small $gutter-small;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .navigation__toggler {
+        display: none;
+    }
+
+    .navigation__menuContainer {
+        &.collapse {
+            display: block;
+        }
+
+        .menu {
+            flex-direction: row;
+            margin-left: -$gutter-small;
+            position: relative;
+
+            &__menuItem {
+                border-bottom: 0;
+
+                &_hasSubMenu {
+                    position: unset;
+                }
+            }
+
+            &__menuItemLink {
+                padding: $spacer-small $gutter-small;
+
+                &:hover, &.active {
+                    background-color: $so-navigation-hover-menu-bg-color;
+                }
+            }
+        }
+
+        .subMenu {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin-top: $spacer-large;
+            padding: $spacer-small;
+
+            &.show {
+                display: block;
+            }
+
+            &__menuItem {
+                float: left;
+                margin: 0;
+            }
+        }
+    }
+}

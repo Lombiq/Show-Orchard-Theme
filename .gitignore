@@ -12,3 +12,5 @@ node_modules/
 # Mac
 .DS_Store
 
+Recipes/ShowOrchard.MediaTheme.recipe.json
+Recipes/_MediaTheme/

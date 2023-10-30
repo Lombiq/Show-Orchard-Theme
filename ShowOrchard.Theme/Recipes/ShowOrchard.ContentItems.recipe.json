@@ -1,0 +1,976 @@
+{
+  "name": "ShowOrchard.ContentItems",
+  "displayName": "Show Orchard - Content Items",
+  "description": "Content items for the Show Orchard site.",
+  "author": "Lombiq",
+  "version": "1.0",
+  "categories": [ "content" ],
+  "tags": [ "content" ],
+  "steps": [
+    {
+      "name": "content",
+      "data": [
+        {
+          "ContentItemId": "4nx4bwds19mw91c12chskay3cx",
+          "ContentItemVersionId": "4tf7sam6ysj5vvnfaq6nfpanmv",
+          "ContentType": "Menu",
+          "DisplayText": "Main Menu",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2023-06-25T11:33:02.8621962Z",
+          "PublishedUtc": "2023-06-25T11:33:02.8681331Z",
+          "CreatedUtc": "2023-06-15T14:16:24.3025997Z",
+          "Owner": "4y1mj3s8jcq32z0s70n17cbqda",
+          "Author": "admin",
+          "TitlePart": {
+            "Title": "Main Menu"
+          },
+          "AliasPart": {
+            "Alias": "main-menu"
+          },
+          "MenuPart": {},
+          "MenuItemsListPart": {
+            "MenuItems": [
+              {
+                "ContentItemId": "474q7xhkqpab2vw7txq0w4pnxt",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": "Home",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2023-06-15T14:16:48.9840556Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Home",
+                  "Url": "~/"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "4n1erg5h2sfp31ypn8pbedvj5c",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": "Interviews",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2023-06-15T14:17:27.1295715Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Interviews",
+                  "Url": "~/interviews"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "4as9qnwzvtgf4yw3tqkbc33zd9",
+                "ContentItemVersionId": null,
+                "ContentType": "CategoriesMenuItem",
+                "DisplayText": "Categories",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2023-06-25T11:32:55.2428412Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "CategoriesMenuItem": {},
+                "TitlePart": {
+                  "Title": "Categories"
+                }
+              }
+            ]
+          },
+          "@WeldedPartSettings": {
+            "MenuPart": {
+              "Position": "3"
+            },
+            "MenuItemsListPart": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "ContentItemId": "4vrvp8sctngdg22e5b0w6xxrxy",
+          "ContentItemVersionId": "4k2xw526df79455ky1t7vtpbnh",
+          "ContentType": "Page",
+          "DisplayText": "Gallery",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2023-07-13T09:49:53.5803969Z",
+          "PublishedUtc": "2023-07-13T09:49:53.6015653Z",
+          "CreatedUtc": "2023-06-21T10:46:05.8642581Z",
+          "Owner": "4y1mj3s8jcq32z0s70n17cbqda",
+          "Author": "admin",
+          "TitlePart": {
+            "Title": "Gallery"
+          },
+          "AutoroutePart": {
+            "Path": "gallery",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": true
+          },
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "4836730g4jm8dve54dtwag11cq",
+                "ContentItemVersionId": null,
+                "ContentType": "HtmlWidget",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2023-07-13T09:49:53.5879492Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "HtmlBodyPart": {
+                  "Html": "<p>Show Orchard is an <a href=\"https://www.orchardcore.net/\">Orchard CMS</a> showcase, displaying only the best Orchard CMS (including Orchard 1.x and Orchard Core) powered sites from around the web. Also follow us on <a href=\"https://twitter.com/showorchard\">Twitter</a>!</p><p><strong>If you know a site that would fit here</strong> write to <a href=\"mailto://crew@lombiq.com\">crew@lombiq.com</a>! Sites should be public and production-ready (so not beta), a good example of web app/site built on Orchard, and be in English (or have an English version). See our <a href=\"https://lombiq.com/privacy-policy\">privacy policy</a>.</p><p>Originally by <a href=\"https://github.com/RyanDBurnett\">Ryan Drew Burnett</a>, now maintained by <a href=\"https://lombiq.com/\">Lombiq Technologies</a>, a company doing everything with Orchard.</p>"
+                },
+                "AdditionalStylingPart": {
+                  "CustomClasses": null,
+                  "RemoveGridExtensionClasses": false
+                },
+                "@WeldedPartSettings": {
+                  "AdditionalStylingPart": {}
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4x40kpxkxah8rtvb9a78txaddr",
+                "ContentItemVersionId": null,
+                "ContentType": "LiquidWidget",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2023-07-13T09:49:53.5932004Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "LiquidPart": {
+                  "Liquid": "{% assign totalItemCountResult = Queries.WebsitesCount | query %}\r\n{% assign totalItemCount = totalItemCountResult.first.WebsitesCount %}\r\n{% assign pageSize = Site.PageSize %}\r\n{% assign page = Request.Query.pagenum.first | default: 1 %}\r\n{% assign skip = page | minus: 1 | times: pageSize %}\r\n\r\n<div class=\"websites\">\r\n    {% assign websites = Queries.Websites | query: offset: skip, limit: pageSize %}\r\n    {% for item in websites %}\r\n  \t\t{{ item | shape_build_display: \"Summary\" | shape_render }}\r\n    {% endfor %}\r\n</div>\r\n\r\n{% assign pager = \"Pager\" | shape_new: PageSize: pageSize, TotalItemCount: totalItemCount, Page: page %}\r\n{% shape_pager pager item_classes: \"pager__item page-item\", classes: \"pagination\" %}\r\n{{ pager | shape_render }}"
+                },
+                "AdditionalStylingPart": {
+                  "CustomClasses": null,
+                  "RemoveGridExtensionClasses": false
+                },
+                "@WeldedPartSettings": {
+                  "AdditionalStylingPart": {}
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ContentItemId": "4cyy04wr020d2s2fj679q578mb",
+          "ContentItemVersionId": "4khznfwmx12t4w8hded3fybdcr",
+          "ContentType": "Page",
+          "DisplayText": "Interviews",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2023-07-13T10:08:49.5897325Z",
+          "PublishedUtc": "2023-07-13T10:08:49.6082791Z",
+          "CreatedUtc": "2023-07-11T12:33:31.8629348Z",
+          "Owner": "4y1mj3s8jcq32z0s70n17cbqda",
+          "Author": "admin",
+          "TitlePart": {
+            "Title": "Interviews"
+          },
+          "AutoroutePart": {
+            "Path": "interviews",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": true
+          },
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "4qybt2vwh3nkj5e6kqv4pry4w5",
+                "ContentItemVersionId": null,
+                "ContentType": "HtmlWidget",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2023-07-13T10:08:49.5972811Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "HtmlBodyPart": {
+                  "Html": "<p>Explore interviews with developers working on real Orchard websites.</p>"
+                },
+                "AdditionalStylingPart": {
+                  "CustomClasses": null,
+                  "RemoveGridExtensionClasses": false
+                },
+                "@WeldedPartSettings": {
+                  "AdditionalStylingPart": {}
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4y3ska2a8x02tskbspe44zdk5w",
+                "ContentItemVersionId": null,
+                "ContentType": "LiquidWidget",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2023-07-13T10:08:49.6006285Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "admin",
+                "LiquidPart": {
+                  "Liquid": "{% assign totalItemCountResult = Queries.InterviewsCount | query %}\r\n{% assign totalItemCount = totalItemCountResult.first.WebsitesCount %}\r\n{% assign pageSize = Site.PageSize %}\r\n{% assign page = Request.Query.pagenum.first | default: 1 %}\r\n{% assign skip = page | minus: 1 | times: pageSize %}\r\n\r\n<div class=\"websites\">\r\n    {% assign websites = Queries.Interviews | query: offset: skip, limit: pageSize %}\r\n    {% for item in websites %}\r\n  \t\t{{ item | shape_build_display: \"Summary\" | shape_render }}\r\n    {% endfor %}\r\n</div>\r\n\r\n{% assign pager = \"Pager\" | shape_new: PageSize: pageSize, TotalItemCount: totalItemCount, Page: page %}\r\n{% shape_pager pager item_classes: \"pager__item page-item\", classes: \"pagination\" %}\r\n{{ pager | shape_render }}"
+                },
+                "AdditionalStylingPart": {
+                  "CustomClasses": null,
+                  "RemoveGridExtensionClasses": false
+                },
+                "@WeldedPartSettings": {
+                  "AdditionalStylingPart": {}
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr",
+          "ContentItemVersionId": "4dsvtxh5zp4q1vhv7aj3qtbs4g",
+          "ContentType": "Taxonomy",
+          "DisplayText": "Category",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2023-08-19T12:48:30.883951Z",
+          "PublishedUtc": "2023-08-19T12:48:31.130746Z",
+          "CreatedUtc": "2023-06-15T14:19:37.7908948Z",
+          "Owner": "4y1mj3s8jcq32z0s70n17cbqda",
+          "Author": "admin",
+          "TitlePart": {
+            "Title": "Category"
+          },
+          "AliasPart": {
+            "Alias": "category"
+          },
+          "AutoroutePart": {
+            "Path": "category",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": true,
+            "Absolute": false
+          },
+          "TaxonomyPart": {
+            "TermContentType": "CategoryTerm",
+            "Terms": [
+              {
+                "ContentItemId": "4mv3gqtq49pm522f1wmv36hmcv",
+                "ContentItemVersionId": "4h0ap3fcscgpq6k96tnssz9c5d",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Agency",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:27.8332404+02:00",
+                "PublishedUtc": "2017-11-11T01:47:09.2712311+01:00",
+                "CreatedUtc": "2017-10-17T11:12:27.8332404+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Agency"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/agency",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/agency",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4qw290mc4k5bptdhj7kt6gjmcb",
+                "ContentItemVersionId": "4bd9ts0gp3gz8zgb5980yetj46",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Blog",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:29:32.9189325+02:00",
+                "PublishedUtc": "2017-11-11T01:47:09.5993477+01:00",
+                "CreatedUtc": "2017-10-17T11:12:27.8723441+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Blog"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/blog",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/blog",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4cfyv9m8h8t2m4nmk13g7abax1",
+                "ContentItemVersionId": "47rxnwzmpev68t4y15r9w7065v",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Business",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:27.9014238+02:00",
+                "PublishedUtc": "2017-11-11T01:47:09.8962256+01:00",
+                "CreatedUtc": "2017-10-17T11:12:27.9014238+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Business"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/business",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/business",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4p9ankd6chjdvsbw64y98ypgc6",
+                "ContentItemVersionId": "4aq0fqhwnbspp36ewazxt59nme",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Churches",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:27.9305042+02:00",
+                "PublishedUtc": "2017-11-11T01:47:10.2243521+01:00",
+                "CreatedUtc": "2017-10-17T11:12:27.9305042+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Churches"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/churches",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/churches",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4zq59rqpgf32zzd49t1ksxnema",
+                "ContentItemVersionId": "41rqyy4j3dq9svnebjcsjrsmmj",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Community",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:27.959584+02:00",
+                "PublishedUtc": "2017-11-11T01:47:10.7399806+01:00",
+                "CreatedUtc": "2017-10-17T11:12:27.959584+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Community"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/community",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/community",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4a7rkzzwd9kwhzwey6nb92f4w0",
+                "ContentItemVersionId": "48xwyapbwfwr4x0xb54s9nr2wk",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Corporate",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:27.9916456+02:00",
+                "PublishedUtc": "2017-11-11T01:47:11.1001927+01:00",
+                "CreatedUtc": "2017-10-17T11:12:27.9916456+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Corporate"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/corporate",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/corporate",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "41fgn3xtke7bkrzfqysxfsxqnk",
+                "ContentItemVersionId": "4hw0h65xes893s8a6xz9d7105r",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Education",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.0237219+02:00",
+                "PublishedUtc": "2017-11-11T01:47:11.3970741+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.0237219+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Education"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/education",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/education",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "49z604mm5kjb31yfaxfhhj0fw1",
+                "ContentItemVersionId": "4zk5ztd8g0j1kwsrh5m754x9n5",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Entertainment",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.0558406+02:00",
+                "PublishedUtc": "2017-11-11T01:47:11.6976632+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.0558406+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Entertainment"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/entertainment",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/entertainment",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4vmkm9khpqm6942nk35g0b0jmj",
+                "ContentItemVersionId": "4fmf24hr58zf1re37d10r1vqx2",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Financial",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.1260231+02:00",
+                "PublishedUtc": "2017-11-11T01:47:12.3070532+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.1260231+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Financial"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/financial",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/financial",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "427961kpbjpny4wn5yf8chvy5a",
+                "ContentItemVersionId": "4q2q22843rk5v5hg6p38m0y2xw",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Government",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.1611144+02:00",
+                "PublishedUtc": "2017-11-11T01:47:12.6195559+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.1611144+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Government"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/government",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/government",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "48rxjq16vj11h1h3raw9fcdx49",
+                "ContentItemVersionId": "4mv9pgw5pwzfevey1p4t3ktnc0",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Hospitality",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.196208+02:00",
+                "PublishedUtc": "2017-11-11T01:47:12.932057+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.196208+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Hospitality"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/hospitality",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/hospitality",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4tyc60rz7qm2bv3gsnas5c72dx",
+                "ContentItemVersionId": "4jwqh6jqy4k7gy3vnzyf6ev241",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Medical",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.234304+02:00",
+                "PublishedUtc": "2017-11-11T01:47:13.2445623+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.234304+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Medical"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/medical",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/medical",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "430yqpxe7vzjwzbbvs5e42nwm7",
+                "ContentItemVersionId": "4zjhwbgmr1c06scj2vwbqmvpc9",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Music/Arts",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.2683977+02:00",
+                "PublishedUtc": "2017-11-11T01:47:13.557058+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.2683977+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Music/Arts"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/music-arts",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/music-arts",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4r2hqjr2034bwxf9dps5pw55m2",
+                "ContentItemVersionId": "4jnaja6psmb9azxw0rkmgq9wmr",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "News",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.3024947+02:00",
+                "PublishedUtc": "2017-11-11T01:47:13.8851936+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.3024947+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "News"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/news",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/news",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4tnfd6nzw6weyzhmqtfz2sec5f",
+                "ContentItemVersionId": "41n5w4xpv14qe39y2613s9q5cw",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Nonprofit",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.3355502+02:00",
+                "PublishedUtc": "2017-11-11T01:47:14.1976937+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.3355502+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Nonprofit"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/nonprofit",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/nonprofit",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "41t4qb7kgcbfbtxz751te2q2n9",
+                "ContentItemVersionId": "4vdgj5a7hkx17t5ryxtvaff9my",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Orchard Core",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2018-11-27T16:04:22.4531186+01:00",
+                "PublishedUtc": "2018-11-27T16:04:22.468712+01:00",
+                "CreatedUtc": "2018-11-27T16:02:45.1027475+01:00",
+                "Owner": null,
+                "Author": "Zoltán Lehóczky",
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Orchard Core"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/orchard-core",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/orchard-core",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "47vxhyvfzbstx0zm1wycptb35z",
+                "ContentItemVersionId": "4a2hw7yp0wehw6qp6qkc9rb3x1",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Personal",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.3676695+02:00",
+                "PublishedUtc": "2017-11-11T01:47:14.5570673+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.3676695+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Personal"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/personal",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/personal",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4z0dcd9gsvkx2zydgztzyfz4n9",
+                "ContentItemVersionId": "43jk8rshcg6ap4eefygwfvz95w",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Real Estate",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.4348485+02:00",
+                "PublishedUtc": "2017-11-11T01:47:15.353947+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.4348485+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Real Estate"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/real-estate",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/real-estate",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4qzztpvz8kfhhzvzfe5cc9r1cs",
+                "ContentItemVersionId": "4xfzzxwscrtcjtmktfrfprgpxr",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Retail",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.468926+02:00",
+                "PublishedUtc": "2017-11-11T01:47:15.8979527+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.468926+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Retail"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/retail",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/retail",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "43xqn34rrznmh3jdz0v5mqppny",
+                "ContentItemVersionId": "47v6chgtrp85z7dn3vz3f99gw8",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Sports",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.5030245+02:00",
+                "PublishedUtc": "2017-11-11T01:47:16.2417075+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.5030245+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Sports"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/sports",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/sports",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4mc3d43q1egyjsaawsyvn1kx52",
+                "ContentItemVersionId": "41rjyg6de3gvs1d8s1b2pav35g",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Technology",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.5380896+02:00",
+                "PublishedUtc": "2017-11-11T01:47:16.6995351+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.5380896+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Technology"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/technology",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/technology",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              },
+              {
+                "ContentItemId": "4frtcfq67vwpw5str0dmf8k4x2",
+                "ContentItemVersionId": "4bx21tt6qnj7r12hxxyd2gqkx2",
+                "ContentType": "CategoryTerm",
+                "DisplayText": "Travel",
+                "Latest": true,
+                "Published": true,
+                "ModifiedUtc": "2017-10-17T11:12:28.5732091+02:00",
+                "PublishedUtc": "2017-11-11T01:47:17.0276671+01:00",
+                "CreatedUtc": "2017-10-17T11:12:28.5732091+02:00",
+                "Owner": null,
+                "Author": null,
+                "CategoryTerm": {},
+                "TitlePart": {
+                  "Title": "Travel"
+                },
+                "AutoroutePart": {
+                  "Path": "gallery/category/travel",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": true
+                },
+                "OrchardIds": {
+                  "ExportId": "/alias=gallery\\/category\\/travel",
+                  "Parent": null
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "40z1s1vqgrkzqrbaaw1a913kcr"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

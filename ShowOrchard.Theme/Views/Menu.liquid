@@ -1,0 +1,5 @@
+<ul class="menu navbar-nav">
+    {% for item in Model.Items %}
+        {{ item | shape_properties: screen: Model.Screen | shape_render }}
+    {% endfor %}
+</ul>

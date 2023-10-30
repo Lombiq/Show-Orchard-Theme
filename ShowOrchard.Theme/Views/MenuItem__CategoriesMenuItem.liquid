@@ -1,0 +1,17 @@
+{% if Model.Screen == "desktop" %}
+    {% assign menuItemsId = "categoriesMenuItemsDesktop" %}
+{% else %}
+    {% assign menuItemsId = "categoriesMenuItemsMobile" %}
+{% endif %}
+
+<li class="menu__menuItem menu__menuItem_hasSubMenu nav-item">
+    <a class="menu__menuItemLink menu__menuItemLink_dropdown nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#{{ menuItemsId }}">
+        <span class="menu__menuItemLinkCaret">{{ Model.ContentItem.DisplayText | t }}</span>
+    </a>
+    <ul id="{{ menuItemsId }}" class="subMenu collapse navbar-nav">
+        {% assign taxonomy = Queries.CategoryTaxonomy | query %}
+        {% for term in taxonomy.first.Content.TaxonomyPart.Terms %}
+            {{ term | shape_build_display: "CategoriesMenuSummary" | shape_render }}
+        {% endfor %}
+    </ul>
+</li>

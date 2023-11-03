@@ -281,6 +281,31 @@
               }
             }
           ]
+        },
+        {
+          "Name": "Export All Content And Media",
+          "Steps": [
+            {
+              "Type": "AllContentDeploymentStep",
+              "Step": {
+                "ExportAsSetupRecipe": false,
+                "Id": "6aa05b5fb0fa4f00ae2244ed835ac215",
+                "Name": "AllContent"
+              }
+            },
+            {
+              "Type": "MediaDeploymentStep",
+              "Step": {
+                "IncludeAll": false,
+                "FilePaths": [],
+                "DirectoryPaths": [
+                  "Gallery"
+                ],
+                "Id": "d23a50c9a09b4fc88afee09461be1301",
+                "Name": "Media"
+              }
+            }
+          ]
         }
       ]
     },

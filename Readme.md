@@ -8,7 +8,7 @@ The goal of Show Orchard is to collect all the representative Orchard websites i
 
 ## Documentation
 
-It's recommended to use this theme with your fork of the [DotNest Core Sites SDK](https://github.com/Lombiq/DotNest-Core-SDK). See its readme for more information.
+It's recommended to use this theme with your fork of the [DotNest Core SDK](https://github.com/Lombiq/DotNest-Core-SDK). See its readme for more information.
 
 ## Contributing and support
 

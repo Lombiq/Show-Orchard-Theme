@@ -1,0 +1,13 @@
+h1 {
+    margin-bottom: $spacer-large;
+}
+
+a {
+    h1, h2, h3 {
+        color: $body-color;
+    }
+}
+
+body {
+    background-color: #{$so-color-mine-shaft};
+}

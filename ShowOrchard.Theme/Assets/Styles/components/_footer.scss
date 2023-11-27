@@ -1,0 +1,53 @@
+@import "../abstracts/variables";
+
+$so-footer-bg-color: #{$so-color-mine-shaft};
+$so-footer-color: #{$so-color-dusty-gray};
+$so-footer-link-color: #{$so-color-alto};
+
+.footer {
+    background-color: $so-footer-bg-color;
+    color: $so-footer-color;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: {
+        size: 13px;
+    }
+
+    a {
+        color: $so-footer-link-color;
+    }
+
+    &__copyrightAndSignIn, &__copyright, &__widgets, &__signIn {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__copyright, &__widgets {
+        padding: {
+            top: $spacer;
+        }
+    }
+
+    &__signIn {
+        padding-top: $spacer-small;
+    }
+
+    @include media-breakpoint-up(lg) {
+        text-align: left;
+
+        &__copyrightAndSignIn {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__signIn {
+            padding-top: $spacer;
+        }
+    }
+}
+
+.dotnest-credits .dotnest-powered-by a:link {
+    color: $so-footer-link-color;
+}

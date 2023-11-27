@@ -1,0 +1,69 @@
+<div class="website">
+    {{ Model.Content.ContentsMetadata | shape_render }}
+    <h1 class="website__title">{{ Model.ContentItem.DisplayText }}</h1>
+    <a class="website__imageLink" href="{{ Model.ContentItem.Content.Website.Website.Url }}">
+        <img class="website__image" src="{{ Model.ContentItem.Content.Website.Screenshot.Paths.first | asset_url }}" alt="{{ "Screenshot" | t }}">
+    </a>
+    <div class="website__meta">
+        <span class="website__publishDate">
+            {{ "Added on" | t }}
+            {{ Model.ContentItem.PublishedUtc | date: "%d %B %Y"  }}
+        </span>
+        <span class="website__category">
+            {{ "Category" | t }}
+            <span class="website__categories">
+                {% assign categories = Model.ContentItem.Content.Website.Category | taxonomy_terms %}
+                {% for category in categories %}
+                    <span>{{ category | shape_build_display: "WebsiteMetaSummary" | shape_render }}{% unless forloop.last %},{% endunless %}</span>
+                {% endfor %}
+            </span>
+        </span>
+        <span class="website__url">
+            {{ "Website" | t }}
+            <a class="website__urlLink" href="{{ Model.ContentItem.Content.Website.Website.Url }}">{{ Model.ContentItem.Content.Website.Website.Text }}</a>
+        </span>
+        {% if Model.ContentItem.Content.Website.Developer.Url != null and Model.ContentItem.Content.Website.Developer.Url != "" %}
+            <span class="website__developer">
+                {{ "Developer" | t }}
+                <a class="website__developerLink" href="{{ Model.ContentItem.Content.Website.Developer.Url }}">{{ Model.ContentItem.Content.Website.Developer.Text }}</a>
+            </span>
+        {% endif %}
+    </div>
+    {% if Model.ContentItem.Content.HtmlBodyPart.Html != null %}
+        <div class="website__interview">
+            {{ Model.ContentItem.Content.HtmlBodyPart.Html | raw }}
+        </div>
+    {% endif %}
+</div>
+
+<div class="websitePager">
+    {% assign previousItem = Queries.PreviousWebsite | query: id: Model.ContentItem.Id %}
+    {% assign nextItem = Queries.NextWebsite | query: id: Model.ContentItem.Id %}
+
+    {% if previousItem.first != null %}
+        <div class="websitePager__previous">
+            <a class="websitePager__previousLink btn btn-primary" href="{{ previousItem.first | display_url }}">← {{ previousItem.first | display_text }}</a>
+        </div>
+    {% endif %}
+
+    {% if nextItem.first != null %}
+        <div class="websitePager__next">
+            <a class="websitePager__nextLink btn btn-primary" href="{{ nextItem.first | display_url }}">{{ nextItem.first | display_text }} →</a>
+        </div>
+    {% endif %}
+</div>
+
+<div class="relatedWebsites">
+    <h3 class="relatedWebsites__title">{{ "Related Websites" | t}}</h3>
+    <div class="relatedWebsites__websites">
+        {% assign relatedWebsites = Queries.RelatedWebsites | query: categoryId: Model.ContentItem.Content.Website.Category.TermContentItemIds.first, currentId: Model.ContentItem.ContentItemId %}
+        {% for item in relatedWebsites %}
+            <div class="relatedWebsites__website relatedWebsite">
+                <a class="relatedWebsite__link" href="{{ item | display_url }}">
+                    <h3 class="relatedWebsite__title">{{ item.DisplayText }}</h3>
+                    <img class="relatedWebsite__image" src="{{ item.Content.Website.Screenshot.Paths.first | asset_url }}" alt="{{ "Screenshot" | t }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>

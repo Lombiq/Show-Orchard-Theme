@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+
+@font-face {
+    font-family: Raleway;
+    src: url(#{$fonts-path}/Raleway/Raleway-VariableFont_wght.ttf) format("truetype-variations");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(#{$fonts-path}/Raleway/Raleway-Italic-VariableFont_wght.ttf) format("truetype-variations");
+    font-weight: 100 900;
+    font-style: italic;
+}

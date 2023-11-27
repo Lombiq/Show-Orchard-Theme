@@ -1,0 +1,332 @@
+{
+  "name": "ShowOrchard.Configuration",
+  "displayName": "Show Orchard - Configuration",
+  "description": "Configuration for the Show Orchard site.",
+  "author": "Lombiq",
+  "version": "1.0",
+  "categories": [ "configuration" ],
+  "tags": [ "configuration" ],
+  "steps": [
+    {
+      "name": "Settings",
+      "AuditTrailSettings": {
+        "Categories": [
+          {
+            "Name": "Content",
+            "Events": [
+              {
+                "Name": "Created",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Saved",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Published",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Unpublished",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Removed",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Cloned",
+                "Category": "Content",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Restored",
+                "Category": "Content",
+                "IsEnabled": true
+              }
+            ]
+          },
+          {
+            "Name": "User",
+            "Events": [
+              {
+                "Name": "PasswordReset",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "PasswordRecovered",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Registered",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "LoggedIn",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "LogInFailed",
+                "Category": "User",
+                "IsEnabled": false
+              },
+              {
+                "Name": "LogInIsLockedOut",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Enabled",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Disabled",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Created",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Updated",
+                "Category": "User",
+                "IsEnabled": true
+              },
+              {
+                "Name": "Deleted",
+                "Category": "User",
+                "IsEnabled": true
+              }
+            ]
+          }
+        ],
+        "ClientIpAddressAllowed": false
+      },
+      "AuditTrailTrimmingSettings": {
+        "RetentionDays": 10,
+        "LastRunUtc": null,
+        "Disabled": true
+      },
+      "ContentAuditTrailSettings": {
+        "AllowedContentTypes": [
+          "Category",
+          "Website"
+        ]
+      },
+      "AdminSettings": {
+        "DisplayDarkMode": true,
+        "DisplayMenuFilter": false,
+        "DisplayNewMenu": false,
+        "DisplayTitlesInTopbar": false
+      }
+    },
+    {
+      "name": "Settings",
+      "MaxPagedCount": 0,
+      "MaxPageSize": 100,
+      "PageSize": 10,
+      "SiteName": "Show Orchard",
+      "PageTitleFormat": "{% page_title Site.SiteName, position: \"after\", separator: \" - \" %}",
+      "HomeRoute": {
+        "Area": "OrchardCore.Contents",
+        "Controller": "Item",
+        "Action": "Display",
+        "contentItemId": "4vrvp8sctngdg22e5b0w6xxrxy"
+      },
+      "AppendVersion": true,
+      "CacheMode": 0
+    },
+    {
+      "name": "deployment",
+      "Plans": [
+        {
+          "Name": "Export content to deployment plan target",
+          "Steps": [
+            {
+              "Type": "ExportContentToDeploymentTargetDeploymentStep",
+              "Step": {
+                "Id": "4ctsrbqvm49ap77a2hnsh0z351",
+                "Name": "ExportContentToDeploymentTargetDeploymentStep"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Content Definition",
+          "Steps": [
+            {
+              "Type": "ContentDefinitionDeploymentStep",
+              "Step": {
+                "IncludeAll": false,
+                "ContentTypes": [
+                  "CategoriesMenuItem",
+                  "Category",
+                  "Website"
+                ],
+                "ContentParts": [
+                  "CategoriesMenuItem",
+                  "Category",
+                  "Website"
+                ],
+                "Id": "8b9df93d34a9496097ee2128941cfb8b",
+                "Name": "ContentDefinition"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Content Items",
+          "Steps": [
+            {
+              "Type": "ContentDeploymentStep",
+              "Step": {
+                "ContentTypes": [
+                  "Menu",
+                  "Page",
+                  "Taxonomy"
+                ],
+                "ExportAsSetupRecipe": false,
+                "Id": "c2f72459c9ee4f4e8e522fba11088e5e",
+                "Name": "ContentDeploymentStep"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Configuration",
+          "Steps": [
+            {
+              "Type": "AuditTrailSettings_SiteSettingsPropertyDeploymentStep",
+              "Step": {
+                "Id": "faec0c008c5e4b6f812f9af361eb273e",
+                "Name": "AuditTrailSettings_SiteSettingsPropertyDeploymentStep"
+              }
+            },
+            {
+              "Type": "AuditTrailTrimmingSettings_SiteSettingsPropertyDeploymentStep",
+              "Step": {
+                "Id": "6364687d44894834bb6288f94358a858",
+                "Name": "AuditTrailTrimmingSettings_SiteSettingsPropertyDeploymentStep"
+              }
+            },
+            {
+              "Type": "ContentAuditTrailSettings_SiteSettingsPropertyDeploymentStep",
+              "Step": {
+                "Id": "858c18c45ce24bdb9d431ccaea0e1cdc",
+                "Name": "ContentAuditTrailSettings_SiteSettingsPropertyDeploymentStep"
+              }
+            },
+            {
+              "Type": "AdminSettings_SiteSettingsPropertyDeploymentStep",
+              "Step": {
+                "Id": "316b4adcad9046639a75fb21827ec835",
+                "Name": "AdminSettings_SiteSettingsPropertyDeploymentStep"
+              }
+            },
+            {
+              "Type": "SiteSettingsDeploymentStep",
+              "Step": {
+                "Settings": [
+                  "MaxPagedCount",
+                  "MaxPageSize",
+                  "PageSize",
+                  "SiteName",
+                  "PageTitleFormat",
+                  "HomeRoute",
+                  "AppendVersion",
+                  "CacheMode"
+                ],
+                "Id": "679962efadb643b5b599b7d99aa4be76",
+                "Name": "SiteSettings"
+              }
+            },
+            {
+              "Type": "DeploymentPlanDeploymentStep",
+              "Step": {
+                "IncludeAll": true,
+                "DeploymentPlanNames": [],
+                "Id": "e61f40396da0462d872565d76a3ede27",
+                "Name": "DeploymentPlan"
+              }
+            },
+            {
+              "Type": "AdminMenuDeploymentStep",
+              "Step": {
+                "Id": "2230792c6b38444da2982069781bed99",
+                "Name": "AdminMenu"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Queries",
+          "Steps": [
+            {
+              "Type": "AllQueriesDeploymentStep",
+              "Step": {
+                "Id": "87d3f48aa9c549c997e7107b0c7bca37",
+                "Name": "AllQueries"
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Export All Content And Media",
+          "Steps": [
+            {
+              "Type": "AllContentDeploymentStep",
+              "Step": {
+                "ExportAsSetupRecipe": false,
+                "Id": "6aa05b5fb0fa4f00ae2244ed835ac215",
+                "Name": "AllContent"
+              }
+            },
+            {
+              "Type": "MediaDeploymentStep",
+              "Step": {
+                "IncludeAll": false,
+                "FilePaths": [],
+                "DirectoryPaths": [
+                  "Gallery"
+                ],
+                "Id": "d23a50c9a09b4fc88afee09461be1301",
+                "Name": "Media"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Roles",
+      "Roles": [
+        {
+          "Name": "Authenticated",
+          "Description": "Authenticated role",
+          "Permissions": [
+            "ViewContent"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Description": "Anonymous role",
+          "Permissions": [
+            "ViewContent"
+          ]
+        }
+      ]
+    }
+  ]
+}

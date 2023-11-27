@@ -1,0 +1,50 @@
+// Show Orchard colors
+$so-color-mine-shaft: #333;
+$so-color-cape-cod: #4a4f50;
+$so-color-outer-space: #2d3233;
+$so-color-lunar-green: #3e443d;
+$so-color-blue-zodiac: #152c60;
+$so-color-st-tropaz: #23489f;
+$so-color-dusty-gray: #9c9c9c;
+$so-color-bud: #5d605c;
+$so-color-pumice: #bbc3ba;
+$so-color-saltpan: #ebf3ea;
+$so-color-alto: #d4d4d4;
+$so-color-gallery: #eee;
+$so-color-white: #fefefe;
+
+// Show Orchard paths
+$base-path: "../" !default;
+$images-path: "#{$base-path}images" !default;
+$fonts-path: "#{$base-path}fonts" !default;
+
+// Bootstrap overrides.
+$container-max-widths: (
+    sm: 750px,
+    lg: 830px,
+    xl: 870px,
+);
+$link-color: $so-color-st-tropaz;
+$body-color: $so-color-mine-shaft;
+$grid-gutter-width: 1.875rem;
+$spacer: 1.5rem;
+$enable-rfs: false;
+$font-family-base: "Raleway", sans-serif;
+$font-size-base: 1.0625rem;
+$font-size-sm: 0.875rem;
+$line-height-base: 1.7;
+$headings-font-weight: 700;
+$headings-line-height: 1.4;
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.375rem;
+$link-decoration: underline;
+$list-group-border-width: 0;
+$list-group-item-padding-y: 0;
+$list-group-item-padding-x: 0;
+
+// Custom variables
+$spacer-large: $spacer * 2;
+$spacer-small: calc($spacer / 2);
+$gutter: $grid-gutter-width;
+$gutter-small: calc($gutter / 2);

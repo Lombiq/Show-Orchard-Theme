@@ -1,0 +1,34 @@
+.websitePager {
+    display: table;
+    width: 100%;
+    margin-bottom: $spacer;
+
+    &__previous, &__next {
+        margin-bottom: $spacer;
+    }
+
+    &__previous {
+        float: left;
+    }
+
+    &__next {
+        float: right;
+    }
+
+    .btn-primary {
+        --bs-btn-color: #{$so-color-mine-shaft};
+        --bs-btn-bg: #{$so-color-gallery};
+        --bs-btn-border-color: #{$so-color-gallery};
+        --bs-btn-hover-color: #{$so-color-mine-shaft};
+        --bs-btn-hover-bg: #{$so-color-alto};
+        --bs-btn-hover-border-color: #{$so-color-alto};
+        --bs-btn-active-color: #{$so-color-mine-shaft};
+        --bs-btn-active-bg: #{$so-color-alto};
+        --bs-btn-active-border-color: #{$so-color-alto};
+        --bs-btn-border-radius: 0;
+        --bs-btn-padding: 16px;
+        --bs-btn-padding-y: 12px;
+        --bs-btn-font-size: 17px;
+        --bs-btn-font-weight: 700;
+    }
+}

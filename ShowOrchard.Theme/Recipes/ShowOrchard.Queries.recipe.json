@@ -1,0 +1,72 @@
+{
+  "name": "ShowOrchard.Queries",
+  "displayName": "Show Orchard - Queries",
+  "description": "Queries for the Show Orchard site.",
+  "author": "Lombiq",
+  "version": "1.0",
+  "categories": [ "content" ],
+  "tags": [ "query" ],
+  "steps": [
+    {
+      "name": "Queries",
+      "Queries": [
+        {
+          "Template": "select DocumentId from ContentItemIndex where Published = true and ContentType = 'Website' and CreatedUtc < (select CreatedUtc from ContentItemIndex where DocumentId = @id limit 1) order by CreatedUtc desc limit 1",
+          "ReturnDocuments": true,
+          "Name": "PreviousWebsite",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "select DocumentId from ContentItemIndex where Published = true and ContentType = 'Website' and CreatedUtc > (select CreatedUtc from ContentItemIndex where DocumentId = @id limit 1) order by CreatedUtc limit 1",
+          "ReturnDocuments": true,
+          "Name": "NextWebsite",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "select DocumentId from TaxonomyIndex where Published = 1 and ContentType = 'Website' and ContentField = 'Category' and TermContentItemId = @categoryId and ContentItemId <> @currentId order by DocumentId desc limit 6",
+          "ReturnDocuments": true,
+          "Name": "RelatedWebsites",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "select DocumentId from ContentItemIndex where ContentType = 'Website' and Published = 1 order by CreatedUtc desc limit {{ limit | default: 10 }} offset {{ offset | default: 0 }}",
+          "ReturnDocuments": true,
+          "Name": "Websites",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "select count(DocumentId) as WebsitesCount from ContentItemIndex where ContentType = 'Website' and Published = 1",
+          "ReturnDocuments": false,
+          "Name": "WebsitesCount",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "select DocumentId from ContentItemIndex where Published = 1 and ContentItemId = '40z1s1vqgrkzqrbaaw1a913kcr'",
+          "ReturnDocuments": true,
+          "Name": "CategoryTaxonomy",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "select DocumentId from BooleanFieldIndex where ContentType = 'Website' and Published = 1 and ContentField = 'Interview' and Boolean = 1 order by DocumentId desc ",
+          "ReturnDocuments": true,
+          "Name": "Interviews",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "select count(DocumentId) as WebsitesCount from BooleanFieldIndex where ContentType = 'Website' and Published = 1 and ContentField = 'Interview' and Boolean = 1",
+          "ReturnDocuments": false,
+          "Name": "InterviewsCount",
+          "Source": "Sql",
+          "Schema": null
+        }
+      ]
+    }
+  ]
+}

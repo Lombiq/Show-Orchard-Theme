@@ -1,0 +1,57 @@
+@import "../abstracts/variables";
+
+.website {
+    margin-bottom: $spacer;
+
+    &__image {
+        width: 100%;
+        margin-bottom: $spacer;
+    }
+
+    &__meta {
+        margin-bottom: $spacer;
+        font-size: $font-size-sm;
+        line-height: 1.95;
+        color: $so-color-mine-shaft;
+
+        a {
+            text-decoration: none;
+            font-weight: 700;
+            color: $so-color-mine-shaft;
+        }
+
+        &::before {
+            display: block;
+            content: " ";
+            width: 15px;
+            height: 2px;
+            background: $so-color-alto;
+            margin-bottom: 15px;
+            position: relative;
+        }
+    }
+
+    &__category, &__url, &__developer {
+        &::before {
+            content: "/";
+            display: inline-block;
+            margin: 0 9px 0 4px;
+            font-weight: 400;
+            color: $so-color-mine-shaft;
+        }
+    }
+
+    &__interview {
+        margin-bottom: $spacer;
+    }
+}
+
+.websiteSummary {
+    margin-bottom: $spacer-large;
+
+    &__link {
+        &, &:visited, &:hover, &:active {
+            text-decoration: none;
+        }
+    }
+}

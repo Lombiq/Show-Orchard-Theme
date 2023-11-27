@@ -1,0 +1,6 @@
+<div class="websiteSummary">
+    <a class="websiteSummary__link" href="{{ Model.ContentItem | display_url }}">
+        <h2 class="websiteSummary__title">{{ Model.ContentItem.DisplayText }}</h2>
+        <img class="websiteSummary__image w-100" src="{{ Model.ContentItem.Content.Website.Screenshot.Paths.first | asset_url }}" alt="{{ "Screenshot" | t }}">
+    </a>
+</div>

@@ -30,7 +30,10 @@
     }
 
     &__link {
-        &, &:visited, &:hover, &:active {
+        &,
+        &:visited,
+        &:hover,
+        &:active {
             text-decoration: none;
         }
     }

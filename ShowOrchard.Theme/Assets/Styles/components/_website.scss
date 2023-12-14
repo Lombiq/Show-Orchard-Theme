@@ -31,7 +31,9 @@
         }
     }
 
-    &__category, &__url, &__developer {
+    &__category,
+    &__url,
+    &__developer {
         &::before {
             content: "/";
             display: inline-block;
@@ -50,7 +52,10 @@
     margin-bottom: $spacer-large;
 
     &__link {
-        &, &:visited, &:hover, &:active {
+        &,
+        &:visited,
+        &:hover,
+        &:active {
             text-decoration: none;
         }
     }

@@ -18,13 +18,17 @@ $so-footer-link-color: #{$so-color-alto};
         color: $so-footer-link-color;
     }
 
-    &__copyrightAndSignIn, &__copyright, &__widgets, &__signIn {
+    &__copyrightAndSignIn,
+    &__copyright,
+    &__widgets,
+    &__signIn {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
 
-    &__copyright, &__widgets {
+    &__copyright,
+    &__widgets {
         padding: {
             top: $spacer;
         }

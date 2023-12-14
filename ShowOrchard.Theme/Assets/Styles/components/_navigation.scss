@@ -59,7 +59,9 @@ $so-navigation-toggler-size: 22px;
 
         position: relative;
 
-        &, &::before, &::after {
+        &,
+        &::before,
+        &::after {
             display: block;
             width: 100%;
             height: 2px;
@@ -67,7 +69,8 @@ $so-navigation-toggler-size: 22px;
             transition: transform 0.1s ease;
         }
 
-        &::before, &::after {
+        &::before,
+        &::after {
             content: " ";
             position: absolute;
         }
@@ -106,13 +109,7 @@ $so-navigation-toggler-size: 22px;
         border-bottom: 1px solid $so-navigation-menu-border-color;
 
         &Link {
-            padding: {
-                top: $spacer-small;
-                bottom: $spacer-small;
-                left: $gutter-small;
-                right: $gutter-small;
-            }
-
+            padding: $spacer-small $gutter-small $spacer-small $gutter-small;
             color: $so-navigation-menu-color;
             font-weight: 700;
         }
@@ -149,7 +146,8 @@ $so-navigation-toggler-size: 22px;
                 }
             }
 
-            &.active .subMenu__menuItem.active, .subMenu__menuItem:hover {
+            &.active .subMenu__menuItem.active,
+            .subMenu__menuItem:hover {
                 background-color: $so-navigation-active-opened-menu-bg-color;
                 color: $so-navigation-opened-menu-item-color;
             }
@@ -180,11 +178,13 @@ $so-navigation-toggler-size: 22px;
         }
 
         &.active {
-            .menu__menuItemLink[aria-expanded="false"], .menu__menuItemLink:not([aria-expanded]) {
+            .menu__menuItemLink[aria-expanded="false"],
+            .menu__menuItemLink:not([aria-expanded]) {
                 color: $so-navigation-active-menu-color;
 
                 .menu__menuItemLinkCaret {
-                    &::before, &::after {
+                    &::before,
+                    &::after {
                         background-color: $so-navigation-active-menu-color;
                     }
                 }
@@ -234,7 +234,8 @@ $so-navigation-toggler-size: 22px;
             &__menuItemLink {
                 padding: $spacer-small $gutter-small;
 
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     background-color: $so-navigation-hover-menu-bg-color;
                 }
             }

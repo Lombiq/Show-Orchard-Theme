@@ -72,7 +72,7 @@
     <Target Name="MediaThemeDeploymentAfterTargets" AfterTargets="NpmDotnetPrebuild" />
 
     <PropertyGroup>
-        <!-- This must be defined after the Lombiq.Hosting.MediaTheme.Targets import to override property. -->
+        <!-- This must be defined after the Lombiq.Hosting.MediaTheme.Targets import to override the property. -->
         <MediaThemeRecipeFileName>ShowOrchard.MediaTheme</MediaThemeRecipeFileName>
         <MediaThemeBaseId>Lombiq.BaseTheme</MediaThemeBaseId>
     </PropertyGroup>

@@ -1,0 +1,1 @@
+media-theme-deploy --path . --base-id Lombiq.BaseTheme --clear true --deployment-path .\Deployment

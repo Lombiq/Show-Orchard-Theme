@@ -47,7 +47,7 @@ public class CategoryOrchardExportConverter : IOrchardExportConverter
         }
 
         importedTerms.RemoveAll(existingTerms.Contains);
-        if (importedTerms.Any())
+        if (importedTerms.Count != 0)
         {
             category.Alter<TaxonomyPart>(part => part.Terms.AddRange(importedTerms));
             contentItems.Add(category);

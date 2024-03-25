@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
         <DefaultItemExcludes>$(DefaultItemExcludes);.git*;node_modules\**</DefaultItemExcludes>
     </PropertyGroup>
@@ -15,11 +15,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="OrchardCore.Theme.Targets" Version="1.7.0" />
-        <PackageReference Include="OrchardCore.ContentManagement" Version="1.7.0" />
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.0" />
-        <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.0" />
-        <PackageReference Include="OrchardCore.Taxonomies" Version="1.7.0" />
+        <PackageReference Include="OrchardCore.Theme.Targets" Version="1.8.2" />
+        <PackageReference Include="OrchardCore.ContentManagement" Version="1.8.2" />
+        <PackageReference Include="OrchardCore.DisplayManagement" Version="1.8.2" />
+        <PackageReference Include="OrchardCore.ResourceManagement" Version="1.8.2" />
+        <PackageReference Include="OrchardCore.Taxonomies" Version="1.8.2" />
     </ItemGroup>
 
     <PropertyGroup>
@@ -41,11 +41,11 @@
     </ImportGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqHelpfulExtensionsPath))">
-        <PackageReference Include="Lombiq.HelpfulExtensions" Version="7.0.2" />
+        <PackageReference Include="Lombiq.HelpfulExtensions" Version="8.0.0" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqNodeJsExtensionsPath))">
-        <PackageReference Include="Lombiq.NodeJs.Extensions" Version="1.3.2" />
+        <PackageReference Include="Lombiq.NodeJs.Extensions" Version="2.1.0" />
     </ItemGroup>
 
     <PropertyGroup>
@@ -56,8 +56,8 @@
 
     <ItemGroup>
         <ProjectReference Condition="Exists($(LombiqHostingMediaThemePath))" Include="$(LombiqHostingMediaThemePath)" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="5.0.0" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="5.0.0" />
+        <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="6.0.0" />
+        <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="6.0.0" />
     </ItemGroup>
 
     <ItemGroup>

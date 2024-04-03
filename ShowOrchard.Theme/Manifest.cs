@@ -8,8 +8,8 @@ using OrchardCore.DisplayManagement.Manifest;
     Version = "0.0.1",
     Description = "ShowOrchard.Theme",
     BaseTheme = "Lombiq.BaseTheme",
-    Dependencies = new[]
-    {
+    Dependencies =
+    [
         FeatureNames.MediaThemeBridge,
-    }
+    ]
 )]

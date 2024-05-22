@@ -25,15 +25,15 @@
 </head>
 <body dir="{{ Culture.Dir }}">
 <header class="header">
-    <nav class="header__navigation navigation">
+    <nav class="header__navigation navigation" aria-label="{{ "Main navigation" | t }}">
         <div class="navigation__container container d-flex justify-content-between">
             <a class="navigation__logo" href="{{ "~/" | href }}">Show Orchard</a>
-            <button class="navigation__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenuContainer" aria-label="Toggle navigation">
+            <button class="navigation__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenuContainer" aria-label="{{ "Toggle navigation" | t }}">
                 <span class="navigation__togglerIcon"></span>
             </button>
         </div>
         <div class="navigation__menuContainer container collapse" id="mainMenuContainer">
-            {% shape "menu", alias: "alias:main-menu" %}
+            {% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_duration: "00:05:00", cache_tag: "alias:main-menu" %}
         </div>
     </nav>
 </header>

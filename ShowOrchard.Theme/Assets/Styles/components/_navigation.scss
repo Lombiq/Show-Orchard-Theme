@@ -10,7 +10,7 @@ $so-navigation-opened-menu-item-color: #{$so-color-saltpan};
 $so-navigation-active-menu-color: #{$so-color-lunar-green};
 $so-navigation-active-opened-menu-bg-color: #{$so-color-cape-cod};
 $so-navigation-hover-menu-bg-color: #{$so-color-pumice};
-$so-navigation-toggler-size: 22px;
+$so-navigation-toggler-size: 24px;
 
 .navigation {
     background-color: $so-navigation-bg-color;
@@ -48,8 +48,9 @@ $so-navigation-toggler-size: 22px;
 
     &__toggler {
         display: block;
-        width: 22px;
-        height: 22px;
+        min-width: $so-navigation-toggler-size;
+        width: $so-navigation-toggler-size;
+        height: $so-navigation-toggler-size;
     }
 
     &__togglerIcon {

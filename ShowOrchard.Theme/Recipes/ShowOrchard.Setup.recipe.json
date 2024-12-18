@@ -153,10 +153,6 @@
         {
           "executionid": "DotNest.Core.SDK.Web",
           "name": "ShowOrchard.ContentItems"
-        },
-        {
-          "executionid": "DotNest.Core.SDK.Web",
-          "name": "ShowOrchard.MediaTheme"
         }
       ]
     }

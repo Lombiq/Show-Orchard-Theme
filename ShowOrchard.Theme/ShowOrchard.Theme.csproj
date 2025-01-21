@@ -4,7 +4,6 @@
         <TargetFramework>net8.0</TargetFramework>
         <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
         <DefaultItemExcludes>$(DefaultItemExcludes);.git*;node_modules\**;Deployment\**</DefaultItemExcludes>
-        <OrchardCoreVersion>2.1.0</OrchardCoreVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,11 +15,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="OrchardCore.Theme.Targets" Version="$(OrchardCoreVersion)" />
-        <PackageReference Include="OrchardCore.ContentManagement" Version="$(OrchardCoreVersion)" />
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="$(OrchardCoreVersion)" />
-        <PackageReference Include="OrchardCore.ResourceManagement" Version="$(OrchardCoreVersion)" />
-        <PackageReference Include="OrchardCore.Taxonomies" Version="$(OrchardCoreVersion)" />
+        <PackageReference Include="OrchardCore.Theme.Targets" Version="2.1.0" />
+        <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.0" />
+        <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.0" />
+        <PackageReference Include="OrchardCore.ResourceManagement" Version="2.1.0" />
+        <PackageReference Include="OrchardCore.Taxonomies" Version="2.1.0" />
     </ItemGroup>
 
     <PropertyGroup>

@@ -1,0 +1,74 @@
+{
+  "name": "ShowOrchard.MediaTheme",
+  "displayName": "Media Theme",
+  "description": "A recipe created with the media-theme-deployment tool.",
+  "author": "",
+  "website": "",
+  "version": "",
+  "issetuprecipe": false,
+  "categories": [],
+  "tags": [],
+  "steps": [
+    {
+      "name": "Feature",
+      "enable": [
+        "Lombiq.Hosting.MediaTheme.Bridge",
+        "Lombiq.Hosting.MediaTheme"
+      ]
+    },
+    {
+      "name": "Themes",
+      "Site": "Lombiq.Hosting.MediaTheme"
+    },
+    {
+      "name": "mediatheme",
+      "ClearMediaThemeFolder": true,
+      "BaseThemeId": "Lombiq.BaseTheme"
+    },
+    {
+      "name": "media",
+      "Files": [
+        {
+          "SourcePath": "_MediaTheme/Templates/Content_CategoriesMenuSummary__CategoryTerm.liquid",
+          "TargetPath": "_MediaTheme/Templates/Content_CategoriesMenuSummary__CategoryTerm.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/Content_Summary__Website.liquid",
+          "TargetPath": "_MediaTheme/Templates/Content_Summary__Website.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/Content_WebsiteMetaSummary__CategoryTerm.liquid",
+          "TargetPath": "_MediaTheme/Templates/Content_WebsiteMetaSummary__CategoryTerm.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/Content__Website.liquid",
+          "TargetPath": "_MediaTheme/Templates/Content__Website.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/Layout.liquid",
+          "TargetPath": "_MediaTheme/Templates/Layout.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/menu.liquid",
+          "TargetPath": "_MediaTheme/Templates/menu.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/MenuItemLink__LinkMenuItem.liquid",
+          "TargetPath": "_MediaTheme/Templates/MenuItemLink__LinkMenuItem.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/MenuItem__CategoriesMenuItem.liquid",
+          "TargetPath": "_MediaTheme/Templates/MenuItem__CategoriesMenuItem.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/MenuItem__LinkMenuItem.liquid",
+          "TargetPath": "_MediaTheme/Templates/MenuItem__LinkMenuItem.liquid"
+        },
+        {
+          "SourcePath": "_MediaTheme/Templates/Metas.liquid",
+          "TargetPath": "_MediaTheme/Templates/Metas.liquid"
+        }
+      ]
+    }
+  ]
+}

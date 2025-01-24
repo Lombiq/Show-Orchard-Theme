@@ -29,6 +29,218 @@
       "name": "media",
       "Files": [
         {
+          "SourcePath": "_MediaTheme/Assets/css/site.css",
+          "TargetPath": "_MediaTheme/Assets/css/site.css"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/css/site.css.map",
+          "TargetPath": "_MediaTheme/Assets/css/site.css.map"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/css/site.min.css",
+          "TargetPath": "_MediaTheme/Assets/css/site.min.css"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/show-orchard-logo-tagline-100h.png",
+          "TargetPath": "_MediaTheme/Assets/images/show-orchard-logo-tagline-100h.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/show-orchard-logo-tagline-40h.png",
+          "TargetPath": "_MediaTheme/Assets/images/show-orchard-logo-tagline-40h.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/show-orchard-logo-tagline-60h.png",
+          "TargetPath": "_MediaTheme/Assets/images/show-orchard-logo-tagline-60h.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/show-orchard-logo-tagline.png",
+          "TargetPath": "_MediaTheme/Assets/images/show-orchard-logo-tagline.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/OFL.txt",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/OFL.txt"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/Raleway-VariableFont_wght.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/Raleway-VariableFont_wght.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/README.txt",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/README.txt"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-144x144.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-144x144.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-192x192.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-192x192.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-256x256.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-256x256.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-36x36.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-36x36.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-384x384.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-384x384.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-48x48.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-48x48.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-512x512.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-512x512.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-72x72.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-72x72.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/android-chrome-96x96.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/android-chrome-96x96.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-114x114.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-114x114.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-120x120.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-120x120.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-144x144.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-144x144.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-152x152.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-152x152.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-180x180.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-180x180.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-57x57.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-57x57.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-60x60.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-60x60.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-72x72.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-72x72.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon-76x76.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon-76x76.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/apple-icon.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/apple-icon.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/favicon.ico",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/favicon.ico"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/ms-icon-144x144.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/ms-icon-144x144.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/ms-icon-150x150.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/ms-icon-150x150.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/ms-icon-310x310.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/ms-icon-310x310.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/images/Favicons/ms-icon-70x70.png",
+          "TargetPath": "_MediaTheme/Assets/images/Favicons/ms-icon-70x70.png"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Black.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Black.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-BlackItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-BlackItalic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Bold.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Bold.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-BoldItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-BoldItalic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraBold.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraBold.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraBoldItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraBoldItalic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraLight.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraLight.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraLightItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ExtraLightItalic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Italic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Italic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Light.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Light.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-LightItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-LightItalic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Medium.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Medium.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-MediumItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-MediumItalic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Regular.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Regular.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-SemiBold.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-SemiBold.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-SemiBoldItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-SemiBoldItalic.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Thin.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-Thin.ttf"
+        },
+        {
+          "SourcePath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ThinItalic.ttf",
+          "TargetPath": "_MediaTheme/Assets/fonts/Raleway/static/Raleway-ThinItalic.ttf"
+        },
+        {
           "SourcePath": "_MediaTheme/Templates/Content_CategoriesMenuSummary__CategoryTerm.liquid",
           "TargetPath": "_MediaTheme/Templates/Content_CategoriesMenuSummary__CategoryTerm.liquid"
         },

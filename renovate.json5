@@ -1,0 +1,17 @@
+{
+    '$schema': 'https://docs.renovatebot.com/renovate-schema.json',
+    'extends': ['github>Lombiq/renovate-config:default-orchard-core-submodule.json5'],
+    packageRules: [
+        // ESLint-related dependencies should be updated together.
+        {
+            groupName: 'ESLint Updates',
+            matchPackageNames: [
+                'eslint',
+                'eslint-plugin-import',
+                'eslint-plugin-promise',
+                'eslint-plugin-node',
+                'eslint-plugin-n',
+            ],
+        },
+    ],
+}

@@ -1,17 +1,10 @@
 // Show Orchard colors
-$so-color-mine-shaft: #333;
-$so-color-cape-cod: #4a4f50;
-$so-color-outer-space: #2d3233;
-$so-color-lunar-green: #3e443d;
-$so-color-blue-zodiac: #152c60;
-$so-color-st-tropaz: #23489f;
-$so-color-dusty-gray: #9c9c9c;
-$so-color-bud: #5d605c;
-$so-color-pumice: #bbc3ba;
-$so-color-saltpan: #ebf3ea;
-$so-color-alto: #d4d4d4;
-$so-color-gallery: #eee;
-$so-color-white: #fefefe;
+$so-color-primary: #23489f; // Lombiq blue
+$so-color-red: #ff4b55; // Lombiq red
+$so-color-green: #7ac943; // Lombiq green
+$so-color-blue: #00b6e6; // Lombiq light blue
+$so-color-text: #333; // Dark gray for text
+$so-color-background: #fff; // White background
 
 // Show Orchard paths
 $base-path: "../" !default;
@@ -24,8 +17,8 @@ $container-max-widths: (
     lg: 830px,
     xl: 870px,
 );
-$link-color: $so-color-st-tropaz;
-$body-color: $so-color-mine-shaft;
+$link-color: $so-color-primary;
+$body-color: $so-color-text;
 $grid-gutter-width: 1.875rem;
 $spacer: 1.5rem;
 $enable-rfs: false;

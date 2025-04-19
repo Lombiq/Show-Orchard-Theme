@@ -27,7 +27,9 @@
 <header class="header">
     <nav class="header__navigation navigation" aria-label="{{ "Main navigation" | t }}">
         <div class="navigation__container container d-flex justify-content-between">
-            <a class="navigation__logo" href="{{ "~/" | href }}">Show Orchard</a>
+            <a class="navigation__logo" href="{{ "~/" | href }}">
+                <img src="{{ "~/ShowOrchard.Theme/Assets/Images/lombiq-logo.png" | href }}" alt="Lombiq" height="40">
+            </a>
             <button class="navigation__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenuContainer" aria-label="{{ "Toggle navigation" | t }}">
                 <span class="navigation__togglerIcon"></span>
             </button>

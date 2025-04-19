@@ -21,4 +21,3 @@ jobs:
       CHECKOUT_TOKEN: ${{ secrets.LOMBIQBOT_GITHUB_PERSONAL_ACCESS_TOKEN }}
     with:
         additional-reviewers: DemeSzabolcs
-        log-level: debug

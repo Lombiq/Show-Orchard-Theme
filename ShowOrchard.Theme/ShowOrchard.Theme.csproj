@@ -41,7 +41,7 @@
     </ImportGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqHelpfulExtensionsPath))">
-        <PackageReference Include="Lombiq.HelpfulExtensions" Version="10.0.0" />
+        <PackageReference Include="Lombiq.HelpfulExtensions" Version="10.0.1-alpha.0.osoe-935" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqNodeJsExtensionsPath))">
@@ -56,8 +56,8 @@
 
     <ItemGroup>
         <ProjectReference Condition="Exists($(LombiqHostingMediaThemePath))" Include="$(LombiqHostingMediaThemePath)" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="8.0.0" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="8.0.0" />
+        <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="8.0.1-alpha.1.nest-562" />
+        <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="8.0.1-alpha.1.nest-562" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,6 +1,6 @@
 {
-  "name": "ShowOrchard.Setup",
-  "displayName": "Show Orchard - Setup (Base)",
+  "name": "ShowOrchard.MediaTheme.Setup",
+  "displayName": "Show Orchard - Media Theme - Setup (Base)",
   "description": "Setup recipe for Show Orchard.",
   "author": "Lombiq",
   "website": "https://www.showorchard.com",
@@ -18,10 +18,6 @@
           "name": "ShowOrchard.Common"
         }
       ]
-    },
-    {
-      "name": "themes",
-      "site": "ShowOrchard.Theme"
     }
   ]
 }

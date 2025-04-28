@@ -19,5 +19,3 @@ jobs:
     uses: Lombiq/GitHub-Actions/.github/workflows/renovate.yml@dev
     secrets:
       CHECKOUT_TOKEN: ${{ secrets.LOMBIQBOT_GITHUB_PERSONAL_ACCESS_TOKEN }}
-    with:
-        additional-reviewers: DemeSzabolcs

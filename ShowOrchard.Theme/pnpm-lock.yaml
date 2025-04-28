@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  nodejs-extensions: link:node_modules/.nx
+  nodejs-extensions: link:../../../../../../../node_modules/.nx
 
 importers:
 
@@ -15,8 +15,8 @@ importers:
         specifier: 5.3.5
         version: 5.3.5(@popperjs/core@2.11.8)
       nodejs-extensions:
-        specifier: link:node_modules/.nx
-        version: link:node_modules/.nx
+        specifier: link:../../../../../../../node_modules/.nx
+        version: link:../../../../../../../node_modules/.nx
     devDependencies:
       eslint:
         specifier: 8.47.0

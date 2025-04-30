@@ -4,4 +4,13 @@
     'prBodyNotes': [
         '@Lombiq/dotnest-sites-renovate-notification-recipients',
     ],
+    packageRules: [
+        // ESLint-related dependencies should be updated together.
+        {
+            groupName: 'ESLint Updates',
+            matchPackageNames: [
+                'eslint*',
+            ],
+        },
+    ],
 }

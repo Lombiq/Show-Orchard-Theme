@@ -9,8 +9,8 @@ overrides:
 
 dependencies:
   bootstrap:
-    specifier: 5.3.5
-    version: 5.3.5(@popperjs/core@2.11.8)
+    specifier: 5.3.6
+    version: 5.3.6(@popperjs/core@2.11.8)
   nodejs-extensions:
     specifier: link:node_modules/.nx
     version: link:node_modules/.nx
@@ -357,8 +357,8 @@ packages:
       - supports-color
     dev: true
 
-  /bootstrap@5.3.5(@popperjs/core@2.11.8):
-    resolution: {integrity: sha512-ct1CHKtiobRimyGzmsSldEtM03E8fcEX4Tb3dGXz1V8faRwM50+vfHwTzOxB3IlKO7m+9vTH3s/3C6T2EAPeTA==}
+  /bootstrap@5.3.6(@popperjs/core@2.11.8):
+    resolution: {integrity: sha512-jX0GAcRzvdwISuvArXn3m7KZscWWFAf1MKBcnzaN02qWMb3jpMoUX4/qgeiGzqyIb4ojulRzs89UCUmGcFSzTA==}
     peerDependencies:
       '@popperjs/core': ^2.11.8
     dependencies:

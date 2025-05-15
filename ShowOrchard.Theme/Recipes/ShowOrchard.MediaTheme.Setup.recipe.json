@@ -1,7 +1,7 @@
 {
-  "name": "ShowOrchard.Development.Setup",
-  "displayName": "Show Orchard - Development - Setup",
-  "description": "Development setup recipe for Show Orchard.",
+  "name": "ShowOrchard.MediaTheme.Setup",
+  "displayName": "Show Orchard - Media Theme - Setup (Base)",
+  "description": "Setup recipe for Show Orchard.",
   "author": "Lombiq",
   "website": "https://www.showorchard.com",
   "version": "1.0",
@@ -15,11 +15,7 @@
       "Values": [
         {
           "executionid": "DotNest.Core.SDK.Web",
-          "name": "ShowOrchard.Setup"
-        },
-        {
-          "executionid": "DotNest.Core.SDK.Web",
-          "name": "ShowOrchard.Development.Common"
+          "name": "ShowOrchard.Common"
         }
       ]
     }

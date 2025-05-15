@@ -29,13 +29,7 @@
     }
   },
   "dependencies": {
-    "bootstrap": "5.3.6",
-    "nodejs-extensions": "link:node_modules/.nx"
-  },
-  "pnpm": {
-    "overrides": {
-      "nodejs-extensions": "link:node_modules/.nx"
-    }
+    "bootstrap": "5.3.6"
   },
   "devDependencies": {
     "eslint": "9.26.0",

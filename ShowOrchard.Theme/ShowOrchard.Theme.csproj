@@ -41,7 +41,7 @@
     </ImportGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqHelpfulExtensionsPath))">
-        <PackageReference Include="Lombiq.HelpfulExtensions" Version="10.0.1-alpha.0.osoe-935" />
+        <PackageReference Include="Lombiq.HelpfulExtensions" Version="11.0.0" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqNodeJsExtensionsPath))">

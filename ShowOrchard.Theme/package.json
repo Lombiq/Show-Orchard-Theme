@@ -32,11 +32,11 @@
     "bootstrap": "5.3.7"
   },
   "devDependencies": {
-    "eslint": "9.34.0",
+    "eslint": "9.36.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-n": "17.21.3",
-    "eslint-plugin-n": "17.21.3",
+    "eslint-plugin-n": "17.23.1",
     "eslint-plugin-only-warn": "1.1.0",
     "eslint-plugin-promise": "7.2.1"
   }

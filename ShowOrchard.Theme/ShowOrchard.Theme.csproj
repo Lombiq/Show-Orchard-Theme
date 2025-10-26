@@ -45,7 +45,7 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqNodeJsExtensionsPath))">
-        <PackageReference Include="Lombiq.NodeJs.Extensions" Version="2.2.0" />
+        <PackageReference Include="Lombiq.NodeJs.Extensions" Version="3.0.0" />
     </ItemGroup>
 
     <PropertyGroup>

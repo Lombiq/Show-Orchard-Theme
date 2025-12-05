@@ -3,9 +3,9 @@ name: Renovate
 on:
   # Run manually.
   workflow_dispatch:
-  # Run on the first Sunday of every month.
+  # Run on the 5th of every month.
   schedule:
-    - cron: 0 4 1-7 * 0
+    - cron: 0 4 5 * *
   # Run on pushes to dev when the Renovate configuration changes.
   push:
     branches:

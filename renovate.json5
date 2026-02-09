@@ -4,6 +4,9 @@
     'prBodyNotes': [
         '@Lombiq/dotnest-sites-renovate-notification-recipients',
     ],
+    addLabels: [
+        'no-jira-community-activity-issue',
+    ],
     packageRules: [
         // ESLint-related dependencies should be updated together.
         {

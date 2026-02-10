@@ -8,12 +8,13 @@
         'no-jira-community-activity-issue',
     ],
     packageRules: [
-        // ESLint-related dependencies should be updated together.
+        // We keep ESLint as-is, since Node.js Extensions won't be updated anymore.
         {
             groupName: 'ESLint Updates',
             matchPackageNames: [
                 'eslint*',
             ],
+            enabled: false,
         },
     ],
 }

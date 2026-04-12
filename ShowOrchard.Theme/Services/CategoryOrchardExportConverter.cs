@@ -20,13 +20,13 @@ public class CategoryOrchardExportConverter : IOrchardExportConverter
     public async Task UpdateContentItemsAsync(XDocument document, IList<ContentItem> contentItems)
     {
         var category = await _contentManager.GetAsync("40z1s1vqgrkzqrbaaw1a913kcr");
-        var categoryPart = category.As<TaxonomyPart>();
+        var categoryPart = category.GetOrCreate<TaxonomyPart>();
         var importedTerms = contentItems.Where(item => item.ContentType == "CategoryTerm").ToList();
         var existingTerms = new List<ContentItem>();
         foreach (var importedTerm in importedTerms)
         {
             var existingTerm = categoryPart.Terms
-                .Find(term => term.As<OrchardIds>()?.ExportId == importedTerm.As<OrchardIds>().ExportId);
+                .Find(term => term.GetMaybe<OrchardIds>()?.ExportId == importedTerm.GetMaybe<OrchardIds>()?.ExportId);
             if (existingTerm != null)
             {
                 importedTerm.ContentItemId = existingTerm.ContentItemId;
@@ -34,16 +34,19 @@ public class CategoryOrchardExportConverter : IOrchardExportConverter
             }
         }
 
-        var aliasToTermIds = importedTerms.ToDictionary(key => key.As<OrchardIds>().ExportId, value => value.ContentItemId);
-        var oldWebsites = document.Root.Element("Content").Elements("Website");
-        var newWebsites = contentItems.Where(item => item.ContentType == "Website");
+        var aliasToTermIds = importedTerms.ToDictionary(key => key.GetOrCreate<OrchardIds>().ExportId, value => value.ContentItemId);
+        var oldWebsites = document.Root?.Element("Content")?.Elements("Website").CastWhere<XElement>() ?? [];
+        var newWebsites = GetNewWebsites(contentItems);
+
         foreach (var oldWebsite in oldWebsites)
         {
-            var oldTermIds = oldWebsite.Element("TaxonomyField.Category").Attribute("Terms").Value.Split(',');
-            var newWebsite = newWebsites.First(website =>
-                website.As<OrchardIds>().ExportId == oldWebsite.Attribute("Id").Value);
-            newWebsite.Content.Website.Category.TaxonomyContentItemId = category.ContentItemId;
-            newWebsite.Content.Website.Category.TermContentItemIds = JArray.FromObject(oldTermIds.Select(id => aliasToTermIds[id]).ToArray());
+            var oldTermIds = oldWebsite.Element("TaxonomyField.Category")?.Attribute("Terms")?.Value.Split(',') ?? [];
+            if (newWebsites.First(pair => pair.ExportId == oldWebsite.Attribute("Id")?.Value).Website is { } newWebsite)
+            {
+                newWebsite.Content.Website.Category.TaxonomyContentItemId = category.ContentItemId;
+                newWebsite.Content.Website.Category.TermContentItemIds =
+                    JArray.FromObject(oldTermIds.Select(id => aliasToTermIds[id]).ToArray());
+            }
         }
 
         importedTerms.RemoveAll(existingTerms.Contains);
@@ -55,4 +58,11 @@ public class CategoryOrchardExportConverter : IOrchardExportConverter
 
         contentItems.RemoveAll(item => item.ContentType == "CategoryTerm");
     }
+
+    internal static List<(ContentItem Website, string ExportId)> GetNewWebsites(IList<ContentItem> contentItems) =>
+        contentItems
+            .SelectWhere(
+                item => (Website: item, item.GetMaybe<OrchardIds>()?.ExportId),
+                pair => pair.Website.ContentType == "Website" && !string.IsNullOrEmpty(pair.ExportId))
+            .ToList();
 }

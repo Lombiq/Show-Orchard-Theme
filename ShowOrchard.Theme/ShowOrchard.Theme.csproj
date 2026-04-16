@@ -15,11 +15,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="OrchardCore.Theme.Targets" Version="3.0.0-preview-18975" />
-        <PackageReference Include="OrchardCore.ContentManagement" Version="3.0.0-preview-18975" />
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="3.0.0-preview-18975" />
-        <PackageReference Include="OrchardCore.ResourceManagement" Version="3.0.0-preview-18975" />
-        <PackageReference Include="OrchardCore.Taxonomies" Version="3.0.0-preview-18975" />
+        <PackageReference Include="OrchardCore.Theme.Targets" Version="3.0.0-preview-18979" />
+        <PackageReference Include="OrchardCore.ContentManagement" Version="3.0.0-preview-18979" />
+        <PackageReference Include="OrchardCore.DisplayManagement" Version="3.0.0-preview-18979" />
+        <PackageReference Include="OrchardCore.ResourceManagement" Version="3.0.0-preview-18979" />
+        <PackageReference Include="OrchardCore.Taxonomies" Version="3.0.0-preview-18979" />
     </ItemGroup>
 
     <PropertyGroup>
@@ -41,7 +41,7 @@
     </ImportGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqHelpfulExtensionsPath))">
-        <PackageReference Include="Lombiq.HelpfulExtensions" Version="11.1.1-alpha.4.osoe-925" />
+        <PackageReference Include="Lombiq.HelpfulExtensions" Version="11.1.1-alpha.9.osoe-925" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqNodeJsExtensionsPath))">
@@ -56,8 +56,8 @@
 
     <ItemGroup>
         <ProjectReference Condition="Exists($(LombiqHostingMediaThemePath))" Include="$(LombiqHostingMediaThemePath)" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="8.0.1-alpha.9.osoe-925" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="8.0.1-alpha.9.osoe-925" />
+        <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="8.0.1-alpha.11.osoe-925" />
+        <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="8.0.1-alpha.11.osoe-925" />
     </ItemGroup>
 
     <ItemGroup>

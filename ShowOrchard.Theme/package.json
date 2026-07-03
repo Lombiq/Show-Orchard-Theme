@@ -23,12 +23,14 @@
         "target": "wwwroot/fonts"
       },
       {
+        "sequence": 1,
         "sources": [
           "wwwroot"
         ],
         "target": "Recipes/_MediaTheme/Assets"
       },
       {
+        "sequence": 1,
         "sources": [
           "Views"
         ],

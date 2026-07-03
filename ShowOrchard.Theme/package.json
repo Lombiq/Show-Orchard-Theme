@@ -21,6 +21,18 @@
           "Assets/Fonts"
         ],
         "target": "wwwroot/fonts"
+      },
+      {
+        "sources": [
+          "wwwroot"
+        ],
+        "target": "Recipes/_MediaTheme/Assets"
+      },
+      {
+        "sources": [
+          "Views"
+        ],
+        "target": "Recipes/_MediaTheme/Templates"
       }
     ],
     "styles": {

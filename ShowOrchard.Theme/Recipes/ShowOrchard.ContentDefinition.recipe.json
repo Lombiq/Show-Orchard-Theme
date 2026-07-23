@@ -242,52 +242,52 @@
                 },
                 "LuceneContentIndexSettings": {}
               }
-            },
+            }
+          ]
+        },
+        {
+          "Name": "CtaPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Reusable": false,
+              "DisplayName": "CTA",
+              "Description": "Configures the promotional call-to-action cards displayed on the website details page."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": [
             {
-              "Name": "CtaPart",
+              "FieldName": "MultiTextField",
+              "Name": "Cta",
               "Settings": {
-                "ContentPartSettings": {
-                  "Attachable": true,
-                  "Reusable": false,
+                "ContentPartFieldSettings": {
                   "DisplayName": "CTA",
-                  "Description": "Configures the promotional call-to-action cards displayed on the website details page."
-                }
-              },
-              "ContentPartFieldDefinitionRecords": [
-                {
-                  "FieldName": "MultiTextField",
-                  "Name": "Cta",
-                  "Settings": {
-                    "ContentPartFieldSettings": {
-                      "DisplayName": "CTA",
-                      "Editor": "CheckboxList"
+                  "Editor": "CheckboxList"
+                },
+                "ElasticContentIndexSettings": {
+                  "Included": false
+                },
+                "MultiTextFieldSettings": {
+                  "Required": false,
+                  "Options": [
+                    {
+                      "name": "Lombiq Site",
+                      "value": "lombiq",
+                      "default": false
                     },
-                    "ElasticContentIndexSettings": {
-                      "Included": false
-                    },
-                    "MultiTextFieldSettings": {
-                      "Required": false,
-                      "Options": [
-                        {
-                          "name": "Lombiq Site",
-                          "value": "lombiq",
-                          "default": false
-                        },
-                        {
-                          "name": "Dotnest Hosted",
-                          "value": "dotnest",
-                          "default": false
-                        }
-                      ]
-                    },
-                    "LuceneContentIndexSettings": {
-                      "Included": false,
-                      "Stored": false,
-                      "Keyword": false
+                    {
+                      "name": "Dotnest Hosted",
+                      "value": "dotnest",
+                      "default": false
                     }
-                  }
+                  ]
+                },
+                "LuceneContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Keyword": false
                 }
-              ]
+              }
             }
           ]
         }

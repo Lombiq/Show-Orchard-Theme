@@ -13,7 +13,6 @@
     <LombiqHostingMediaThemeTargetsProps>$(ThemesDirectory)Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props</LombiqHostingMediaThemeTargetsProps>
     <LombiqHostingMediaThemeTargetsTargets>$(ThemesDirectory)Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets</LombiqHostingMediaThemeTargetsTargets>
 
-    <MediaThemeRecipeFileName>ShowOrchard.MediaTheme</MediaThemeRecipeFileName>
     <MediaThemeBaseId>Lombiq.BaseTheme</MediaThemeBaseId>
   </PropertyGroup>
 

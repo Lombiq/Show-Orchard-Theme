@@ -1,4 +1,5 @@
 {% assign field = Model.ContentItem.Content.CtaPart.Cta %}
+
 {% if field %}
     {% assign ctas = field.Values | default: empty %}
 
@@ -6,40 +7,50 @@
     {% assign hasDotNest = ctas contains "dotnest" %}
 
     {% if hasLombiq or hasDotNest %}
-        <div class="cta-section">
+    <div class="cta">
 
         {% if hasLombiq %}
-        <div class="cta-card">
-            <img class="pure-img-responsive" src="{{ "~/mediatheme/images/lombiq-logo-small.svg" | href }}" alt="Lombiq"/>
-            <h2>Need an Orchard Core application?</h2>
+        <article class="cta__card">
+            <img class="cta__logo"
+                 src="{{ "~/mediatheme/images/lombiq-logo-small.svg" | href }}"
+                 alt=""
+                 role="presentation">
 
-            <p>
-                Would you like a great web application based on Orchard Core?
-                Drop us a line and let's build something together!
+            <h2 class="cta__title">
+                {{ "Need an Orchard Core application?" | t }}
+            </h2>
+
+            <p class="cta__text">
+                {{ "Would you like a great web application based on Orchard Core? Drop us a line and let's build something together!" | t }}
             </p>
 
-            <a class="cta-link" href="https://lombiq.com/contact">
-                Contact Lombiq
+            <a class="cta__link" href="https://lombiq.com/contact">
+                {{ "Contact Lombiq" | t }}
             </a>
-        </div>
+        </article>
         {% endif %}
 
         {% if hasDotNest %}
-        <div class="cta-card">
-            <img class="pure-img-responsive" src="{{ "~/mediatheme/images/dotnest-logo.svg" | href }}" alt="DotNest"/>
-            <h2>Need Orchard hosting?</h2>
+        <article class="cta__card">
+            <img class="cta__logo"
+                 src="{{ "~/mediatheme/images/dotnest-logo.svg" | href }}"
+                 alt=""
+                 role="presentation">
 
-            <p>
-                Would you like a website that runs happily in the cloud without
-                you lifting a finger? Get started for free or let us build it for you.
+            <h2 class="cta__title">
+                {{ "Need Orchard hosting?" | t }}
+            </h2>
+
+            <p class="cta__text">
+                {{ "Would you like a website that runs happily in the cloud without you lifting a finger? Get started for free or let us build it for you." | t }}
             </p>
 
-            <a class="cta-link" href="https://dotnest.com">
-                Try DotNest
+            <a class="cta__link" href="https://dotnest.com">
+                {{ "Try DotNest" | t }}
             </a>
-        </div>
+        </article>
         {% endif %}
 
-        </div>
+    </div>
     {% endif %}
 {% endif %}

@@ -52,8 +52,8 @@
 
   <ItemGroup>
     <ProjectReference Condition="Exists($(LombiqHostingMediaThemePath))" Include="$(LombiqHostingMediaThemePath)" />
-    <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="9.0.1-alpha.3.nest-608" />
-    <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="9.0.1-alpha.3.nest-608" />
+    <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="9.0.1" />
+    <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="9.0.1" />
   </ItemGroup>
 
   <Import Condition="Exists($(LombiqHostingMediaThemeTargetsProps))" Project="$(LombiqHostingMediaThemeTargetsProps)" />

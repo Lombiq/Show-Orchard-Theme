@@ -1,4 +1,3 @@
-using Lombiq.HelpfulExtensions.Extensions.OrchardRecipeMigration.Models;
 using Lombiq.HelpfulExtensions.Extensions.OrchardRecipeMigration.Services;
 using OrchardCore.ContentManagement;
 using System.Collections.Generic;
@@ -13,20 +12,22 @@ public class ScreenshotOrchardExportConverter : IOrchardExportConverter
 {
     public Task UpdateContentItemsAsync(XDocument document, IList<ContentItem> contentItems)
     {
-        var images = document.Root.Element("Content").Elements("Image");
-        var oldWebsites = document.Root.Element("Content").Elements("Website");
-        var newWebsites = contentItems.Where(item => item.ContentType == "Website");
-        var imageIdToMediaUrl = images.ToDictionary(
-            key => key.Attribute("Id").Value,
-            value => value.Element("MediaPart").Attribute("FolderPath").Value +
-                "/" +
-                value.Element("MediaPart").Attribute("FileName").Value);
+        var images = document.Root?.Element("Content")?.Elements("Image") ?? [];
+        var oldWebsites = document.Root?.Element("Content")?.Elements("Website") ?? [];
+        var newWebsites = CategoryOrchardExportConverter.GetNewWebsites(contentItems);
+
+        var imageIdToMediaUrl = images
+            .SelectWhere(
+                image => new { Id = image.Attribute("Id")?.Value, MediaPart = image.Element("MediaPart") },
+                pair => pair.Id != null)
+            .ToDictionary(
+                pair => pair.Id,
+                pair => $"{pair.MediaPart?.Attribute("FolderPath")?.Value}/{pair.MediaPart?.Attribute("FileName")?.Value}");
 
         foreach (var oldWebsite in oldWebsites)
         {
-            var newWebsite = newWebsites.First(website =>
-                website.As<OrchardIds>().ExportId == oldWebsite.Attribute("Id").Value);
-            var screenshotId = oldWebsite.Element("MediaLibraryPickerField.Screenshot").Attribute("ContentItems").Value;
+            var newWebsite = newWebsites.First(website => website.ExportId == oldWebsite.Attribute("Id")?.Value).Website;
+            var screenshotId = oldWebsite.Element("MediaLibraryPickerField.Screenshot")?.Attribute("ContentItems")?.Value;
             newWebsite.Content.Website.Screenshot.Paths = JArray.FromObject(new[] { imageIdToMediaUrl[screenshotId] });
         }
 

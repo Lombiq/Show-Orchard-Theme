@@ -21,6 +21,20 @@
           "Assets/Fonts"
         ],
         "target": "wwwroot/fonts"
+      },
+      {
+        "sequence": 1,
+        "sources": [
+          "wwwroot"
+        ],
+        "target": "Recipes/_MediaTheme/Assets"
+      },
+      {
+        "sequence": 1,
+        "sources": [
+          "Views"
+        ],
+        "target": "Recipes/_MediaTheme/Templates"
       }
     ],
     "styles": {
@@ -38,5 +52,6 @@
     "eslint-plugin-n": "17.23.1",
     "eslint-plugin-only-warn": "1.1.0",
     "eslint-plugin-promise": "7.2.1"
-  }
+  },
+  "packageManager": "pnpm@9.15.9"
 }

@@ -1,79 +1,65 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-    <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
-        <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-        <DefaultItemExcludes>$(DefaultItemExcludes);.git*;node_modules\**;Deployment\**</DefaultItemExcludes>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <DefaultItemExcludes>$(DefaultItemExcludes);.git*;node_modules/**;Deployment/**</DefaultItemExcludes>
 
-    <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    </ItemGroup>
+    <ThemesDirectory>../../../../../</ThemesDirectory>
+    <LombiqHelpfulExtensionsPath>$(ThemesDirectory)../Modules/Lombiq.HelpfulExtensions/Lombiq.HelpfulExtensions/Lombiq.HelpfulExtensions.csproj</LombiqHelpfulExtensionsPath>
+    <LombiqNodeJsExtensionsDirectory>$(ThemesDirectory)../Utilities/Lombiq.NodeJs.Extensions/Lombiq.NodeJs.Extensions/</LombiqNodeJsExtensionsDirectory>
+    <LombiqNodeJsExtensionsPath>$(LombiqNodeJsExtensionsDirectory)Lombiq.NodeJs.Extensions.csproj</LombiqNodeJsExtensionsPath>
+    <LombiqHostingMediaThemePath>$(ThemesDirectory)Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.csproj</LombiqHostingMediaThemePath>
+    <LombiqHostingMediaThemeTargetsProps>$(ThemesDirectory)Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props</LombiqHostingMediaThemeTargetsProps>
+    <LombiqHostingMediaThemeTargetsTargets>$(ThemesDirectory)Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets</LombiqHostingMediaThemeTargetsTargets>
 
-    <ItemGroup>
-        <None Include="..\Readme.md" />
-    </ItemGroup>
+    <MediaThemeBaseId>Lombiq.BaseTheme</MediaThemeBaseId>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="OrchardCore.Theme.Targets" Version="2.1.0" />
-        <PackageReference Include="OrchardCore.ContentManagement" Version="2.1.0" />
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.0" />
-        <PackageReference Include="OrchardCore.ResourceManagement" Version="2.1.0" />
-        <PackageReference Include="OrchardCore.Taxonomies" Version="2.1.0" />
-    </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
 
-    <PropertyGroup>
-        <LombiqHelpfulExtensionsPath>..\..\..\..\..\..\Modules\Lombiq.HelpfulExtensions\Lombiq.HelpfulExtensions\Lombiq.HelpfulExtensions.csproj</LombiqHelpfulExtensionsPath>
-        <LombiqNodeJsExtensionsPath>..\..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.csproj</LombiqNodeJsExtensionsPath>
-    </PropertyGroup>
+  <ItemGroup>
+    <None Include="../Readme.md" />
+    <Content Include=".config/dotnet-tools.json" />
+  </ItemGroup>
 
-    <ItemGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqHelpfulExtensionsPath))">
-        <ProjectReference Include="$(LombiqHelpfulExtensionsPath)" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.Theme.Targets" Version="$(OrchardCoreVersion)" />
+  </ItemGroup>
 
-    <ItemGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqNodeJsExtensionsPath))">
-        <ProjectReference Include="$(LombiqNodeJsExtensionsPath)" />
-    </ItemGroup>
+  <ItemGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqHelpfulExtensionsPath))">
+    <ProjectReference Include="$(LombiqHelpfulExtensionsPath)" />
+  </ItemGroup>
 
-    <ImportGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqNodeJsExtensionsPath))">
-        <Import Project="..\..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.props" />
-        <Import Project="..\..\..\..\..\..\Utilities\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions\Lombiq.NodeJs.Extensions.targets" />
-    </ImportGroup>
+  <ItemGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqNodeJsExtensionsPath))">
+    <ProjectReference Include="$(LombiqNodeJsExtensionsPath)" />
+  </ItemGroup>
 
-    <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqHelpfulExtensionsPath))">
-        <PackageReference Include="Lombiq.HelpfulExtensions" Version="11.1.0" />
-    </ItemGroup>
+  <ImportGroup Condition="'$(NuGetBuild)' != 'true' and Exists($(LombiqNodeJsExtensionsPath))">
+    <Import Project="$(LombiqNodeJsExtensionsDirectory)Lombiq.NodeJs.Extensions.props" />
+    <Import Project="$(LombiqNodeJsExtensionsDirectory)Lombiq.NodeJs.Extensions.targets" />
+  </ImportGroup>
 
-    <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqNodeJsExtensionsPath))">
-        <PackageReference Include="Lombiq.NodeJs.Extensions" Version="3.0.1-alpha.2.nest-665" />
-    </ItemGroup>
+  <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqHelpfulExtensionsPath))">
+    <PackageReference Include="Lombiq.HelpfulExtensions" Version="12.0.0" />
+  </ItemGroup>
 
-    <PropertyGroup>
-        <LombiqHostingMediaThemePath>../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.csproj</LombiqHostingMediaThemePath>
-        <LombiqHostingMediaThemeTargetsProps>../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props</LombiqHostingMediaThemeTargetsProps>
-        <LombiqHostingMediaThemeTargetsTargets>../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets</LombiqHostingMediaThemeTargetsTargets>
-    </PropertyGroup>
+  <ItemGroup Condition="'$(NuGetBuild)' == 'true' or !Exists($(LombiqNodeJsExtensionsPath))">
+    <PackageReference Include="Lombiq.NodeJs.Extensions" Version="3.0.1-alpha.3.nest-608" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <ProjectReference Condition="Exists($(LombiqHostingMediaThemePath))" Include="$(LombiqHostingMediaThemePath)" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="8.0.1-alpha.7.olys-29" />
-        <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="8.0.1-alpha.7.olys-29" />
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Condition="Exists($(LombiqHostingMediaThemePath))" Include="$(LombiqHostingMediaThemePath)" />
+    <PackageReference Condition="!Exists($(LombiqHostingMediaThemePath))" Include="Lombiq.Hosting.MediaTheme" Version="9.0.1" />
+    <PackageReference Condition="!Exists($(LombiqHostingMediaThemeTargetsProps))" Include="Lombiq.Hosting.MediaTheme.Targets" Version="9.0.1" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <Content Include=".config\dotnet-tools.json" />
-    </ItemGroup>
+  <Import Condition="Exists($(LombiqHostingMediaThemeTargetsProps))" Project="$(LombiqHostingMediaThemeTargetsProps)" />
+  <Import Condition="Exists($(LombiqHostingMediaThemeTargetsTargets))" Project="$(LombiqHostingMediaThemeTargetsTargets)" />
 
-    <Import Condition="Exists($(LombiqHostingMediaThemeTargetsProps))" Project="../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.props" />
-    <Import Condition="Exists($(LombiqHostingMediaThemeTargetsTargets))" Project="../../../../../Lombiq.Hosting.MediaTheme/Lombiq.Hosting.MediaTheme.Targets/Lombiq.Hosting.MediaTheme.Targets.targets" />
-
-    <!-- Overriding to change the dependency order of the targets. -->
-    <Target Name="MediaThemeDeploymentBeforeTargets" BeforeTargets="EmbeddModuleAssets;OrchardCoreEmbedModuleAssets" />
-    <Target Name="MediaThemeDeploymentAfterTargets" AfterTargets="NpmDotnetPrebuild" />
-
-    <PropertyGroup>
-        <!-- This must be defined after the Lombiq.Hosting.MediaTheme.Targets import to override the property. -->
-        <MediaThemeRecipeFileName>ShowOrchard.MediaTheme</MediaThemeRecipeFileName>
-        <MediaThemeBaseId>Lombiq.BaseTheme</MediaThemeBaseId>
-    </PropertyGroup>
+  <!-- Overriding to change the dependency order of the targets. -->
+  <Target Name="MediaThemeDeploymentBeforeTargets" BeforeTargets="EmbeddModuleAssets;OrchardCoreEmbedModuleAssets" />
+  <Target Name="MediaThemeDeploymentAfterTargets" AfterTargets="NpmDotnetPrebuild" />
 </Project>

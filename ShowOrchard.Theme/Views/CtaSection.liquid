@@ -1,0 +1,56 @@
+{% assign field = Model.ContentItem.Content.CtaPart.Cta %}
+
+{% if field %}
+    {% assign ctas = field.Values | default: empty %}
+
+    {% assign hasLombiq = ctas contains "lombiq" %}
+    {% assign hasDotNest = ctas contains "dotnest" %}
+
+    {% if hasLombiq or hasDotNest %}
+    <div class="cta">
+
+        {% if hasLombiq %}
+        <article class="cta__card">
+            <img class="cta__logo"
+                 src="{{ "~/mediatheme/images/lombiq-logo-small.svg" | href }}"
+                 alt=""
+                 role="presentation">
+
+            <h2 class="cta__title">
+                {{ "Need an Orchard Core application?" | t }}
+            </h2>
+
+            <p class="cta__text">
+                {{ "Would you like a great web application based on Orchard Core? Drop us a line and let's build something together!" | t }}
+            </p>
+
+            <a class="cta__link" href="https://lombiq.com/contact">
+                {{ "Contact Lombiq" | t }}
+            </a>
+        </article>
+        {% endif %}
+
+        {% if hasDotNest %}
+        <article class="cta__card">
+            <img class="cta__logo"
+                 src="{{ "~/mediatheme/images/dotnest-logo.svg" | href }}"
+                 alt=""
+                 role="presentation">
+
+            <h2 class="cta__title">
+                {{ "Need Orchard hosting?" | t }}
+            </h2>
+
+            <p class="cta__text">
+                {{ "Would you like a website that runs happily in the cloud without you lifting a finger? Get started for free or let us build it for you." | t }}
+            </p>
+
+            <a class="cta__link" href="https://dotnest.com">
+                {{ "Try DotNest" | t }}
+            </a>
+        </article>
+        {% endif %}
+
+    </div>
+    {% endif %}
+{% endif %}
